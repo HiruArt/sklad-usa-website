@@ -1,0 +1,449 @@
+@import "_import";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-wrap{
+  overflow: hidden;
+  position: relative;
+}
+
+/*SITE STYLE*/
+.contacts{
+
+  &__item{
+    display: flex;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: center;
+  }
+
+  &__ico{
+    margin-right: 4px;
+  }
+}
+
+
+.header{
+  background: #F8F4EE;
+  box-shadow: 0px 4px 24px rgba(182, 182, 182, 0.25);
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top{
+    height: 35px;
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $brown;
+      opacity: .2;
+    }
+  }
+
+  &__top-column{
+    width: 25%;
+    align-items: center;
+    display: flex;
+
+    &--contacts{
+      width: 50%;
+      justify-content: center;
+    }
+  }
+
+  &__schedule{
+
+  }
+
+  &__schedule-txt{
+    font-size: 12px;
+    line-height: 14px;
+    color: $grey;
+  }
+
+  &__contacts{
+    display: flex;
+    margin: 0 -12px;
+    justify-content: center;
+
+    > a{
+      padding: 0 12px;
+    }
+  }
+
+  &__management{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__lang{
+    display: flex;
+    position: relative;
+  }
+
+  &__lang-i{
+    font-size: 12px;
+    line-height: 14px;
+    color: $grey;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__lang-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: .1s ease-in-out;
+  }
+
+  &__lang:hover &__lang-arrow{
+    transform: rotate(-180deg) translateY(3px);
+  }
+
+  &__lang-list{
+    display: flex;
+    position: absolute;
+    transition: .2s ease-in-out;
+    flex-direction: column;
+    left: 0;
+    top: calc(100% + 1px);
+    min-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% + 16px);
+      height: calc(100% + 40px);
+      background: #F8F4EE;
+      box-shadow: 0px 4px 24px rgba(182, 182, 182, 0.25);
+    }
+
+    > a{
+      margin-bottom: 4px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__lang:hover &__lang-list{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+  &__email{
+    display: flex;
+  }
+
+  &__email-i{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__login{
+    display: flex;
+  }
+
+  &__login-i{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: $grey;
+  }
+
+  &__center-line{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    width: 200px;
+  }
+
+  &__logo-i{
+
+  }
+
+  &__nav{
+    display: flex;
+  }
+
+  &__calculator{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__burger{
+
+  }
+
+}
+
+
+.header-nav{
+
+  &__list{
+    display: flex;
+    margin: 0 -12px;
+  }
+
+  &__item{
+    position: relative;
+    padding: 8px 12px;
+    display: flex;
+  }
+
+  &__link{
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: .2s ease-in-out;
+  }
+
+  &__item:hover &__arrow{
+    transform: rotate(-180deg) translateY(2px);
+  }
+
+  &__dropdown{
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    background: $white;
+    box-shadow: 0px 4px 24px rgba(182, 182, 182, 0.25);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: .2s ease-in-out;
+  }
+
+  &__item:hover &__dropdown{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &__dropdown-i{
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+}
+
+
+
+
+
+.footer {
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__center{
+    display: flex;
+    padding-top: 40px;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $brown;
+      opacity: .3;
+    }
+  }
+
+  &__row{
+    display: flex;
+    margin: 0 -12px;
+    width: 100%;
+    flex-wrap: wrap;
+      }
+
+  &__column{
+    padding: 0 12px;
+    width: 33.33333%;
+
+    @include for-800{
+      margin-bottom: 15px;
+      width: 50%;
+
+      &:first-child{
+        width: 100%;
+      }
+    }
+  }
+
+  &__logo{
+    margin-bottom: 30px;
+  }
+
+  &__logo-i{
+
+  }
+
+  &__contact{
+    padding-left: 57px;
+    margin-bottom: 24px;
+
+    @include for-800{
+      padding-left: 0;
+    }
+
+    > a{
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 12px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+  &__email{
+    padding-left: 57px;
+
+    @include for-800{
+      padding-left: 0;
+    }
+  }
+
+  &__email-i{
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  &__list{
+    column-count: 2;
+
+    @include for-1100{
+      column-count: 1;
+    }
+  }
+
+  &__item{
+    margin-bottom: 8px;
+  }
+
+  &__link{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__bottom{
+    padding-top: 45px;
+    padding-bottom: 15px;
+
+    @include for-1100{
+      padding-top: 15px;
+    }
+
+    @include for-800{
+      position: relative;
+
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $brown;
+        opacity: .3;
+      }
+    }
+  }
+
+  &__bottom-inner{
+    display: flex;
+    justify-content: center;
+
+    @include for-800{
+      justify-content: space-between;
+    }
+  }
+
+  &__bottom-link{
+    margin: 0 15px;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: .4;
+
+    @include for-800{
+      margin: 0;
+    }
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+}
+

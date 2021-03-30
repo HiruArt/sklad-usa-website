@@ -1,0 +1,80 @@
+header.header
+  .header__inner.site-container
+    .header__top.desktop
+      .header__top-column
+        .header__schedule
+          .header__schedule-txt Пн. — Пт. 9:00 — 18:00
+      .header__top-column.header__top-column--contacts
+        .header__contacts.contacts
+          a(href="tel:0800217096").contacts__item
+            .contacts__ico
+              img(src="../../img/ico/flag-ukrainian.svg" alt="ico" width="16" height="10")
+            | 0 (800) 217 096
+          a(href="tel:+16124338383").contacts__item
+            .contacts__ico
+              img(src="../../img/ico/flag-american.svg" alt="ico" width="16" height="10")
+            | +1 (612) 433 83 83 (FBM)
+          a(href="tel:+16126367581").contacts__item
+            .contacts__ico
+              img(src="../../img/ico/flag-american.svg" alt="ico" width="16" height="10")
+            | +1 (612) 636 75 81 (FBA)
+
+      .header__top-column
+        .header__management
+          .header__lang
+            .header__lang-i Укр
+            .header__lang-arrow
+              include ../../img/ico/arrow-grey-down.svg
+            .header__lang-list
+              a(href="#").header__lang-i En
+              a(href="#").header__lang-i Рус
+
+          .header__email
+            a(href="mailto:support@skladusa.com").header__email-i support @ skladusa.com
+
+          .header__login
+            a(href="javascript:void(0)").header__login-i Увiйти
+
+    .header__center-line
+      .header__burger.tablet
+        a(href="javascript:void(0)")
+          include ../../img/ico/burger-menu.svg
+
+      .header__logo
+        a(href="/").header__logo-i
+          include ../../img/skladusa-logo.svg
+
+      .header__nav.desktop
+        nav.header-nav
+          ul.header-nav__list
+            li.header-nav__item
+              a(href="#").header-nav__link Послуги
+              .header-nav__arrow
+                include ../../img/ico/arrow-grey-down.svg
+              .header-nav__dropdown
+                a(href="#").header-nav__dropdown-i FBM Fullfilment
+                a(href="#").header-nav__dropdown-i Експрес вiдправка
+                a(href="#").header-nav__dropdown-i FBA Преп центр
+                a(href="#").header-nav__dropdown-i Консолiдацiї
+                a(href="#").header-nav__dropdown-i Приймання платежiв
+                a(href="#").header-nav__dropdown-i Повернення
+                a(href="#").header-nav__dropdown-i Онлайн Арбiтраж
+                a(href="#").header-nav__dropdown-i Навчання
+            li.header-nav__item
+              a(href="#").header-nav__link Вiдгуки
+            li.header-nav__item
+              a(href="#").header-nav__link Служба пiдтримки
+            li.header-nav__item
+              a(href="#").header-nav__link Вiдгуки
+            li.header-nav__item
+              a(href="#").header-nav__link Про нас
+            li.header-nav__item
+              a(href="#").header-nav__link Блог
+            li.header-nav__item
+              a(href="#").header-nav__link Контакти
+
+      .header__calculator
+        a(href="javascript:void(0)").header__calculator-btn.site-btn
+          span Калькулятор
+
+    include _mobile-menu
