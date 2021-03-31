@@ -34,9 +34,10 @@ if (UAString.indexOf("Trident") !== -1 && UAString.indexOf("rv:10") !== -1)
 
 $(document).ready(function () {
 
-  $('#menu-btn').click(function () {
+  $('.js_mobile-menu').click(function () {
     $(this).closest('header').toggleClass('menu-open');
     $('body').toggleClass('oh');
+    $('.mobile-menu').slideToggle();
   });
 
   $(document).on('click', function (e) {

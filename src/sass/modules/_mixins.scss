@@ -23,6 +23,7 @@
   @media (min-width: 551px) { @content; }
 }
 
+
 @mixin for-800 {
   @media (max-width: 800px) { @content; }
 }
@@ -81,4 +82,13 @@
 }
 @mixin from-1800 {
   @media (min-width: 1801px) { @content; }
+}
+
+
+
+@mixin for-680 {
+  @media (max-width: 680px) { @content; }
+}
+@mixin from-680 {
+  @media (min-width: 681px) { @content; }
 }

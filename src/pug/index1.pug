@@ -7,3 +7,135 @@ block vars
 
 block content
   div.main-wrap
+    .capital
+      .capital__inner.site-container.site-container--section
+        .capital__floating-img.floating-img
+          img(src="./img/floating-img01.svg" alt="floating").floating-img__i
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large Вiдправлення товарiв закордон та&nbsp
+              span прийом платежiв з платформ
+          p Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо допомогти робити це зручно! Приймайте платежi, тримайте товар на наших складах та користуйтеся нашими службами доставки.
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link
+                span Детальнiше про нас
+        .capital__media
+          .capital__media-img
+            include ../img/caption-homepage-img.svg
+
+    include ./modules/_all-services
+
+    .our-system
+      .our-system__inner.site-container.site-container--section
+        .our-system__content.grid-padding.center-content
+          .our-system__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-our-system.svg
+            .site-title__designation Наша Система
+            .site-title__large Iнтерфейс, яким&nbsp
+              span зручно користуватися
+          p Власна WHM-система (Warehouse Management System) і безліч автоматизованих функцій, які не потребують очікування відповіді на запит.
+
+        .our-system__media.grid-padding
+          .our-system__media-img
+            picture
+              source(srcset="./img/crm-interface-img.webp" type="image/webp")
+              img(src="./img/crm-interface-img.png" alt="crm interface")
+
+    .benefit
+      .benefit__inner.site-container.site-container--section
+        .benefit__head.center-content.grid-padding
+          .benefit__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-benefit.svg
+            .site-title__designation з нами вигiдно
+            .site-title__large Заощаджуйте
+
+        .benefit__content
+          .benefit__media.w-half
+            .benefit__media-img
+              img(src="./img/benefit-img.svg" alt="benefit")
+          .benefit__list.grid-padding.center-content.center-content--w100
+            .benefit__item
+              .benefit__item-ico
+                .benefit__item-ico-i
+                  include ../img/benefit-icon01.svg
+              .benefit__item-content
+                .benefit__item-title Усього лише 3% комiсiї з платежу
+                p Пропонуємо найнижчу комiсiю за пройом платежiв — 3%.
+            .benefit__item
+              .benefit__item-ico
+                .benefit__item-ico-i
+                  include ../img/benefit-icon02.svg
+              .benefit__item-content
+                .benefit__item-title PayPal та банкiвскi картки
+                p Користуйтеся зручними для вас платiжними системами —<br>ми працюємо з усiм.
+            .benefit__item
+              .benefit__item-ico
+                .benefit__item-ico-i
+                  include ../img/benefit-icon03.svg
+              .benefit__item-content
+                .benefit__item-title Безкоштовне користування складом FBM
+                p За умови регулярних продажів і відправок до 1/2 палети ми<br>пропонуємо послуги FBM складу безкоштовно для вас
+            .benefit__item
+              .benefit__item-ico
+                .benefit__item-ico-i
+                  include ../img/benefit-icon04.svg
+              .benefit__item-content
+                .benefit__item-title 70% зинижки на експрес вiдправлення
+                p Сплачуйте лише 30% вартостi експресс<br>вiдправлення з України.
+
+    include ./modules/_consolidations
+
+
+    .some-facts
+      .some-facts__inner.site-container.site-container--section
+        .some-facts__content
+          .some-facts__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-all-some-facts.svg
+            .site-title__designation Трохи фактiв
+            .site-title__large Отримуйте&nbsp;
+              span більше<br>переваг
+          a(href="#").site-btn
+            span Зареєcтруватися
+
+          ol.numbered-tiles__list.custom-row.custom-row--12px.grid-padding--right
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Готове замовлення менше нiж за годину
+                p Обробка та відправлення замовлення FBM в той же день (*при створенні в системі до 12:00).
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Google Authenticator
+                p Забезпечення безпеки за допомогою Google Authenticator.
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Виведення коштів  з балансу за 5 хвилин
+                p Виведення до $500 з балансу протягом 5 хвилин без комісій
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Митний платiж
+                p У вартість відправлень замовлень в Європу включений митний платіж. Клієнти відмовлятимуться від посилок через доплати.
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Google Analytics прямо в особистому кабiнетi
+                p Можливість підключення Google Analytics, що дозволяє зручно переглядати основні показники, не покидаючи системи.
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Easy-кабiнет: Вiдправлення  у 2 клiки
+                p Полегшене створення відправлень, оплата доставки відбувається відразу, а у вартість вже включені всі витрати.
+
+
+
+
+
+
+
+
