@@ -141,6 +141,7 @@ div{
     visibility: hidden;
     opacity: 0;
     z-index: -1;
+    padding-top: 2px;
 
     &:before{
       content: '';
@@ -609,6 +610,8 @@ div{
   &__bottom-inner{
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 
     @include for-800{
       justify-content: space-between;
@@ -630,6 +633,23 @@ div{
     }
   }
 
+
+  &__bottom-made-by{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+
+    @include for-1100{
+      display: none;
+    }
+
+    > a{
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
 }
 
 
@@ -639,6 +659,10 @@ div{
     display: flex;
     position: relative;
     padding-top: 24px;
+
+    @include for-680{
+      flex-wrap: wrap;
+    }
   }
 
   &__floating-img{
@@ -647,14 +671,28 @@ div{
     width: 81px;
     height: 81px;
     transform: translateY(90px);
+
+    @include for-1200{
+      display: none;
+    }
   }
 
   &__content{
     width: 50%;
     padding-top: 30px;
 
+    @include for-1100{
+      width: 100%;
+    }
+
+    @include for-680{
+      padding-top: 0;
+    }
+
     &--top-block{
-      padding-top: 96px;
+      @include from-1100 {
+        padding-top: 96px;
+      }
     }
   }
 
@@ -674,13 +712,33 @@ div{
 
   &__media{
     width: fit-content;
+
+    @include for-1100{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__media-img{
     width: 100%;
 
+    @include for-1100{
+      max-width: 350px;
+    }
+
+    @include for-680{
+      max-width: calc(100% + 30px);
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+    }
+
     img,svg{
       width: 100%;
+
+      @include for-1100{
+       height: auto;
+      }
     }
   }
 
@@ -724,6 +782,14 @@ div{
     position: relative;
     display: flex;
     margin-bottom: 24px;
+
+    @include for-992{
+      width: 50%;
+    }
+
+    @include for-680{
+      width: 100%;
+    }
 
 
     &:before{
@@ -774,6 +840,10 @@ div{
   }
 
   &__media-img{
+    @include for-550{
+      width: calc(100% + 20px);
+      margin: 0 -10px;
+    }
 
     img{
       width: 100%;
@@ -786,6 +856,127 @@ div{
     }
   }
 }
+
+
+.reviews{
+  overflow: hidden;
+  position: relative;
+
+  &__inner{
+    position: relative;
+  }
+
+  &__content{
+
+  }
+
+  &__title{
+
+  }
+
+  &__all-wrap{
+    position: absolute;
+    width: 100%;
+
+    @include for-800{
+      display: none;
+    }
+  }
+
+  &__all-reviews{
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+  }
+
+  &__slider-wrap{
+
+  }
+
+  &__slider{
+    position: relative;
+    min-height: 290px;
+
+    @include for-1100{
+      min-height: 320px;
+    }
+  }
+
+  &__slider-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    padding-left: 70px;
+
+    @include for-1400{
+      padding-left: 0;
+    }
+
+    @include for-550{
+      padding: 0;
+    }
+  }
+
+  &__slider-main{
+
+  }
+
+  &__item{
+    padding: 0 15px;
+  }
+
+  &__item-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px;
+    background: $white;
+    box-shadow: 0px 4px 14px #e2d8cb;
+    border-radius: 14px;
+    max-height: 380px;
+    min-height: 275px;
+
+    @include for-550{
+      padding: 24px;
+    }
+  }
+
+  &__txt, p{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__read-more{
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    text-decoration-line: underline;
+    color: $brown;
+
+    &:hover{
+      color: $accent;
+    }
+  }
+
+
+  &__name{
+    margin-top: 24px;
+    font-weight: bold;
+  }
+
+
+}
+
+
+
+
 
 
 

@@ -52,7 +52,7 @@ gulp.task('pug', () => {
 });
 
 gulp.task('js', () => {
-  return gulp.src('src/js/main.js')
+  return gulp.src('src/js/**/!(_)*.js')
     .pipe(rigger())
     .pipe(gulp.dest('dist/js/'))
     .pipe(rename({suffix: '.min'}))
@@ -66,7 +66,7 @@ gulp.task('js', () => {
 gulp.task('css-libs', () => {
   return gulp.src([
       'node_modules/normalize.css/normalize.css',
-      // 'node_modules/slick-carousel/slick/slick.css',
+      'node_modules/slick-carousel/slick/slick.css',
       // 'node_modules/bootstrap/dist/css/bootstrap.css',
       // 'node_modules/bootstrap-select/dist/css/bootstrap-select.css',
       // 'node_modules/magnific-popup/dist/magnific-popup.css',
@@ -90,7 +90,7 @@ gulp.task('js-libs', () => {
       // 'node_modules/bootstrap-select/dist/js/bootstrap-select.js',
       // 'node_modules/blazy/blazy.min.js',
       // 'node_modules/inputmask/dist/jquery.inputmask.js',
-      // 'node_modules/slick-carousel/slick/slick.js',
+      'node_modules/slick-carousel/slick/slick.js',
       // 'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
       // 'node_modules/jquery-ui-dist/jquery-ui.min.js',
       // 'node_modules/owl.carousel/dist/owl.carousel.js',
