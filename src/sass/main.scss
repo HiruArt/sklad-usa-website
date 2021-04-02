@@ -233,6 +233,14 @@ div{
     @include for-1100{
       margin-left: auto;
     }
+
+    &__calculator-btn{
+
+      span{
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
   }
 
   &__burger{
@@ -636,11 +644,10 @@ div{
 
   &__bottom-made-by{
     display: flex;
-    justify-content: flex-end;
     margin-top: -20px;
 
     @include for-1100{
-      display: none;
+      margin-top: 10px;
     }
 
     > a{
@@ -670,7 +677,7 @@ div{
     top: 0;
     width: 81px;
     height: 81px;
-    transform: translateY(90px);
+    transform: translateY(115px);
   }
 
   &__content{
@@ -700,10 +707,24 @@ div{
     margin-top: 20px;
     display: flex;
     align-items: center;
+
+    @media(max-width: 370px){
+      margin-left: -5px;
+      margin-right: -5px;
+    }
   }
 
   &__manage-item{
 
+    @media(max-width: 370px){
+      padding-left: 5px!important;
+      padding-right: 5px!important;
+    }
+
+    .site-link{
+      padding: 11px 0;
+      display: flex;
+    }
   }
 
   &__media{
@@ -754,14 +775,35 @@ div{
 
 
 .numbered-tiles{
+  position: relative;
 
   &__inner{
-    position: relative;
+    @media (max-width: 1446px){
+      position: relative;
+    }
+
   }
 
   &__floating-img{
     top: 93px;
-    right: 175px;
+    right: 28vw;
+
+    @media (max-width: 1900px){
+      right: 50vw;
+      transform: translateX(380px);
+    }
+
+    @media (max-width: 1610px){
+      right: 50vw;
+      transform: translateX(423px);
+    }
+
+
+    @media (max-width: 1446px){
+      right: 175px;
+      transform: translateX(0);
+    }
+
   }
 
   &__content{

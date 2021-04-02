@@ -7,7 +7,14 @@
   background-size: auto, auto;
   background-repeat: no-repeat;
 
+
+
   @media (min-width: 1446px){
+    background-image: url("../img/background-img-homepage--top1920(1).svg"), url("../img/background-img-homepage--bottom1920(1).svg");
+    background-size: auto, auto;
+  }
+
+  @media (min-width: 1600px){
     background-size: 100%;
   }
 
