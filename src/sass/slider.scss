@@ -61,6 +61,10 @@
     width: 100%;
     justify-content: center;
 
+    @include for-680{
+      width: calc(100% - 15px);
+    }
+
 
     li{
       width: initial;

@@ -1,6 +1,18 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
+.homepage .page__wrapper{
+  background-image: url("../img/background-img-homepage--top.svg"), url("../img/background-img-homepage--bottom.svg");
+  background-position: center top, center bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @include for-992{
+    background-size: cover;
+  }
+}
+
+
 .our-system{
 
   &__inner{
@@ -158,6 +170,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include for-680{
+      padding-top: 24px;
+    }
   }
 
   &__media-i{
@@ -290,11 +306,20 @@
 
 .warehouses{
 
+
   &__inner{
+    position: relative;
 
     @include for-680{
       flex-direction: column-reverse;
     }
+  }
+
+  &__floating-img{
+    right: 0;
+    top: 0;
+
+    transform: translate(20px, 40px);
   }
 
   &__title{

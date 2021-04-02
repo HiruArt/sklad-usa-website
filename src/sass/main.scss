@@ -671,10 +671,6 @@ div{
     width: 81px;
     height: 81px;
     transform: translateY(90px);
-
-    @include for-1200{
-      display: none;
-    }
   }
 
   &__content{
@@ -760,7 +756,12 @@ div{
 .numbered-tiles{
 
   &__inner{
+    position: relative;
+  }
 
+  &__floating-img{
+    top: 93px;
+    right: 175px;
   }
 
   &__content{
@@ -899,6 +900,10 @@ div{
 
     @include for-1100{
       min-height: 320px;
+    }
+
+    @include for-680{
+      width: calc(100% + 15px);
     }
   }
 

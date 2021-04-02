@@ -222,6 +222,8 @@ block content
 
     .warehouses
       .warehouses__inner.site-container.site-container--section.double-block
+        .warehouses__floating-img.floating-img
+          img(src="./img/floating-img02.svg" alt="floating").floating-img__i
         .warehouses__media.left-block.left-media
           .warehouses__media-img
             img(src="./img/our-warehouses-img.svg" alt="warehouses" width="447")
@@ -290,7 +292,10 @@ block content
 
         .education__media.right-block.right-media
           .education__media-img
-            img(src="./img/education-img.svg" alt="education" width="690")
+            picture
+              source(media="(max-width: 680px)" srcset="./img/education-img-mobile.svg" )
+              img(src="./img/education-img.svg" alt="education" width="690px")
+
 
 
 
