@@ -750,7 +750,7 @@ div{
       margin: 0 -15px;
     }
 
-    img,svg{
+    img{
       width: 100%;
 
       @include for-1100{
@@ -832,6 +832,7 @@ div{
 
     @include for-680{
       width: 100%;
+      margin-bottom: 12px;
     }
 
 
