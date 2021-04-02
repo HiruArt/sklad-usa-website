@@ -40,6 +40,35 @@ $(document).ready(function () {
     $('.mobile-menu').slideToggle();
   });
 
+
+  if($(window).width() > 1200) {
+
+    let scrollDown;
+
+    (function () {
+      let previousScroll = 0;
+      $(window).scroll(() => {
+        let currentScroll = $(this).scrollTop();
+        currentScroll > previousScroll ? scrollDown = true : scrollDown = false;
+        previousScroll = currentScroll;
+      });
+    }());
+
+    $(document).scroll(function () {
+      let top = $(document).scrollTop();
+      if (top < 150 || scrollDown) {
+        $(".top-arrow").removeClass('show');
+      } else {
+        $(".top-arrow").addClass('show');
+      }
+    });
+
+
+    $(document).on('click', '.js_top-arrow', function (e) {
+      $('html,body').animate({scrollTop: 0}, 800);
+    });
+  }
+
   /*popups start*/
   $(document).on('click', '[data-modal-class]', function (e) {
     e.preventDefault();
