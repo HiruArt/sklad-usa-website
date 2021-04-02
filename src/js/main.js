@@ -40,32 +40,6 @@ $(document).ready(function () {
     $('.mobile-menu').slideToggle();
   });
 
-  $(document).on('click', function (e) {
-    if($(e.target).closest('.header.menu-open').length === 0 && $('.header.menu-open').length > 0 && $(e.target).closest('#menu-btn').length === 0) {
-      $('.header').removeClass('menu-open');
-      $('body').removeClass('oh');
-    }
-  });
-
-  $('.nav__item-arrow').click(function (e) {
-    $(this).parent('.parent').toggleClass('open');
-  });
-
-  if($(document).width() < 992){
-    $('.nav__triangle').click(function (e) {
-      $(this).closest('.nav__item').toggleClass('open');
-    });
-  }
-  $(document).scroll(function () {
-    var top = $(document).scrollTop();
-    if (top < 150) {
-      $(".header").removeClass('scroll');
-    } else {
-      $(".header").addClass('scroll');
-    }
-  });
-
-
   /*popups start*/
   $(document).on('click', '[data-modal-class]', function (e) {
     e.preventDefault();
@@ -83,37 +57,6 @@ $(document).ready(function () {
     }
   });
   /*popups end*/
-
-
-  $(document).on('click', '[data-tab-nav]', function (e) {
-    e.preventDefault();
-    var tab = $(this).attr('data-tab-nav');
-    var content = $(this).closest('.menu__body-item').find('[data-tab-content="'+ tab +'"]');
-
-    $(this).closest('.menu__body-item').find('[data-tab-nav]').removeClass('active');
-    $(this).addClass('active');
-    $(this).closest('.menu__body-item').find('[data-tab-content]').removeClass('active');
-    $(content).addClass('active');
-
-    menuSlider.updateAutoHeight(300);
-
-  })
-
-
-  if($('[data-tab-card-content]').length > 0){
-
-
-    $(document).on('click', '[data-tab-card]', function (e) {
-      e.preventDefault();
-      var tab = $(this).attr('data-tab-card');
-      $('[data-tab-card]').removeClass('active');
-      $(this).addClass('active');
-      // $('.active[data-tab-card-content]').slideToggle();
-      $('.active[data-tab-card-content]').removeClass('active');
-      $('[data-tab-card-content="'+ tab + '"]').addClass('active');
-    })
-  }
-
 
 });
 

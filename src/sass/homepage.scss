@@ -4,8 +4,12 @@
 .homepage .page__wrapper{
   background-image: url("../img/background-img-homepage--top.svg"), url("../img/background-img-homepage--bottom.svg");
   background-position: center top, center bottom;
-  background-size: auto;
+  background-size: auto, auto;
   background-repeat: no-repeat;
+
+  @media (min-width: 1446px){
+    background-size: 100%;
+  }
 
   @include for-992{
     background-size: cover;
