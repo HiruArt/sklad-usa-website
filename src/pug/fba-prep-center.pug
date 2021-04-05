@@ -1,0 +1,143 @@
+extends _layout
+
+block vars
+  - var pageTitle = "FBA Prep center";
+  - var pageClass = "fba-prep-center";
+  - var pageActive = "fba-prep-center";
+
+block content
+  div.main-wrap
+    .capital.capital--fba-prep-center
+      .capital__inner.site-container.site-container--section
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large
+              span Реалiзацiя товару на Amazon&nbsp;
+              | зайвих складнощiв
+          p Компанія SkladUSA дає Вам унікальну можливість — вести торгівлю в США, без будь-яких проблем і обмежень. Ми завжди готові допомогти продавцям  з України реалізовувати свій товар на торговому майданчику Amazon за допомогою Фулфілмент центру.
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link
+                span Детальнiше про нас
+        .capital__media.rhombus
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/amazon-on-hero.svg" alt="img" width="636" height="636").lazyload
+
+    .l-media-r-info.why-necessary
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/why-necessary-img.svg" alt="warehouses" width="444").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-star.svg
+            .site-title__designation Чому це необхiдно
+            .site-title__large Склад займається рутинною роботою,&nbsp;<br>
+              span а ви — своїм бiзнесом
+          p Будь-який бізнес постійно розвивається – і Ви повинні завжди встигати за ним і забезпечувати його масштабність, у міру його становлення.
+          p Це означає, що Ви не повинні витрачати багато часу на підготовку та відправлення товару, а акцентувати на розширенні бізнесу за допомогою реклами та інших маніпуляцій. Компанія SkladUSA готова перейняти на себе всю рутину по упаковці і доставці товару.
+
+
+    .cascade
+      .cascade__inner.site-container.site-container--section.double-block
+        .cascade__content.grid-padding.left-block
+          .cascade__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-crown.svg
+            .site-title__designation Чому ми
+            .site-title__large Ми робимо усе, щоб у&nbsp;<br> вас залишилися тiльки&nbsp;<br>
+              span найприємнiшi справи
+
+          a(href="https://system.skladusa.com/registration").site-btn
+            span Зареєcтруватися
+
+        .cascade__content.right-block.grid-padding
+          .cascade__list
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Багаторічний досвід роботи
+                p Наша перевага – це багаторічний досвід роботи в цiй сфері обслуговування.
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Великi партiї
+                p Ми гарантуємо відсутність проблем з обробкою великої кількості замовлень і їх доставкою в пункти.
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Розташування складу
+                p Склад в США розташований в штаті Міннесота, завдяки чому ми доставляємо товар на склад Amazon чи покупцевi за гарною ціною.
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Вигiднi умови для Вас
+                p Нашi послуги доступнi всім, хто хоче продавати в США з України. Ми завжди готовi обговорювати особливi умови клiєнтiв.
+
+
+    .education
+      .education__inner.site-container.site-container--section.double-block
+        .education__content.grid-padding
+          .education__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-support.svg
+            .site-title__designation Постiйна пiдтримка
+            .site-title__large Спецiалiсти з технічної підтримки &nbsp;<br>
+              span працюють для Вас
+          p У разі виникнення питань, можете сміливо звертатися в технічну підтримку – ми допоможемо Вам впоратися з будь-якими проблемами.
+          p В разі, якщо у вас є персональні вимоги – обов’язково зв’яжіться з нами і ми знайдемо компроміс.
+
+        .education__media.right-block.right-media
+          .education__media-img
+            img(src="./img/support-img.svg" alt="support" width="602").lazyload
+
+
+    .table-block
+      .table-block__inner.site-container.site-container--section.double-block
+        .table-block__content.grid-padding.left-block
+          .table-block__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-automation.svg
+            .site-title__designation Нашi обов’язки
+            .site-title__large Ми допоможемо з усiм i&nbsp;
+              span навiть бiльше
+          p Ми беремо на себе усю рутину роботу, пов’язану з вiдправкою, пакуванням та зберiганням товару за доступною цiною.
+          p З додатковими послугами — особливими роботами, що не зазначенi у списку — ми виконуємо за окрему плату у $ 35 / год  (мінiмум 30 хвилин).
+          a(href="https://system.skladusa.com/registration").site-btn
+            span Зареєcтруватися
+
+        .table-block__table.right-block.grid-padding
+          .site-table
+            .site-table__inner
+              table
+                thead
+                  tr
+                    th Послуга
+                    th Умови
+                tbody
+                  tr
+                    td Приймаєм та беремо на облік
+                    td до 3 днiв
+                  tr
+                    td Безкоштовне зберігання
+                    td до 14 днів, далi:  <br>
+                      | $35 — 1\2 палети,<br>
+                      |  $50 — 1 палета в місяць
+                  tr
+                    td Наліпка FNSKU
+                    td за потреби
+                  tr
+                    td Пакування
+                    td за потреби
+                  tr
+                    td Набiр з декількох товарів
+                    td $0.25 за кожен (без цiни за коробку)
+                  tr
+                    td Робота з вкладишами
+                    td $0.10 за кожен
+                  tr
+                    td Вiдправлення до складу Amazon
+                    td за тарифами перевізників

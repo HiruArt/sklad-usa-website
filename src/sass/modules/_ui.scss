@@ -269,7 +269,7 @@
   &__ico{
     position: absolute;
     top: 0;
-    left: -105px;
+    left: -95px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -401,27 +401,38 @@ p{
 }
 
 .left-block{
-  max-width: 470px;
-  width: 100%;
+  //max-width: 470px;
+  //width: 100%;
+
+  @include from-680 {
+    width: calc(50% - 50px);
+  }
 
   @include for-680{
     max-width: 100%;
+    width: 100%;
   }
 }
 
 .right-block{
-  max-width: calc(50% + 24px);
-  width: 100%;
+  //max-width: calc(50% + 24px);
+  width: calc(50% + 50px);
+  //width: 100%;
 
   @include for-680{
     max-width: 100%;
+    width: 100%;
   }
 }
 
 .left-media{
   width: 100%;
-  max-width: 50%;
+  //max-width: 50%;
   padding-top: 55px;
+
+  @include from-680 {
+    width: calc(50% - 50px);
+  }
 
   @include for-680{
     max-width: 100%;
@@ -436,7 +447,8 @@ p{
   }
 
   @include for-1400{
-    max-width: 40%;
+    //max-width: 40%;
+    padding-right: 24px;
 
     img{
       width: 100%;
@@ -447,6 +459,7 @@ p{
 
   @include for-680{
     max-width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -472,9 +485,94 @@ p{
 .double-block{
   position: relative;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
 
   @include for-680{
     flex-direction: column;
+  }
+}
+
+.site-table{
+  position: relative;
+
+  &:before{
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 64px);
+    height: calc(100% + 64px);
+    background: $white;
+    box-shadow: 0px 4px 30px #E2D8CB;
+    border-radius: 14px;
+    position: absolute;
+
+    @include for-800{
+      display: none;
+    }
+  }
+  &__inner{
+    position: relative;
+    z-index: 1;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td{
+    padding: 16px 0 16px 16px;
+
+    @include for-680{
+      padding: 12px 0 12px 12px;
+    }
+
+
+    &:first-child{
+      padding-left: 24px;
+
+      @include for-680{
+        padding-left: 17px;
+      }
+
+    }
+
+    &:last-child{
+      padding-right: 16px;
+
+      @include for-680{
+        padding-right: 17px;
+      }
+    }
+  }
+
+  th{
+    background: $tableBrown;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: start;
+
+    @include for-680{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  td{
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+
+    @include for-680{
+      font-size: 12px;
+      line-height: 13px;
+    }
+  }
+
+  tbody tr:nth-child(even){
+    background: $tableBg;
   }
 }

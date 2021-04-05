@@ -759,8 +759,31 @@ div{
     }
   }
 
+  &__media:not(.rhombus){
+
+  }
+
+  &__media.rhombus{
+
+    @include for-680{
+      margin-left: -15px;
+      margin-right: -15px;
+      width: calc(100% + 30px);
+      height: 561px;
+      position: relative;
+      margin-bottom: -40px;
+    }
+
+    @include for-350{
+      height: 400px;
+    }
+  }
+
   &__media-img{
     width: 100%;
+  }
+
+  &__media:not(.rhombus) &__media-img{
 
     @include for-1100{
       max-width: 350px;
@@ -786,10 +809,44 @@ div{
       width: 100%;
 
       @include for-1100{
-       height: auto;
+        height: auto;
+      }
+    }
+
+  }
+
+  &__media.rhombus &__media-img{
+    @include from-1100 {
+      transform: translateX(42px);
+      margin-top: -105px;
+    }
+
+    @include for-1100 {
+      margin-top: -80px;
+      width: 100%;
+      max-width: 440px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    @include for-680 {
+      margin-top: 0;
+
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 561px;
+        height: 100%;
       }
     }
   }
+
 
 
   /*modify*/
@@ -1115,8 +1172,182 @@ div{
 }
 
 
+.l-media-r-info{
+
+  &__inner{
+    position: relative;
+
+    @include for-680{
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__floating-img{
+    right: 0;
+    top: 0;
+
+    transform: translate(20px, 40px);
+  }
+
+  &__title{
+
+    @include from-680{
+      max-width: 530px!important;
+    }
+
+    @include for-680{
+      max-width: 100%;
+    }
+  }
+
+  p{
+    max-width: 530px;
+
+    @include for-680{
+      max-width: 100%;
+    }
+  }
+
+  /*modify*/
+
+  &.why-necessary &__media {
+    padding-top: 0;
+
+    @include from-680 {
+      margin-top: -35px;
+    }
+  }
+
+  &.why-necessary &__media-img {
+    @include from-1100 {
+      transform: translateX(56px);
+    }
 
 
+    @include for-680{
+      height: 503px;
+      position: relative;
+      margin: 0 -15px;
+      width: calc(100% + 30px);
 
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  /**************************/
+
+}
+
+
+.cascade{
+  &__inner{
+    @include for-800{
+      flex-direction: column;
+    }
+  }
+
+  &__content{
+    @include for-800{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__title{
+    @include for-800{
+
+      br{
+        display: none;
+      }
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    padding-top: 12px;
+  }
+
+  &__item{
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+    @include for-680{
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+
+    @include from-800 {
+      &:nth-child(4n - 1),
+      &:nth-child(4n - 4) {
+        transform: translateX(-155px);
+      }
+    }
+  }
+
+  &__item-content{
+    min-height: 194px;
+    padding: 24px 19px 24px 24px;
+    width: 100%;
+
+    @include for-680{
+      padding: 32px 24px;
+    }
+
+    p{
+      margin: 0;
+
+      @include from-680 {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+
+.table-block{
+
+  &__inner{
+    @include for-1100{
+      flex-direction: column;
+    }
+  }
+
+  &__content{
+    @include for-1100{
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+
+    @include from-1100{
+      > *{
+
+        max-width: 383px;
+      }
+    }
+  }
+
+  &__table{
+    @include for-1100{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
 
 
