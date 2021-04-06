@@ -1,0 +1,179 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Accepting-payments";
+  - var pageClass = "accepting-payments rhombus";
+  - var pageActive = "accepting-payments";
+
+block content
+  div.main-wrap
+    .capital.capital--fba-prep-center
+      .capital__inner.site-container.site-container--section
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large
+              span Грошi з Ebay, Etsy,&nbsp;<br> Shopify чи&nbsp;
+              | вашого інтернет-магазину
+          p Всі платежі зараховуються в режимі реального часу, кошти надходять на рахунки платіжних систем PayPal і Authorize.net. Далі гроші будуть переведені на ваш рахунок.
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link
+                span Детальнiше про нас
+        .capital__media.rhombus
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/accepting-payments-hero.svg" alt="img" width="636" height="636").lazyload
+
+    .l-media-r-info.money-system
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/money-system-img.svg" alt="image" width="453").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-money-system.svg
+            .site-title__designation Грошi з системи
+            .site-title__large Ви виводите грошi туди,&nbsp;
+              span де вам зручно
+          p Ми працюємо зi значною кiлькiстью банкiв та платiжних систем. Серед них найпопулярнiшими є:
+          ul
+            li рахунки ПриватБанку;
+            li ФОП рахунку;
+            li карти «Ключ до рахунку»;
+            li Payoneer.
+
+
+    .tariff
+      .tariff__inner.site-container.site-container--section
+        .tariff__content.grid-padding
+          .tariff__table.tariff__table--desktop
+            .tariff__head Тарифи приймання оплат
+            .tariff__table-list
+              .tariff__table-item
+                .tariff__table-title
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/paypal-logo.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/paypal-logo.png" alt="ico" width="131" height="35").lazyload
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th Умови
+                        th Комiсiя PayPal
+                        th Комiсiя SKALDUSA
+                    tbody
+                      tr
+                        td Оплата з США
+                        td 2.3% + $0.30
+                        td(rowspan="2").big-num 3%
+                      tr
+                        td Оплата з iнших країн
+                        td 3.8% + $0.30 + втрати на повiйнiй конвертацiї
+              .tariff__table-item
+                .tariff__table-title
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/cards-header.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/cards-header.png" alt="ico" width="265" height="21").lazyload
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th Умови
+                        th Комiсiя PayPal
+                        th Комiсiя SKALDUSA
+                    tbody
+                      tr
+                        td Оплата з США=iнших країн
+                        td 3.5% + $0.30
+                        td 3%
+
+          .tariff__table.tariff__table--desktop
+            .tariff__head Тарифи зняття коштiв з рахунку
+            .tariff__table-list
+              .tariff__table-item
+                .tariff__table-content
+                  table
+                    thead
+                      tr
+                        th Виплати на
+                        th Оплата з США
+                        th SKALDUSA
+                        th Обмеження
+                    tbody
+                      tr
+                        td Приват у доларi без конвертацiї <br>На картку українського банку у гривнi
+                        td(rowspan="2") 0.5% <br>+  комісія за зарахування<br> (залежить від банку та<br> виду картки)
+                        td до $500 — без комiсiї<br> вiд $500 до $1,000— $4 <br>вiд $1,000 до $3,00 — $10
+                        td до $3 000 на добу <br>до $12 000
+                      tr
+                        td Рахунки ФОП в українському банку
+                        td 0
+                        td нема
+                      tr
+                        td Картка SKLADUSA
+                        td 0
+                        td 0
+                        td нема
+                      tr
+                        td Картка Payoneer
+                        td 0
+                        td 0
+                        td нема
+                      tr
+                        td Банкiвскький переказ (SWIFT)
+                        td $45
+                        td 0
+                        td нема
+
+
+          .tariff__table.tariff__table--mobile
+            .tariff__head Тарифи приймання оплат
+            .tariff__table-list
+              .tariff__table-item
+                .tariff__table-title
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/paypal-logo.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/paypal-logo.png" alt="ico" width="131" height="35").lazyload
+                .tariff__table-content
+                  table.col-3
+                    thead
+                      tr
+                        th Умови
+                        th Комiсiя PayPal
+                        th Комiсiя SKALDUSA
+                    tbody
+                      tr
+                        td Оплата з США
+                        td 2.3% + $0.30
+                        td(rowspan="2").big-num 3%
+                      tr
+                        td Оплата з iнших країн
+                        td 3.8% + $0.30 + втрати на повiйнiй конвертацiї
+              .tariff__table-item
+                .tariff__table-title
+                  picture
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/cards-header.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/cards-header.png" alt="ico" width="265" height="21").lazyload
+                .tariff__table-content
+                  table.col-3
+                    thead
+                      tr
+                        th Умови
+                        th Комiсiя PayPal
+                        th Комiсiя SKALDUSA
+                    tbody
+                      tr
+                        td Оплата з США=iнших країн
+                        td 3.5% + $0.30
+                        td 3%
+
+
+    include ./modules/_all-services
+
+

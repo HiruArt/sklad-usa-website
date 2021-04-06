@@ -1241,7 +1241,7 @@ div{
   &__title{
 
     @include from-680{
-      max-width: 530px!important;
+      max-width: 530px;
     }
 
     @include for-680{
@@ -1254,6 +1254,28 @@ div{
 
     @include for-680{
       max-width: 100%;
+    }
+  }
+
+  ul{
+
+    li{
+      position: relative;
+      padding-left: 9px;
+      color: #000000;
+      font-size: 16px;
+      line-height: 141.19%;
+
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: black;
+      }
     }
   }
 
@@ -1289,6 +1311,42 @@ div{
       }
     }
   }
+
+  /**************************/
+  &.money-system &__content {
+    > *{
+      @include from-1400{
+        max-width: 420px;
+      }
+    }
+  }
+  &.money-system &__media {
+
+  }
+
+  &.money-system &__media-img {
+
+    @include from-1400 {
+      transform: translateX(83px) translateY(17px);
+    }
+
+    @include for-680{
+      height: 312px;
+      position: relative;
+      margin: 0 -15px;
+      width: calc(100% + 30px);
+
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
 
   /**************************/
 

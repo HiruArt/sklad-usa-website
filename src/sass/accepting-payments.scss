@@ -1,0 +1,139 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+.tariff{
+  padding-bottom: 8px;
+
+  &__inner{
+
+  }
+
+  &__content{
+
+  }
+
+  &__table{
+
+    &--desktop{
+      @include for-992{
+        display: none;
+      }
+    }
+
+    &--mobile{
+      @include from-992{
+        display: none;
+      }
+    }
+  }
+
+  &__table:first-child &__head{
+    margin-top: 0;
+  }
+
+  &__head{
+
+    @include from-992 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #FFFFFF;
+      background: $tableBrown;
+      height: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 64px;
+    }
+
+    @include for-992{
+      color: $brown;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+  }
+
+  &__table-list{
+
+  }
+
+  &__table-item{
+
+  }
+
+  &__table-title{
+    @include from-992 {
+      height: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $tableBrownDarken;
+    }
+
+    @include for-992 {
+
+    }
+  }
+
+  &__table-content{
+
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th{
+    background: $white;
+  }
+
+  th{
+    text-align: start;
+  }
+
+  td{
+    background: $mainBg;
+  }
+
+  th, td{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    vertical-align: top;
+    border: 1px solid $brown;
+    padding: 24px;
+
+    @include for-1400{
+      padding: 20px 15px;
+    }
+  }
+
+  .big-num{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: $brown;
+    vertical-align: middle;
+  }
+
+  .col-three tr{
+    td:nth-child(1){
+      width: 25%;
+    }
+    td:nth-child(2){
+      width: 45%;
+    }
+    td:nth-child(3){
+      width: 30%;
+    }
+  }
+
+
+}

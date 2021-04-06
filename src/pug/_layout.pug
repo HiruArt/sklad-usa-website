@@ -14,15 +14,21 @@ html(lang="uk")
 		//favicon
 		link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
 
-		if (pageClass === "homepage")
+		if (pageActive === "homepage")
 			link(rel='stylesheet', href='./css/libs/slick.css')
 			link(rel='stylesheet', href='./css/slider.css')
+		link(rel='stylesheet', href='./css/main.css')
+
+		if (pageActive === "homepage")
 			link(rel='stylesheet', href='./css/homepage.css')
 
-		if (pageClass === "fba-prep-center")
+		if (pageActive === "fba-prep-center")
 			link(rel='stylesheet', href='./css/fba-prep-center.css')
 
-		link(rel='stylesheet', href='./css/main.css')
+		if (pageActive === "accepting-payments")
+			link(rel='stylesheet', href='./css/accepting-payments.css')
+
+
 
 
 
