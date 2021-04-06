@@ -1,7 +1,14 @@
 .numbered-tiles
   .numbered-tiles__inner.site-container.site-container--section
-    .numbered-tiles__floating-img.floating-img.floating-img--ico
-      include ../../img/floating-ico01.svg
+
+    if (pageClass === "homepage")
+      .numbered-tiles__floating-img.floating-img.floating-img--ico
+        include ../../img/floating-ico01.svg
+
+    if (pageClass !== "homepage")
+      .numbered-tiles__gift.site-container.desktop
+        .numbered-tiles__gift-img
+          include ../../img/floation-gift-img.svg
 
     .numbered-tiles__content.grid-padding
       .numbered-tiles__title.site-title

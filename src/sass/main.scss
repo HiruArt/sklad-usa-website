@@ -14,6 +14,38 @@ div{
   position: relative;
 }
 
+/*rhombus bg*/
+
+.rhombus .page__wrapper{
+  background-image: url("../img/background-img-rhombus.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-rhombus1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+
+  @include for-1100{
+    background-image: url("../img/background-img-rhombus1100.svg");
+    background-size: auto;
+    background-position: center 2%;
+  }
+}
+
+
+
 /*SITE STYLE*/
 .contacts{
 
@@ -819,6 +851,7 @@ div{
     @include from-1100 {
       transform: translateX(42px);
       margin-top: -105px;
+      margin-bottom: 30px;
     }
 
     @include for-1100 {
@@ -911,6 +944,16 @@ div{
       transform: translateX(0);
     }
 
+  }
+
+  &__gift{
+    position: relative;
+  }
+
+  &__gift-img{
+    position: absolute;
+    right: 0;
+    top: -35px;
   }
 
   &__content{
@@ -1015,6 +1058,12 @@ div{
 
   &__inner{
     position: relative;
+
+    &.site-container--section {
+      @include from-1100 {
+        padding-top: 60px;
+      }
+    }
   }
 
   &__content{
@@ -1062,7 +1111,7 @@ div{
     left: 0;
     top: 0;
     width: 100vw;
-    padding-left: 70px;
+    padding-left: 90px;
 
     @include for-1400{
       padding-left: 0;
@@ -1214,7 +1263,7 @@ div{
     padding-top: 0;
 
     @include from-680 {
-      margin-top: -35px;
+      margin-top: -70px;
     }
   }
 
@@ -1261,6 +1310,10 @@ div{
   }
 
   &__title{
+    @include from-1100{
+      width: calc(100% + 30px);
+    }
+
     @include for-800{
 
       br{
@@ -1324,13 +1377,22 @@ div{
     @include for-1100{
       flex-direction: column;
     }
+
+    &.site-container--section {
+      @include from-1100 {
+        padding-top: 70px;
+      }
+
+      @include for-680{
+        padding-bottom: 10px;
+      }
+    }
   }
 
   &__content{
     @include for-1100{
       max-width: 100%;
       width: 100%;
-      margin-bottom: 40px;
     }
 
 
@@ -1343,11 +1405,61 @@ div{
   }
 
   &__table{
+    margin-top: 69px;
     @include for-1100{
       max-width: 100%;
       width: 100%;
+
+      margin-top: 40px;
     }
   }
 }
+
+.plans{
+
+  &__truck-img{
+    right: 100%;
+    bottom: 100%;
+    position: absolute;
+    transform: translateX(32px) translateY(71px);
+
+    @include for-1400{
+      transform: translateX(50%) translateY(30px);
+    }
+
+    @include for-1100{
+      display: none;
+    }
+  }
+
+  &__inner{
+    position: relative;
+  }
+
+  &__title{
+
+  }
+
+  &__content{
+    padding-top: 16px;
+  }
+
+  &__list{
+
+  }
+
+  &__item{
+    display: flex;
+
+    @include for-1100{
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-content{
+
+  }
+}
+
 
 
