@@ -1322,13 +1322,13 @@ div{
       max-width: 530px;
     }
 
-    @include for-680{
-      max-width: 100%;
-
-      br{
-        display: none;
-      }
-    }
+    //@include for-680{
+    //  max-width: 100%;
+    //
+    //  br{
+    //    display: none;
+    //  }
+    //}
   }
 
   p{
@@ -1470,12 +1470,12 @@ div{
       width: calc(100% + 30px);
     }
 
-    @include for-800{
-
-      br{
-        display: none;
-      }
-    }
+    //@include for-800{
+    //
+    //  br{
+    //    display: none;
+    //  }
+    //}
   }
 
   &__list{

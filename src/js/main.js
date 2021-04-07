@@ -68,14 +68,17 @@ $(document).ready(function () {
     });
   }
 
-  if($('.tariff').length > 0) {
-    $(document).find('.tariff__table-item.open').find('.tariff__table-content').show();
+  $(window).resize(function() {
 
-    $(document).on('click', '.tariff__table-title', function (e) {
-      $(this).parent().toggleClass('open');
-      $(this).next('.tariff__table-content').slideToggle();
-    });
-  }
+    if ($('.tariff').length > 0 && $(window).width() < 992) {
+      $(document).find('.tariff__table-item.open').find('.tariff__table-content').show();
+
+      $(document).on('click', '.tariff__table-title', function (e) {
+        $(this).parent().toggleClass('open');
+        $(this).next('.tariff__table-content').slideToggle();
+      });
+    }
+  });
 
   /*popups start*/
   $(document).on('click', '[data-modal-class]', function (e) {
