@@ -223,8 +223,10 @@
     padding-right: 26px;
   }
 
-  &:hover{
-    background: $brown;
+  @include from-1100 {
+    &:hover {
+      background: $brown;
+    }
   }
 
   span{

@@ -921,9 +921,15 @@ div{
 
   &__media.rhombus &__media-img{
     @include from-1100 {
-      transform: translateX(42px);
-      margin-top: -105px;
-      margin-bottom: 30px;
+      margin-bottom: 4px;
+      transform: translateX(93px);
+      margin-top: -108px;
+
+      img{
+        width: 680px;
+        height: 100%;
+        object-fit: contain;
+      }
     }
 
     @include for-1100 {
@@ -1389,6 +1395,17 @@ div{
   }
 
   /**************************/
+  &.money-system {
+
+    @media(min-width: 1400px){
+      .site-container--section{
+        padding-top: 0!important;
+      }
+
+      margin-top: -32px;
+    }
+  }
+
   &.money-system &__content {
     > *{
       @include from-1400{
@@ -1437,9 +1454,14 @@ div{
   }
 
   &__content{
+
     @include for-800{
       width: 100%;
       max-width: 100%;
+
+      .site-btn{
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -1527,6 +1549,16 @@ div{
     @include for-1100{
       max-width: 100%;
       width: 100%;
+
+      .site-btn{
+        margin-bottom: 18px;
+      }
+    }
+
+    @include for-800{
+      .site-btn{
+        margin-bottom: 0;
+      }
     }
 
 
