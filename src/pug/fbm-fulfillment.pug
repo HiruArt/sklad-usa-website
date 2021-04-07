@@ -1,0 +1,167 @@
+extends _layout
+
+block vars
+  - var pageTitle = "FBM fulfillment";
+  - var pageClass = "fbm-fulfillment rhombus";
+  - var pageActive = "fbm-fulfillment";
+  - var pageSection = "services";
+  - var pageName = "FBM Фулфiлмент";
+
+
+block content
+  div.main-wrap
+    include ./modules/_breadcrumbs
+
+    .capital.capital--fba-prep-center
+      .capital__inner.site-container.site-container--section
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large Реалізовуйте товар на різних&nbsp;
+              span торгових майданчиках
+          p Фулфілмент або FBM — це цикл операцій, що здійснюються від покупки товару і до моменту його отримання. Якщо ви продаєте на Ebay чи Etsy то для вас ця послуга може бути особливо вигiдною.
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link.site-link--desktop
+                span Детальнiше про нас
+              a(href="#").site-link.site-link--mobile
+                span Про нас
+        .capital__media.rhombus
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/fbm-fulfillment-hero.svg" alt="img" width="636" height="636").lazyload
+
+    .l-media-r-info.for-whom
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/for-whom-img.svg" alt="image" width="444").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-for-whom.svg
+            .site-title__designation для кого
+            .site-title__large
+              span Ви великий iнтернет-магазин?&nbsp;<br>
+              | Тодi це точно для вас
+          .mw-396
+            p Така послуга користується попитом в бізнес-сфері, зокрема в різних інтернет-магазинах, оскільки вони часто передають відправлення в так званий “аутсорс” в різні фулфілмент-центри.   
+            p Надалі сам центр надає певний ряд послуг – зберігання, пакування і відправлення посилок.
+
+
+    .table-block
+      .table-block__inner.site-container.site-container--section.double-block
+        .table-block__content.grid-padding.left-block
+          .table-block__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-automation.svg
+            .site-title__designation Нашi обов’язки
+            .site-title__large Ми допоможемо з усiм i&nbsp;
+              span навiть бiльше
+          p Ми беремо на себе усю рутину роботу, пов’язану з вiдправкою, пакуванням та зберiганням товару за доступною цiною.
+          p З додатковими послугами — особливими роботами, що не зазначенi у списку — ми виконуємо за окрему плату у $ 35 / год  (мінiмум 30 хвилин).
+          a(href="https://system.skladusa.com/registration").site-btn
+            span Зареєcтруватися
+
+        .table-block__table.right-block.grid-padding
+          .site-table
+            .site-table__inner
+              table
+                thead
+                  tr
+                    th Послуга
+                    th Умови
+                tbody
+                  tr
+                    td Приймаєм та беремо на облік
+                    td до 7 днiв
+                  tr
+                    td Зберігання на складах
+                    td до 14 днів - безкоштовно, далi: <br>
+                      | $35 — 1\2 палети,<br>
+                      | $50 — 1 палета в місяць
+
+                  tr
+                    td Прийом оплати вiд покупця
+                    td З PayPal або карток
+                  tr
+                    td Комлектацiя та пакування
+                    td за потреби
+                  tr
+                    td Набiр з декількох товарів
+                    td $0.10 за кожен (без цiни за коробку)
+                  tr
+                    td Доставка замовлень
+                    td $0.10 за кожен
+                  tr
+                    td Перевiрка надходжень згiдно супровiдних документiв
+                    td Для кожного відправлення безкоштовно
+                  tr
+                    td Операцii з повернення товарiв
+                    td
+                      a(href="#").table-link Детальніше
+                  tr
+                    td Вiдправка товарiв покупцевi з нашого фулфiлмент центру
+                    td У той же день, якшо замовлення було створене до опiвдня
+                  tr
+                    td Надання трек номеру
+                    td У той же день
+                  tr
+                    td Фото товару покупцевi
+                    td $5 за 3шт
+
+
+    .plans
+      .plans__inner.site-container.site-container--section
+        .plans__truck-img.truck-img
+          include ../img/truck-cart-img.svg
+
+        .plans__head.grid-padding
+          .plans__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-plans.svg
+            .site-title__designation Плани
+            .site-title__large Обирайте те, що &nbsp;<br>
+              span працює для вас краще
+
+        .plans__content.grid-padding
+          .plans__list.custom-row.custom-row--8px
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $1.00
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline Новачок
+                  .price-case__text
+                    p 20—100 одиниць товару у мiсяць
+                    p сума усiх сторiн до 60см, вага до 1кг.
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $0.80
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline Премiум
+                  .price-case__text
+                    p 100—1000 одиниць товару у мiсяць
+                    p сума усiх сторiн вiд 60см до 100см, вага до 2кг.
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $0.60
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline VIP
+                  .price-case__text
+                    p бiльше 1000 одиниць товару у мiсяць
+                    p сума усiх сторiн вiд 100см до 150см, вага до 5кг.
+
+
+    include ./modules/_all-services
+
+
