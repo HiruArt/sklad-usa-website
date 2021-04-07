@@ -55,8 +55,24 @@
   width: 100% !important;
 }
 
+.mw-350{
+  @include from-680 {
+    max-width: 350px;
+  }
+}
+
 .mw-377{
-  max-width: 377px;
+  @include from-680 {
+    max-width: 377px;
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-end{
+  justify-content: flex-end;
 }
 
 .correct input,
