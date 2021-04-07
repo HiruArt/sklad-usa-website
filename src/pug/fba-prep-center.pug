@@ -4,9 +4,14 @@ block vars
   - var pageTitle = "FBA Prep center";
   - var pageClass = "fba-prep-center rhombus";
   - var pageActive = "fba-prep-center";
+  - var pageSection = "services";
+  - var pageName = "FBA Преп центр";
+
 
 block content
   div.main-wrap
+    include ./modules/_breadcrumbs
+
     .capital.capital--fba-prep-center
       .capital__inner.site-container.site-container--section
         .capital__content.capital__content--top-block.grid-padding
@@ -41,8 +46,9 @@ block content
             .site-title__designation Чому це необхiдно
             .site-title__large Склад займається рутинною роботою,&nbsp;<br>
               span а ви — своїм бiзнесом
-          p Будь-який бізнес постійно розвивається – і Ви повинні завжди встигати за ним і забезпечувати його масштабність, у міру його становлення.
-          p Це означає, що Ви не повинні витрачати багато часу на підготовку та відправлення товару, а акцентувати на розширенні бізнесу за допомогою реклами та інших маніпуляцій. Компанія SkladUSA готова перейняти на себе всю рутину по упаковці і доставці товару.
+          .mw-377
+            p Будь-який бізнес постійно розвивається – і Ви повинні завжди встигати за ним і забезпечувати його масштабність, у міру його становлення.
+            p Це означає, що Ви не повинні витрачати багато часу на підготовку та відправлення товару, а акцентувати на розширенні бізнесу за допомогою реклами та інших маніпуляцій. Компанія SkladUSA готова перейняти на себе всю рутину по упаковці і доставці товару.
 
 
     .cascade

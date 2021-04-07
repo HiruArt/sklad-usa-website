@@ -4,9 +4,13 @@ block vars
   - var pageTitle = "Accepting-payments";
   - var pageClass = "accepting-payments rhombus";
   - var pageActive = "accepting-payments";
+  - var pageSection = "services";
+  - var pageName = "Приймання платежiв";
 
 block content
   div.main-wrap
+    include ./modules/_breadcrumbs
+
     .capital.capital--fba-prep-center
       .capital__inner.site-container.site-container--section
         .capital__content.capital__content--top-block.grid-padding

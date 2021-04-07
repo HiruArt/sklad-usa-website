@@ -4,10 +4,14 @@
 	 width="1920px" height="6234.7px" viewBox="0 0 1920 6234.7" style="enable-background:new 0 0 1920 6234.7;" xml:space="preserve"
 	>
 <style type="text/css">
-	.st0{fill:#F4ECE1;}
+	.st0{display:none;fill:#F4ECE1;}
+	.st1{fill:#F4ECE1;}
 </style>
 <path class="st0" d="M1920-149.8C1281.8,479.5,1.4,1747.5-14.8,1763v3624L1920,3474.2V-149.8z"/>
-<path class="st0" d="M707.7-3038C69.5-2408.7-1210.9-1140.7-1227.1-1103.2v2784.3L707.7-253.6V-3038z"/>
-<image style="display:none;overflow:visible;" width="1440" height="4676" xlink:href="FBA Преп центр.png"  transform="matrix(1 0 0 1 240 0)">
+<path class="st0" d="M1920,2957"/>
+<image style="display:none;overflow:visible;" width="1440" height="4676" xlink:href="D:\ARTEM\downloads\FBA Преп центр.png"  transform="matrix(1 0 0 1 232.6 0)">
 </image>
+<path class="st1" d="M707.7-3038C69.5-2408.7-1210.9-1140.7-1227.1-1103.2v2784.3L707.7-253.6V-3038z"/>
+<path class="st0" d="M2184-427"/>
+<rect x="-215.2" y="-943.6" transform="matrix(0.7036 0.7106 -0.7106 0.7036 1989.6556 84.6948)" class="st1" width="2217" height="6741.8"/>
 </svg>
