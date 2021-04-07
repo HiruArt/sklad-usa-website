@@ -18,9 +18,9 @@ block content
             .site-title__ico.shadow
               include ../img/site-title-icon01.svg
             h1.site-title__large
-              span Реалiзацiя товару на Amazon&nbsp;
-              | зайвих складнощiв
-          p Компанія SkladUSA дає Вам унікальну можливість — вести торгівлю в США, без будь-яких проблем і обмежень. Ми завжди готові допомогти продавцям з України реалізовувати свій товар на торговому майданчику Amazon за допомогою Фулфілмент центру.
+              | Формальностей багато,&nbsp;
+              span але то не <br> вашi проблеми :)
+          p Продажі товару за кордон пов’язані з безліччю формальностей і ситуацій, що вимагають індивідуального підходу до вирішення. Зокрема, одне з важливих питань стосується повернення продукції. Icнує чимало нюансiв щодо ввозу товарiв у країни.
           .capital__manage.custom-row.custom-row--12px
             .capital__manage-item.custom-col.fit-content
               a(href="https://system.skladusa.com/registration").site-btn
@@ -30,24 +30,57 @@ block content
                 span Детальнiше про нас
         .capital__media.rhombus
           .capital__media-img
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/amazon-on-hero.svg" alt="img" width="636" height="636").lazyload
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/returns-rhombus.svg" alt="img" width="636" height="636").lazyload
+
+
+
+    .numbered-tiles
+      .numbered-tiles__inner.site-container.site-container--section
+
+        if (pageClass === "homepage")
+          .numbered-tiles__floating-img.floating-img.floating-img--ico
+            include ../img/floating-ico01.svg
+
+        .numbered-tiles__content.grid-padding
+          .numbered-tiles__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-all-services.svg
+            .site-title__designation усi послуги
+            .site-title__large Ми захистимо вас вiд помилок та допоможемо <br>
+              span подолати тi, якi виникнуть
+            p Навіть якщо ваш товар хорошої якості, відправлення виконане з дотриманням всіх критеріїв угоди і без затримок. І важливо розуміти, що з поверненням може виникнути чимало проблем, наприклад:
+
+          ul.numbered-tiles__list.custom-row.custom-row--12px.numbered-tiles__list--nonumbers
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Недостатня iнформацiя
+                p Якщо ви реалізуєте продукцію на спеціалізованих американських майданчиках, наприклад, ведете продажу через Amazon, eBay і т.д., необхідно надати адресу складу в США, куди буде відправлятися повернення;
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Невiрне зберiгання продукції
+                p Вам необхідно подбати про правильне зберігання або утилізацію продукції, залежно від того, чи придатна вона для подальшої реалізації;
+            li.numbered-tiles__item.custom-col
+              .numbered-tiles__item-content.site-case
+                .numbered-tiles__item-name.site-case__name Зворотнє вiдправлення це розкiш
+                p Організаційні моменти у таких вiдправленнях доволi складно вирішити, а вартість доставки виявляється високою. Це часто призводить до фінансових втрат замість очікуваного заробітку.
+
 
     .l-media-r-info.why-necessary
       .l-media-r-info__inner.site-container.site-container--section.double-block
-        .l-media-r-info__media.left-block.left-media
+        .l-media-r-info__media.left-block.left-media.d-flex.align-items-end
           .l-media-r-info__media-img
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/why-necessary-img.svg" alt="warehouses" width="444").lazyload
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/return-processing-helping.svg" alt="warehouses" width="444").lazyload
 
         .l-media-r-info__content.grid-padding.right-block
           .l-media-r-info__title.site-title
             .site-title__ico.shadow
-              include ../img/site-title-star.svg
-            .site-title__designation Чому це необхiдно
-            .site-title__large Склад займається рутинною роботою,&nbsp;<br>
-              span а ви — своїм бiзнесом
-          .mw-377
-            p Будь-який бізнес постійно розвивається – і Ви повинні завжди встигати за ним і забезпечувати його масштабність, у міру його становлення.
-            p Це означає, що Ви не повинні витрачати багато часу на підготовку та відправлення товару, а акцентувати на розширенні бізнесу за допомогою реклами та інших маніпуляцій. Компанія SkladUSA готова перейняти на себе всю рутину по упаковці і доставці товару.
+              include ../img/site-title-box.svg
+            .site-title__designation Унiкальний сервiс
+            .site-title__large Допомога в оформленнi повенень та&nbsp;
+              span швидкiй реалiзацiї продукції
+
+          p На території США небагато фулфілмент центрів, які займаються прийомом і обробкою товару, який повернули покупці. Ще менше організацій, що здійснюють відправлення продукції закордонному продавцю, а якщо така послуга і є, обійдеться вона недешево.
+          p Що стосується SkladUSA, його можна назвати єдиним партнером, який пропонує широкий спектр послуг і робить це на вигідних умовах.
 
 
     .cascade
