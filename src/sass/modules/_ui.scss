@@ -79,6 +79,10 @@
   align-items: flex-end;
 }
 
+.m-0{
+  margin: 0;
+}
+
 .correct input,
 .correct textarea{
   border-color: green !important;
@@ -157,8 +161,16 @@
 .custom-col{
   width: 100%;
 
-  &--33{
+  &--25{
     width: 25%;
+
+    @include for-1100{
+      width: 50%;
+    }
+
+    @include for-680{
+      width: 100%;
+    }
   }
 
   &--33{
@@ -223,8 +235,10 @@
     padding-right: 26px;
   }
 
-  &:hover{
-    background: $brown;
+  @include from-1100 {
+    &:hover {
+      background: $brown;
+    }
   }
 
   span{

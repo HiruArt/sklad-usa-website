@@ -2,7 +2,7 @@ extends _layout
 
 block vars
   - var pageTitle = "Accepting-payments";
-  - var pageClass = "accepting-payments rhombus";
+  - var pageClass = "accepting-payments";
   - var pageActive = "accepting-payments";
   - var pageSection = "services";
   - var pageName = "Приймання платежiв";
@@ -139,43 +139,133 @@ block content
           .tariff__table.tariff__table--mobile
             .tariff__head Тарифи приймання оплат
             .tariff__table-list
-              .tariff__table-item
+              .tariff__table-item.open
                 .tariff__table-title
                   picture
-                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/paypal-logo.webp" type="image/webp")
-                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/paypal-logo.png" alt="ico" width="131" height="35").lazyload
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/paypal-logo-mobile.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/paypal-logo-mobile.png" alt="ico" width="64" height="17").lazyload
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
                 .tariff__table-content
                   table.col-3
                     thead
                       tr
-                        th Умови
-                        th Комiсiя PayPal
-                        th Комiсiя SKALDUSA
+                        th з США
+                        th з iнших<br>країн
+                        th SKALDUSA
                     tbody
                       tr
-                        td Оплата з США
                         td 2.3% + $0.30
-                        td(rowspan="2").big-num 3%
-                      tr
-                        td Оплата з iнших країн
-                        td 3.8% + $0.30 + втрати на повiйнiй конвертацiї
+                        td 3.8% + $0.30 +<br>втрати з подвiйної конвертацiї
+                        td 3%
               .tariff__table-item
                 .tariff__table-title
                   picture
-                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/cards-header.webp" type="image/webp")
-                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/cards-header.png" alt="ico" width="265" height="21").lazyload
+                    source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/ico/cards-header-mobile.webp" type="image/webp")
+                    img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/ico/cards-header-mobile.png" alt="ico" width="189" height="15").lazyload
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
                 .tariff__table-content
                   table.col-3
                     thead
                       tr
-                        th Умови
-                        th Комiсiя PayPal
-                        th Комiсiя SKALDUSA
+                        th з США
+                        th з iнших<br>країн
+                        th SKALDUSA
                     tbody
                       tr
-                        td Оплата з США=iнших країн
-                        td 3.5% + $0.30
+                        td 2.3% + $0.30
+                        td 3.8% + $0.30 +<br>втрати з подвiйної конвертацiї
                         td 3%
+
+
+          .tariff__table.tariff__table--mobile
+            .tariff__head Тарифи зняття коштiв з рахунку
+            .tariff__table-list
+              .tariff__table-item.open
+                .tariff__table-title Приват у доларi без конвертацiї<br>На картку українського банку у гривнi
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th з США
+                        th SKLAD USA
+                        th Обмеження
+                    tbody
+                      tr
+                        td 0.5%
+                        td до $500 — 0<br><br> вiд $500 до $1,000— $4<br><br>вiд $1,000 до $3,00 — $10
+                        td до $3 000 на добу<br>до $12 000
+
+              .tariff__table-item
+                .tariff__table-title Рахунки ФОП в українському банку
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th з США
+                        th SKLAD USA
+                        th Обмеження
+                    tbody
+                      tr
+                        td 0.5%
+                        td 0
+                        td нема
+
+              .tariff__table-item
+                .tariff__table-title Картка SKLADUSA
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th з США
+                        th SKLAD USA
+                        th Обмеження
+                    tbody
+                      tr
+                        td 0
+                        td 0
+                        td нема
+
+              .tariff__table-item
+                .tariff__table-title Картка Payoneer
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th з США
+                        th SKLAD USA
+                        th Обмеження
+                    tbody
+                      tr
+                        td 0
+                        td 0
+                        td нема
+
+              .tariff__table-item
+                .tariff__table-title Банкiвскький переказ (SWIFT)
+                  .tariff__table-title-arrow
+                    include ../img/ico/arrow-black-up.svg
+                .tariff__table-content
+                  table.col-three
+                    thead
+                      tr
+                        th з США
+                        th SKLAD USA
+                        th Обмеження
+                    tbody
+                      tr
+                        td 0
+                        td 0
+                        td нема
 
 
     include ./modules/_all-services

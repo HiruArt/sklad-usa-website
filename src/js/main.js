@@ -42,7 +42,6 @@ $(document).ready(function () {
 
 
   if($(window).width() > 1200) {
-
     let scrollDown;
 
     (function () {
@@ -66,6 +65,15 @@ $(document).ready(function () {
 
     $(document).on('click', '.js_top-arrow', function (e) {
       $('html,body').animate({scrollTop: 0}, 800);
+    });
+  }
+
+  if($('.tariff').length > 0) {
+    $(document).find('.tariff__table-item.open').find('.tariff__table-content').show();
+
+    $(document).on('click', '.tariff__table-title', function (e) {
+      $(this).parent().toggleClass('open');
+      $(this).next('.tariff__table-content').slideToggle();
     });
   }
 

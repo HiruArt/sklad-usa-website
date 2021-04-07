@@ -1,6 +1,34 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
+.accepting-payments .page__wrapper{
+  background-image: url("../img/background-img-accepting-payments.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-accepting-payments1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+
+  @include for-1100{
+    background-image: url("../img/background-img-accepting-payments1100.svg");
+    background-size: auto;
+    background-position: center 2%;
+  }
+}
+
 .tariff{
   padding-bottom: 8px;
 
@@ -23,6 +51,14 @@
     &--mobile{
       @include from-992{
         display: none;
+      }
+    }
+
+    @include for-992{
+      margin-bottom: 64px;
+
+      &:last-child{
+        margin-bottom: 0;
       }
     }
   }
@@ -64,9 +100,32 @@
 
   &__table-item{
 
+    @include for-992{
+
+
+      &:not(.tariff__table-item:first-child) .tariff__table-title{
+        border-top: 0;
+      }
+      &.open .tariff__table-title{
+        border-bottom: 1px solid $brown!important;
+
+      }
+
+    }
   }
 
   &__table-title{
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 500;
+
+    picture{
+      display: flex;
+      align-items: center;
+    }
+
+
     @include from-992 {
       height: 62px;
       display: flex;
@@ -76,12 +135,34 @@
     }
 
     @include for-992 {
-
+      background: $tableBrownDarken;
+      border: 1px solid $brown;
+      padding: 12px 16px;
+      position: relative;
+      cursor: pointer;
     }
+  }
+
+  &__table-title-arrow{
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    width: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+  }
+
+  &__table-item.open &__table-title-arrow{
+    transform: rotate(0);
   }
 
   &__table-content{
 
+    @include for-992{
+      display: none;
+    }
   }
 
   table{
@@ -89,16 +170,24 @@
     border-collapse: collapse;
   }
 
-  th{
-    background: $white;
-  }
 
   th{
+    background: $white;
     text-align: start;
+
+    @include for-992{
+      border-top: 0!important;
+      vertical-align: middle!important;
+      padding: 5px 15px;
+    }
   }
 
   td{
     background: $mainBg;
+
+    @include for-992{
+      padding: 15px;
+    }
   }
 
   th, td{
@@ -113,6 +202,12 @@
     @include for-1400{
       padding: 20px 15px;
     }
+
+    @include for-992{
+      font-size: 12px;
+      line-height: 14px;
+      height: 45px;
+    }
   }
 
   .big-num{
@@ -121,17 +216,36 @@
     line-height: 56px;
     color: $brown;
     vertical-align: middle;
+
   }
 
   .col-three tr{
     td:nth-child(1){
       width: 25%;
+
+      @include for-992{
+        width: 26%;
+      }
     }
     td:nth-child(2){
       width: 45%;
+
+      @include for-992{
+        width: 35%;
+      }
     }
     td:nth-child(3){
       width: 30%;
+
+      @include for-992{
+        width: 39%;
+      }
+    }
+  }
+
+  .col-3 tr{
+    td{
+      width: 33.33333%;
     }
   }
 

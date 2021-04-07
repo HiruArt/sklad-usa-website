@@ -35,16 +35,16 @@ block content
 
 
     .numbered-tiles
-      .numbered-tiles__inner.site-container.site-container--section
+      .numbered-tiles__inner.site-container
 
-        if (pageClass === "homepage")
-          .numbered-tiles__floating-img.floating-img.floating-img--ico
-            include ../img/floating-ico01.svg
+
+        .numbered-tiles__floating-img.floating-img(style='margin-right: -130px')
+          include ../img/boxes.svg
 
         .numbered-tiles__content.grid-padding
           .numbered-tiles__title.site-title
             .site-title__ico.shadow
-              include ../img/site-title-all-services.svg
+              include ../img/why-happines.svg
             .site-title__designation усi послуги
             .site-title__large Ми захистимо вас вiд помилок та допоможемо <br>
               span подолати тi, якi виникнуть
@@ -68,7 +68,7 @@ block content
     .l-media-r-info.why-necessary
       .l-media-r-info__inner.site-container.site-container--section.double-block
         .l-media-r-info__media.left-block.left-media.d-flex.align-items-end
-          .l-media-r-info__media-img
+          div
             img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/return-processing-helping.svg" alt="warehouses" width="444").lazyload
 
         .l-media-r-info__content.grid-padding.right-block
@@ -83,102 +83,96 @@ block content
           p Що стосується SkladUSA, його можна назвати єдиним партнером, який пропонує широкий спектр послуг і робить це на вигідних умовах.
 
 
-    .cascade
-      .cascade__inner.site-container.site-container--section.double-block
-        .cascade__content.grid-padding.left-block
-          .cascade__title.site-title
+    .responsibilities-block
+      .site-container.site-container--section.double-block
+        .grid-padding.left-block
+          .site-title
             .site-title__ico.shadow
-              include ../img/site-title-crown.svg
-            .site-title__designation Чому ми
-            .site-title__large Ми робимо усе, щоб у&nbsp;<br> вас залишилися тiльки&nbsp;<br>
-              span найприємнiшi справи
-
+              include ../img/site-title-automation.svg
+            .site-title__designation Нашi обов’язки
+            .site-title__large Ваша торгівля в США буде максимально оптимізованою та <br>
+              span принесе очікуваний дохід
           a(href="https://system.skladusa.com/registration").site-btn
             span Зареєcтруватися
+
+        .right-block.grid-padding
+          .block-checked
+            .block-checked__inner
+              .block-checked__title
+                .site-title__large Ми допоможемо з усiм i&nbsp;
+                  span навiть бiльше
+              .block-checked__items
+                .block-checked__item
+                  div Отримання та обробка повернень з будь-яких американських майданчиків – Etsy, Amazon, eBay;
+                .block-checked__item
+                  div Огляд товару, складання фотозвіту;
+                .block-checked__item
+                  div Додавання продукції в інвентар, обробка повторного її замовлення;
+                .block-checked__item
+                  div Комплектація повернення;
+                .block-checked__item
+                  div Заміна упаковки (за необхідності), переклеювання FNSKU;
+                .block-checked__item
+                  div Відправлення товару на склад Amazon, якщо ви працюєте з цим майданчиком, або зберiгання товару на нашому складi до поадльшого продажу.
+                .block-checked__item
+                  div Індивідуальна перевірка товару - за домовленістю (електроніка, перевірка по списку пакувальної карти)
+                .block-checked__item
+                  div Створення оплаченої лейби повернення для покупця (ціна пересилки);
+
+
+    .cascade.cascade--return
+      .cascade__inner.site-container.site-container--section.double-block
+        .cascade__content.grid-padding.left-block
+          .cascade__title.site-title.mw-360
+            .site-title__ico.shadow
+              include ../img/site-title-crown.svg
+            .site-title__designation Переваги
+            .site-title__large Оформлюйте повернення товару&nbsp;
+              span через FBM
+
+            p Нашим клієнтам доступна послуга експрес доставки замовлення безпосередньо до покупця. Така послуга забезпечить максимальну швидкість доставки за оптимальною ціною!​
 
         .cascade__content.right-block.grid-padding
           .cascade__list
             .cascade__item
               .cascade__item-content.site-case
-                .site-case__name Багаторічний досвід роботи
-                p Наша перевага – це багаторічний досвід роботи в цiй сфері обслуговування.
+                .site-case__name Спеціалізовані центри
+                p Ми маємо великий досвід роботи з поверненнями закордонного товару, тому виконують його швидко і професійно;
             .cascade__item
               .cascade__item-content.site-case
-                .site-case__name Великi партiї
-                p Ми гарантуємо відсутність проблем з обробкою великої кількості замовлень і їх доставкою в пункти.
+                .site-case__name Перепродаж без  зворотного пересилання
+                p Перепродовуйте продукцію, яку повернула одна з торгових платформ, без оформлення “звороту”.
             .cascade__item
               .cascade__item-content.site-case
-                .site-case__name Розташування складу
-                p Склад в США розташований в штаті Міннесота, завдяки чому ми доставляємо товар на склад Amazon чи покупцевi за гарною ціною.
+                .site-case__name Немає утилiзацiї
+                p Немає потреби організації процесу утилізації, бо вона входить у послуги повернення товару FBA або FBM;
             .cascade__item
               .cascade__item-content.site-case
-                .site-case__name Вигiднi умови для Вас
-                p Нашi послуги доступнi всім, хто хоче продавати в США з України. Ми завжди готовi обговорювати особливi умови клiєнтiв.
+                .site-case__name Швидке повернення
+                p За необхіднiстю, зворотнє пересилання буде виконане у стислі терміни і за прийнятною ціною.
 
 
-    .education
-      .education__inner.site-container.site-container--section.double-block
-        .education__content.grid-padding
-          .education__title.site-title
+    .why-necessary
+      .site-container.site-container--section.double-block
+        .left-block.left-media.d-flex.align-items-end
+          div
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/why-important.svg" alt="warehouses" width="444").lazyload
+
+        .grid-padding.right-block
+          .site-title
             .site-title__ico.shadow
-              include ../img/site-title-support.svg
-            .site-title__designation Постiйна пiдтримка
-            .site-title__large Спецiалiсти з технічної підтримки &nbsp;<br>
-              span працюють для Вас
-          p У разі виникнення питань, можете сміливо звертатися в технічну підтримку – ми допоможемо Вам впоратися з будь-якими проблемами.
-          p В разі, якщо у вас є персональні вимоги – обов’язково зв’яжіться з нами і ми знайдемо компроміс.
+              include ../img/return.svg
+            .site-title__designation Чому це важливо
+            .site-title__large
+              span Професійно організоване повернення товару&nbsp;
+              | на Etsy, Aamazon, ebay гарантовано
 
-        .education__media.right-block.right-media
-          .education__media-img
-            img(src="./img/support-img.svg" alt="support" width="602").lazyload
+          p Працюючи зi SKLADUSA у вас є можливість відразу після повернення знову додати його в свої запаси FBA inventory і продати найближчим часом.
+          p Звичайно, частина позицій, що мають позначку «customer damaged», реалізувати не вийде. Але на практиці 95% повернутих товарів повторно продається і досить швидко. Що ст осується оплати, то фінансові питання також вирішуються швидко і без проблем –  повернення грошей за товар на eBay, Amazon або Etsy.
 
 
-    .table-block
-      .table-block__inner.site-container.site-container--section.double-block
-        .table-block__content.grid-padding.left-block
-          .table-block__title.site-title
-            .site-title__ico.shadow
-              include ../img/site-title-automation.svg
-            .site-title__designation Нашi обов’язки
-            .site-title__large Ми допоможемо з усiм i&nbsp;
-              span навiть бiльше
-          p Ми беремо на себе усю рутину роботу, пов’язану з вiдправкою, пакуванням та зберiганням товару за доступною цiною.
-          p З додатковими послугами — особливими роботами, що не зазначенi у списку — ми виконуємо за окрему плату у $ 35 / год  (мінiмум 30 хвилин).
-          a(href="https://system.skladusa.com/registration").site-btn
-            span Зареєcтруватися
 
-        .table-block__table.right-block.grid-padding
-          .site-table
-            .site-table__inner
-              table
-                thead
-                  tr
-                    th Послуга
-                    th Умови
-                tbody
-                  tr
-                    td Приймаєм та беремо на облік
-                    td до 3 днiв
-                  tr
-                    td Безкоштовне зберігання
-                    td до 14 днів, далi:  <br>
-                      | $35 — 1\2 палети,<br>
-                      |  $50 — 1 палета в місяць
-                  tr
-                    td Наліпка FNSKU
-                    td за потреби
-                  tr
-                    td Пакування
-                    td за потреби
-                  tr
-                    td Набiр з декількох товарів
-                    td $0.25 за кожен (без цiни за коробку)
-                  tr
-                    td Робота з вкладишами
-                    td $0.10 за кожен
-                  tr
-                    td Вiдправлення до складу Amazon
-                    td за тарифами перевізників
+
 
 
     .plans

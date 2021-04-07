@@ -1,0 +1,72 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+.responsibilities-block{
+
+  .grid-padding.left-block{
+    padding-top: 25px;
+  }
+}
+
+.why-necessary{
+  .right-block{
+    p{
+      padding-right: 50px;
+    }
+  }
+}
+
+.cascade--return{
+  .right-block{
+    margin-top: 80px;
+  }
+}
+
+.mw-360{
+  max-width: 360px;
+}
+
+.block-checked{
+
+  &__inner{
+    padding: 43px;
+    background: #F8F4EE;
+    box-shadow: 0px 4px 30px #E2D8CB;
+    border-radius: 14px;
+  }
+
+  &__title{
+
+  }
+
+  &__items{
+
+  }
+
+  &__item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 23px;
+
+    div{
+      padding-top: 4px;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:before{
+      content: "";
+      display: block;
+      min-width: 32px;
+      height: 32px;
+      background: url("../img/check-mark.svg") center center no-repeat;
+      margin-right: 16px;
+    }
+
+  }
+
+}
