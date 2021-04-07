@@ -903,6 +903,12 @@ div{
 
     }
 
+    @include for-992{
+      svg{
+        width: 100%;
+      }
+    }
+
     img{
       width: 100%;
 
@@ -1312,6 +1318,10 @@ div{
 
     @include for-680{
       max-width: 100%;
+
+      br{
+        display: none;
+      }
     }
   }
 
