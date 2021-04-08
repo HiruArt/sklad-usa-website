@@ -6,6 +6,11 @@
 }
 
 .search-line{
+  margin-bottom: 48px;
+
+  .site-container {
+    padding: 0 40px;
+  }
 
   &__inner{
     form{
@@ -30,7 +35,7 @@
   }
 
   &__btn{
-    background: #CD9E64;
+    background: $accent;
     border-radius: 60px;
     font-weight: 500;
     font-size: 14px;
@@ -49,47 +54,135 @@
 
 .blog-list{
 
+  .site-container {
+    padding: 0 40px;
+  }
+
   &__inner{
 
   }
 
   &__items{
-
+    display: flex;
+    margin: 0 -16px;
+    flex-wrap: wrap;
   }
 
   &__item{
+    display: flex;
+    padding: 0 16px;
+    width: 25%;
+  }
 
+  &__item-content{
+    background: $white;
+    box-shadow: 0px 4px 30px #E2D8CB;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  &__item-text{
+    padding: 16px 24px 24px;
   }
 
   &__image{
-
+    img{
+      width: 100%;
+    }
   }
 
   &__date{
-
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 16px;
+    color: $brown;
   }
 
   &__title{
-
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey;
   }
 
   &__desc{
-
+    color: $grey;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 12px 0px;
   }
 
 }
 
 .site-pagination{
+  padding-top: 64px;
 
   &__inner{
 
   }
 
   &__items{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 50%;
+    border: 1px solid #8f7a614d;
+    box-sizing: border-box;
+    margin-right: 12px;
+    color: $brown;
+
+    &.inactive{
+      color: #000000;
+      opacity: 0.4;
+    }
+
+    &.first{
+      width: auto;
+      height: auto;
+      margin-right: 40px;
+      font-size: 16px;
+      line-height: 23px;
+      border: 0;
+      color: $grey;
+    }
+
+    &.last{
+      width: auto;
+      height: auto;
+      margin-left: 40px;
+      margin-right: 0;
+      font-size: 16px;
+      line-height: 23px;
+      border: 0;
+      color: $grey;
+    }
+
+    &.dots{
+      font-size: 20px;
+      transform: translateY(-2px);
+      border: 0;
+    }
+
+    &.active{
+      background: #8F7A61;
+      color: #ffffff;
+    }
+
+    &.black{
+      color: $grey;
+    }
 
   }
 
