@@ -1,6 +1,34 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
+.return-processing .page__wrapper{
+  background-image: url("../img/background-img-return-processing.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-return-processing1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+
+  @include for-1100{
+    background-image: url("../img/background-img-return-processing1100.svg");
+    background-size: auto;
+    background-position: center 2%;
+  }
+}
+
 .responsibilities-block{
 
   .grid-padding.left-block{

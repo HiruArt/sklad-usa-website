@@ -265,13 +265,15 @@ div{
     @include for-1100{
       margin-left: auto;
     }
+  }
 
-    &__calculator-btn{
+  &__calculator-btn{
+    padding-left: 16px;
+    padding-right: 16px;
 
-      span{
-        font-size: 14px;
-        line-height: 16px;
-      }
+    span{
+      font-size: 14px;
+      line-height: 16px;
     }
   }
 
