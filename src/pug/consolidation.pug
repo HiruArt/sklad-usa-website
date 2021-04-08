@@ -109,99 +109,62 @@ block content
             img(src="./img/bouses-img.svg" alt="support" width="562" height="410").lazyload
 
 
-    .table-block
-      .table-block__inner.site-container.site-container--section.double-block
-        .table-block__content.grid-padding.left-block
-          .table-block__title.site-title
+    .cooperation
+      .cooperation__inner.site-container.site-container--section
+        .cooperation__content.grid-padding
+          .cooperation__title.site-title.mw-100
             .site-title__ico.shadow
-              include ../img/site-title-automation.svg
-            .site-title__designation Нашi обов’язки
-            .site-title__large Ми допоможемо з усiм i&nbsp;
-              span навiть бiльше
-          p Ми беремо на себе усю рутину роботу, пов’язану з вiдправкою, пакуванням та зберiганням товару за доступною цiною.
-          p З додатковими послугами — особливими роботами, що не зазначенi у списку — ми виконуємо за окрему плату у $ 35 / год  (мінiмум 30 хвилин).
-          a(href="https://system.skladusa.com/registration").site-btn
-            span Зареєcтруватися
+              include ../img/sie-title-cooperation.svg
+            .site-title__designation Варiацiї спiвпрацi
+            .site-title__large Будь-яка консолiдацiя їде до <br>покупця&nbsp;
+              span через склад від 6 днів
 
-        .table-block__table.right-block.grid-padding
-          .site-table
-            .site-table__inner
-              table
-                thead
-                  tr
-                    th Послуга
-                    th Умови
-                tbody
-                  tr
-                    td Приймаєм та беремо на облік
-                    td до 3 днiв
-                  tr
-                    td Безкоштовне зберігання
-                    td до 14 днів, далi: <br>
-                      | $35 — 1\2 палети,<br>
-                      | $50 — 1 палета в місяць
-                  tr
-                    td Наліпка FNSKU
-                    td за потреби
-                  tr
-                    td Пакування
-                    td за потреби
-                  tr
-                    td Набiр з декількох товарів
-                    td $0.25 за кожен (без цiни за коробку)
-                  tr
-                    td Робота з вкладишами
-                    td $0.10 за кожен
-                  tr
-                    td Вiдправлення до складу Amazon
-                    td за тарифами перевізників
+          .cooperation__case
+            .cooperation__case-item
+              .cooperation__case-content.site-case
+                .cooperation__case-title Консолiдацiя
+                .cooperation__case-txt
+                  p Консолідація замовлень / товарів в Україні і відправка на склад в Міннесоту з подальшою доставкою покупцеві місцевою поштою
+                .cooperation__case-btn
+                  .cooperation__case-btn-i
+                    a(href="javascript:void(0)" data-modal-class="consolidations-popup").site-btn
+                      span Читати деталi
+                  .cooperation__case-btn-i
+                    a(href="#").site-link
+                      span Калькулятор
+            .cooperation__case-item
+              .cooperation__case-content.site-case
+                .cooperation__case-title Спрощена консолiдацiя
+                .cooperation__case-txt
+                  p Замовлення відразу повинні бути упаковані в тому в вигляді, в якому будуть відправлені покупцеві зі складу в США
+                .cooperation__case-btn
+                  .cooperation__case-btn-i
+                    a(href="javascript:void(0)").site-btn
+                      span Читати деталi
+                  .cooperation__case-btn-i
+                    a(href="#").site-link
+                      span Калькулятор
 
 
-    .plans
-      .plans__inner.site-container.site-container--section
-        .plans__truck-img.truck-img
-          include ../img/truck-cart-img.svg
+    .l-media-r-info.advant-consol
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/advant-consol-img.svg" alt="image" width="610" height="569").lazyload
 
-        .plans__head.grid-padding
-          .plans__title.site-title
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
             .site-title__ico.shadow
-              include ../img/site-title-plans.svg
-            .site-title__designation Плани
-            .site-title__large Обирайте те, що &nbsp;<br>
-              span працює для вас краще
-
-        .plans__content.grid-padding
-          .plans__list.custom-row.custom-row--8px
-            .plans__item.custom-col.custom-col--33
-              .plans__item-content.price-case
-                .price-case__head
-                  span $1.00
-                  | за 1 товар
-                .price-case__content
-                  .price-case__title.underline Новачок
-                  .price-case__text
-                    p 20—100 одиниць товару у мiсяць
-                    p сума усiх сторiн до 60см, вага до 1кг.
-            .plans__item.custom-col.custom-col--33
-              .plans__item-content.price-case
-                .price-case__head
-                  span $0.80
-                  | за 1 товар
-                .price-case__content
-                  .price-case__title.underline Премiум
-                  .price-case__text
-                    p 100—1000 одиниць товару у мiсяць
-                    p сума усiх сторiн вiд 60см до 100см, вага до 2кг.
-            .plans__item.custom-col.custom-col--33
-              .plans__item-content.price-case
-                .price-case__head
-                  span $0.60
-                  | за 1 товар
-                .price-case__content
-                  .price-case__title.underline VIP
-                  .price-case__text
-                    p бiльше 1000 одиниць товару у мiсяць
-                    p сума усiх сторiн вiд 100см до 150см, вага до 5кг.
+              include ../img/site-title-advant-consol.svg
+            .site-title__designation Переваги Консолiдацiй
+            .site-title__large Переваги консолідації товарів або замовлень&nbsp;<br>
+              span неможливо недооцiнити
+            p Щоб об’єктивно оцінити користь такої послуги, виділимо основні переваги консолідації товарів або замовлень:
+            ul.site-ul
+              li.mb-16px одночасне пересилання декількох позицій без обмежень по мінімальному і максимальному обсягу партії;
+              li.mb-16px оперативна доставка на американський склад без затримок завдяки експрес-пошті;
+              li.mb-16px швидке розсилання позицій замовникам, гідний рівень сервісу;
+              li.mb-16px швидке розсилання позицій замовникам, гідний рівень сервісу;
 
 
     include ./modules/_all-services

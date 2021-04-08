@@ -55,6 +55,10 @@
   width: 100% !important;
 }
 
+.mw-100{
+  max-width: 100% !important ;
+}
+
 .mw-350{
   @include from-680 {
     max-width: 350px;
@@ -93,6 +97,9 @@
 
 body .mb-24px{
   margin-bottom: 24px;
+}
+body .mb-16px{
+  margin-bottom: 16px;
 }
 body .mb-12px{
   margin-bottom: 12px;
