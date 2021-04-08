@@ -12,7 +12,7 @@ block content
   div.main-wrap
     include ./modules/_breadcrumbs
 
-    .capital.capital--fba-prep-center
+    .capital.capital--fbm-fulfilment
       .capital__inner.site-container.site-container--section
         .capital__content.capital__content--top-block.grid-padding
           .capital__title.site-title
@@ -53,8 +53,11 @@ block content
             p Надалі сам центр надає певний ряд послуг – зберігання, пакування і відправлення посилок.
 
 
-    .table-block
+    .table-block.table-block--fbm-fulfilment
       .table-block__inner.site-container.site-container--section.double-block
+        .table-block__boxes-img
+          include ../img/boxes-reverse.svg
+
         .table-block__content.grid-padding.left-block
           .table-block__title.site-title
             .site-title__ico.shadow
@@ -115,51 +118,59 @@ block content
                     td $5 за 3шт
 
 
-    .plans
+    .plans.price-volume
       .plans__inner.site-container.site-container--section
-        .plans__truck-img.truck-img
-          include ../img/truck-cart-img.svg
-
         .plans__head.grid-padding
           .plans__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-plans.svg
             .site-title__designation Плани
-            .site-title__large Обирайте те, що &nbsp;<br>
-              span працює для вас краще
+            .site-title__large Вартiсть замовлення&nbsp;<br>
+              span залежить вiд об’єму
+
+
 
         .plans__content.grid-padding
           .plans__list.custom-row.custom-row--8px
-            .plans__item.custom-col.custom-col--33
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
-                .price-case__head
-                  span $1.00
-                  | за 1 товар
+                .price-case__head.mb-24px
+                  span.m-0 $2.00
+                  | /од
                 .price-case__content
-                  .price-case__title.underline Новачок
+                  .price-case__title.mb-12px Маленькi
                   .price-case__text
-                    p 20—100 одиниць товару у мiсяць
-                    p сума усiх сторiн до 60см, вага до 1кг.
-            .plans__item.custom-col.custom-col--33
+                    p сума усiх сторiн до 40см
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
-                .price-case__head
-                  span $0.80
-                  | за 1 товар
+                .price-case__head.mb-24px
+                  span.m-0 $3.00
+                  | /од
                 .price-case__content
-                  .price-case__title.underline Премiум
+                  .price-case__title.mb-12px Середнi
                   .price-case__text
-                    p 100—1000 одиниць товару у мiсяць
-                    p сума усiх сторiн вiд 60см до 100см, вага до 2кг.
-            .plans__item.custom-col.custom-col--33
+                    p сума усiх сторiн  41—80см
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
-                .price-case__head
-                  span $0.60
-                  | за 1 товар
+                .price-case__head.mb-24px
+                  span.m-0 $3.50
+                  | /од
                 .price-case__content
-                  .price-case__title.underline VIP
+                  .price-case__title.mb-12px Великi
                   .price-case__text
-                    p бiльше 1000 одиниць товару у мiсяць
-                    p сума усiх сторiн вiд 100см до 150см, вага до 5кг.
+                    p сума усiх сторiн  81—104см
+            .plans__item.custom-col.custom-col--25
+              .plans__item-content.price-case
+                .price-case__head.mb-24px
+                  span.m-0 $5.00
+                  | /од
+                .price-case__content
+                  .price-case__title.mb-12px Гiганти
+                  .price-case__text
+                    p сума усiх сторiн  вiд 105см
+
+          .plans__caption * цiна коробки та пересилки не врахована
+
 
 
     include ./modules/_all-services
