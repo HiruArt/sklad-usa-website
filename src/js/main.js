@@ -80,6 +80,15 @@ $(document).ready(function () {
     }
   });
 
+  if($('.js_accordion').length > 0){
+    $(document).find('.js_accordion .accordion__item.open .accordion__content').show();
+
+    $(document).on('click', '.accordion .accordion__head', function (e) {
+      $(this).parent().toggleClass('open');
+      $(this).next('.accordion__content').slideToggle();
+    });
+  }
+
   /*popups start*/
   $(document).on('click', '[data-modal-class]', function (e) {
     e.preventDefault();
