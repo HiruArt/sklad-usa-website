@@ -11,7 +11,7 @@ block content
   div.main-wrap
     include ./modules/_breadcrumbs
 
-    .capital
+    .capital.capital--return
       .capital__inner.site-container.site-container--section
         .capital__content.capital__content--top-block.grid-padding
           .capital__title.site-title
@@ -34,7 +34,8 @@ block content
 
 
 
-    .numbered-tiles
+
+    .numbered-tiles.can-go-wrong
       .numbered-tiles__inner.site-container
 
 
@@ -45,23 +46,23 @@ block content
           .numbered-tiles__title.site-title
             .site-title__ico.shadow
               include ../img/why-happines.svg
-            .site-title__designation усi послуги
+            .site-title__designation Що може пiти не так
             .site-title__large Ми захистимо вас вiд помилок та допоможемо <br>
               span подолати тi, якi виникнуть
             p Навіть якщо ваш товар хорошої якості, відправлення виконане з дотриманням всіх критеріїв угоди і без затримок. І важливо розуміти, що з поверненням може виникнути чимало проблем, наприклад:
 
           ul.numbered-tiles__list.custom-row.custom-row--12px.numbered-tiles__list--nonumbers
             li.numbered-tiles__item.custom-col
-              .numbered-tiles__item-content.site-case
-                .numbered-tiles__item-name.site-case__name Недостатня iнформацiя
+              .site-case
+                .site-case__name Недостатня iнформацiя
                 p Якщо ви реалізуєте продукцію на спеціалізованих американських майданчиках, наприклад, ведете продажу через Amazon, eBay і т.д., необхідно надати адресу складу в США, куди буде відправлятися повернення;
             li.numbered-tiles__item.custom-col
-              .numbered-tiles__item-content.site-case
-                .numbered-tiles__item-name.site-case__name Невiрне зберiгання продукції
+              .site-case
+                .site-case__name Невiрне зберiгання продукції
                 p Вам необхідно подбати про правильне зберігання або утилізацію продукції, залежно від того, чи придатна вона для подальшої реалізації;
             li.numbered-tiles__item.custom-col
-              .numbered-tiles__item-content.site-case
-                .numbered-tiles__item-name.site-case__name Зворотнє вiдправлення це розкiш
+              .site-case
+                .site-case__name Зворотнє вiдправлення це розкiш
                 p Організаційні моменти у таких вiдправленнях доволi складно вирішити, а вартість доставки виявляється високою. Це часто призводить до фінансових втрат замість очікуваного заробітку.
 
 
@@ -152,7 +153,7 @@ block content
                 p За необхіднiстю, зворотнє пересилання буде виконане у стислі терміни і за прийнятною ціною.
 
 
-    .why-necessary
+    .why-importantly
       .site-container.site-container--section.double-block
         .left-block.left-media.d-flex.align-items-end
           div
@@ -175,53 +176,49 @@ block content
 
 
 
-    .plans
+    .plans.plans--return
       .plans__inner.site-container.site-container--section
-        .plans__truck-img.truck-img
-          include ../img/truck-cart-img.svg
-
         .plans__head.grid-padding
           .plans__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-plans.svg
             .site-title__designation Плани
-            .site-title__large Обирайте те, що &nbsp;<br>
-              span працює для вас краще
+            .site-title__large Цiни на обробку повернень&nbsp;
+              span FBA та FBM
+            p Обробка повернень до 7 днів. Експрес прийняття повернення протягом 2 днів за подвійним тарифом
 
         .plans__content.grid-padding
           .plans__list.custom-row.custom-row--8px
-            .plans__item.custom-col.custom-col--33
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
                 .price-case__head
-                  span $1.00
-                  | за 1 товар
+                  span $1.50
                 .price-case__content
-                  .price-case__title.underline Новачок
-                  .price-case__text
-                    p 20—100 одиниць товару  у мiсяць
-                    p сума усiх сторiн до 60см, вага до 1кг.
-            .plans__item.custom-col.custom-col--33
+                  .price-case__title Об’єм до 60 см, <br> Вага до 1кг
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
                 .price-case__head
-                  span $0.80
-                  | за 1 товар
+                  span $2.00
                 .price-case__content
-                  .price-case__title.underline Премiум
-                  .price-case__text
-                    p 100—1000 одиниць товару  у мiсяць
-                    p сума усiх сторiн вiд 60см до 100см, вага до 2кг.
-            .plans__item.custom-col.custom-col--33
+                  .price-case__title Об’єм 61—100 см, <br> Вага до 2кг
+            .plans__item.custom-col.custom-col--25
               .plans__item-content.price-case
                 .price-case__head
-                  span $0.60
-                  | за 1 товар
+                  span $3.00
                 .price-case__content
-                  .price-case__title.underline VIP
-                  .price-case__text
-                    p бiльше 1000 одиниць товару  у мiсяць
-                    p сума усiх сторiн вiд 100см до 150см, вага до 5кг.
+                  .price-case__title Об’єм 101—150 см, <br> Вага до 2кг
+            .plans__item.custom-col.custom-col--25
+              .plans__item-content.price-case
+                .price-case__head
+                  span $5.00
+                .price-case__content
+                  .price-case__title Об’єм вiд 150 см, <br> Вага до 10кг
+
+        .plans__bottom.right
+          span Для уточнення ціни для більших розмірів — зверніться до складу.
 
 
-    include ./modules/_all-services
+    .numbered-tiles--return
+      include ./modules/_all-services
 
 
