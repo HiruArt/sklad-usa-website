@@ -239,7 +239,7 @@ body .mb-12px{
 
 .site-btn{
   display: flex;
-  padding: 11px 16px;
+  padding: 11px 24px;
   background: #CD9E64;
   border-radius: 5px;
   transition: .2s ease-in-out;
@@ -750,4 +750,99 @@ p{
   tbody tr:nth-child(even){
     background: $tableBg;
   }
+}
+
+
+.accordion{
+
+  &__item{
+    position: relative;
+    min-height: 69px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: $white;
+    box-shadow: 0px 4px 30px #E2D8CB;
+    border-radius: 11px;
+    margin-bottom: 12px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 31px;
+      height: 6px;
+      width: 13px;
+      background: url("../../img/ico/arrow-black-up.svg") center/contain no-repeat;
+      z-index: 2;
+      transform: rotate(180deg);
+    }
+
+    &.open{
+
+      &:before{
+        transform: rotate(0deg);
+      }
+    }
+
+
+  }
+
+  &__head{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: $grey;
+    width: 100%;
+    position: relative;
+    padding-left: 24px;
+    padding-right: 48px;
+    cursor: pointer;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: 5px;
+      top: -15px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 3;
+    }
+  }
+
+  &__content{
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: none;
+
+    p{
+      margin: 0;
+    }
+  }
+
+}
+
+ul.site-ul{
+  li{
+    position: relative;
+    padding-left: 9px;
+    color: #000000;
+    font-size: 16px;
+    line-height: 141.19%;
+
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: black;
+    }
+  }
+
 }
