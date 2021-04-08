@@ -1,0 +1,96 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+.blog{
+
+}
+
+.search-line{
+
+  &__inner{
+    form{
+      display: flex;
+    }
+  }
+
+  &__input{
+    height: 48px;
+    border: 1px solid #8f7a614d;
+    box-sizing: border-box;
+    border-radius: 60px;
+    background: transparent;
+    width: 100%;
+
+    &::placeholder{
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      padding: 0 24px;
+    }
+  }
+
+  &__btn{
+    background: #CD9E64;
+    border-radius: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 142px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -142px;
+  }
+
+}
+
+.blog-list{
+
+  &__inner{
+
+  }
+
+  &__items{
+
+  }
+
+  &__item{
+
+  }
+
+  &__image{
+
+  }
+
+  &__date{
+
+  }
+
+  &__title{
+
+  }
+
+  &__desc{
+
+  }
+
+}
+
+.site-pagination{
+
+  &__inner{
+
+  }
+
+  &__items{
+
+  }
+
+  &__item{
+
+  }
+
+}

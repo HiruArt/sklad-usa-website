@@ -121,8 +121,13 @@
     img{
       width: 577px;
 
+      @include for-1400{
+        margin-left: -74px;
+      }
+
       @include for-1200{
         width: 100%;
+        margin-left: 0;
       }
 
       @include for-800{
@@ -200,6 +205,13 @@
 
 .why-importantly{
 
+  .double-block{
+    @include for-680{
+      flex-direction: column-reverse;
+      padding-bottom: 0;
+    }
+  }
+
   .left-block{
     @include for-680{
       justify-content: center;
@@ -245,6 +257,10 @@
     max-width: 515px;
   }
 
+  .plans__item.custom-col--25 .price-case {
+    padding: 40px 20px 40px 30px;
+  }
+
   .price-case__content {
     padding-left: 35px;
   }
@@ -281,4 +297,5 @@
 
 .numbered-tiles--return{
   padding-top: 30px;
+  margin-bottom: -20px;
 }
