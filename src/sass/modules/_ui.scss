@@ -88,7 +88,14 @@
 }
 
 .m-0{
-  margin: 0;
+  margin: 0!important;
+}
+
+body .mb-24px{
+  margin-bottom: 24px;
+}
+body .mb-12px{
+  margin-bottom: 12px;
 }
 
 .correct input,
@@ -661,10 +668,10 @@ p{
   &:before{
     content: '';
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: -32px;
+    transform: translateX(-50%);
     width: calc(100% + 64px);
-    height: calc(100% + 64px);
+    height: calc(100% + 38px);
     background: $white;
     box-shadow: 0px 4px 30px #E2D8CB;
     border-radius: 14px;
@@ -685,7 +692,8 @@ p{
   }
 
   th, td{
-    padding: 16px 0 16px 16px;
+    //padding: 16px 0 16px 16px;
+    padding: 18px 0 18px 16px;
 
     @include for-680{
       padding: 12px 0 12px 12px;
@@ -693,7 +701,7 @@ p{
 
 
     &:first-child{
-      padding-left: 24px;
+      padding-left: 18px;
 
       @include for-680{
         padding-left: 17px;
@@ -703,6 +711,7 @@ p{
 
     &:last-child{
       padding-right: 16px;
+      padding-left: 0;
 
       @include for-680{
         padding-right: 17px;
@@ -714,7 +723,8 @@ p{
     background: $tableBrown;
     font-weight: 500;
     font-size: 18px;
-    line-height: 19px;
+    //line-height: 19px;
+    line-height: 21px;
     color: #FFFFFF;
     text-align: start;
 
@@ -726,7 +736,8 @@ p{
 
   td{
     font-size: 16px;
-    line-height: 23px;
+    //line-height: 23px;
+    line-height: 19px;
     color: #000000;
     vertical-align: top;
 

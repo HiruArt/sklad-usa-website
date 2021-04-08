@@ -989,6 +989,30 @@ div{
     }
   }
 
+  /**************************/
+
+  &--fbm-fulfilment &__media-img{
+    @include from-1200{
+      transform: translateX(18px) translateY(26px) !important;
+      margin-bottom: -80px!important;
+    }
+  }
+
+  &--fbm-fulfilment &__content p {
+    @include from-1200{
+      width: calc(100% + 15px);
+    }
+  }
+
+  &--fbm-fulfilment &__media {
+    @include for-680{
+      height: 440px;
+    }
+  }
+
+
+  /**************************/
+
 }
 
 
@@ -1468,6 +1492,39 @@ div{
 
   /**************************/
 
+  &.for-whom &__media-img {
+
+
+
+
+    @include from-1400 {
+      transform: translateX(9px) translateY(-15px);
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    @include for-680{
+      height: 354px;
+      position: relative;
+      margin: 0 -15px;
+      width: calc(100% + 30px);
+
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  /**************************/
+
 }
 
 
@@ -1555,6 +1612,8 @@ div{
 .table-block{
 
   &__inner{
+    position: relative;
+
     @include for-1100{
       flex-direction: column;
     }
@@ -1604,6 +1663,25 @@ div{
       margin-top: 40px;
     }
   }
+
+
+  &__boxes-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-22%, -14%);
+
+    @include for-1100{
+      display: none;
+    }
+  }
+
+
+  /*modify*/
+
+  &--fbm-fulfilment .site-container--section{
+    padding-top: 30px;
+  }
 }
 
 .plans{
@@ -1645,10 +1723,45 @@ div{
     @include for-1100{
       margin-bottom: 12px;
     }
+
+    &.custom-col--25{
+
+      .price-case{
+        padding: 32px 20px 32px 30px;
+      }
+    }
   }
 
   &__item-content{
 
+  }
+
+
+  &__caption{
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    text-align: right;
+    color: $brown;
+    margin-top: 24px;
+
+    @include for-680{
+      display: none;
+    }
+  }
+
+
+  /*modify*/
+  &.price-volume{
+    margin-top: 10px;
+  }
+
+  &.price-volume &__item-content{
+    height: 228px;
+
+    @include for-992{
+      height: 207px;
+    }
   }
 }
 
