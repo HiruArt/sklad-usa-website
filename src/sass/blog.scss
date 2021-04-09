@@ -2,14 +2,34 @@
 @import "./modules/_colors";
 
 .blog{
+  .site-pagination__inner,
+  .blog-list__inner,
+  .search-line__inner{
+    padding-left: 100px;
 
+    @include for-1400{
+      padding-left: 15px;
+    }
+  }
+
+  .footer__wrap.grid-padding{
+    padding-left: 0;
+  }
+
+  @include for-550{
+    .site-title__large{
+      span{
+        display: block;
+      }
+    }
+  }
 }
 
 .search-line{
   margin-bottom: 48px;
 
-  .site-container {
-    padding: 0 40px;
+  @include for-550{
+    margin-bottom: 32px;
   }
 
   &__inner{
@@ -48,15 +68,20 @@
     align-items: center;
     justify-content: center;
     margin-left: -142px;
+
+    @include for-550{
+      width: 48px;
+      height: 48px;
+      font-size: 0;
+      margin-left: -48px;
+
+      background: $accent url("../img/magnifying.svg") center center no-repeat;
+    }
   }
 
 }
 
 .blog-list{
-
-  .site-container {
-    padding: 0 40px;
-  }
 
   &__inner{
 
@@ -72,6 +97,19 @@
     display: flex;
     padding: 0 16px;
     width: 25%;
+    margin-bottom: 16px;
+
+    @include for-1200{
+      width: 33%;
+    }
+
+    @include for-992{
+      width: 50%;
+    }
+
+    @include for-550{
+      width: 100%;
+    }
   }
 
   &__item-content{
@@ -104,6 +142,7 @@
     font-size: 16px;
     line-height: 20px;
     color: $grey;
+    display: block;
   }
 
   &__desc{
@@ -118,6 +157,11 @@
 
 .site-pagination{
   padding-top: 64px;
+
+  @include for-992{
+    padding-top: 24px;
+    padding-bottom: 63px;
+  }
 
   &__inner{
 
@@ -156,6 +200,18 @@
       line-height: 23px;
       border: 0;
       color: $grey;
+
+      @include for-550{
+        width: 28px;
+        height: 28px;
+        font-size: 0;
+        border-radius: 50%;
+        border: 1px solid #8f7a614d;
+        box-sizing: border-box;
+        margin-right: 20px;
+        background: url("../img/right-arrow-p.svg") center center no-repeat;
+        transform: rotate(-180deg);
+      }
     }
 
     &.last{
@@ -167,6 +223,17 @@
       line-height: 23px;
       border: 0;
       color: $grey;
+
+      @include for-550{
+        width: 28px;
+        height: 28px;
+        font-size: 0;
+        border-radius: 50%;
+        border: 1px solid #8f7a614d;
+        box-sizing: border-box;
+        margin-left: 20px;
+        background: url("../img/right-arrow-p.svg") center center no-repeat;
+      }
     }
 
     &.dots{
@@ -182,6 +249,7 @@
 
     &.black{
       color: $grey;
+      margin-right: 0;
     }
 
   }
