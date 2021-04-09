@@ -1,0 +1,79 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Express order";
+  - var pageClass = "express-order";
+  - var pageActive = "express-order";
+  - var pageSection = "services";
+  - var pageName = "Eкспрес замовлення";
+
+
+block content
+  div.main-wrap
+    include ./modules/_breadcrumbs
+
+    .capital.consol-page
+      .capital__inner.site-container.site-container--section
+        .capital__content.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large
+              span Обробка великої кількості товарів —&nbsp;<br>
+              | це просто i швидко
+          p Консолідація передбачає одночасну обробку великої кількості товарів, що істотно заощаджує час, гроші і зусилля по доставці. Консолідація зробить доставку ваших замовлень до США простіше, швидше і зручніше. Ми поєднуємо переваги експрес доставки з низькою вартістю відправлення конкретного замовлення
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link.site-link--desktop
+                span Детальнiше про нас
+              a(href="#").site-link.site-link--mobile
+                span Про нас
+        .capital__media.rhombus
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/consolidation-on-hero.svg" alt="img" width="636" height="636").lazyload
+
+    .l-media-r-info.instruction
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/instruction-img.svg" alt="image" width="491").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-instruction.svg
+            .site-title__designation Iнструкцiя
+            .site-title__large Ще немає замовленя?&nbsp;<br> — Зберiгайте свiй товар&nbsp;<br>
+              span на наших складах
+          .mw-462
+            p Висилайте експрес замолення збiрної посилки на наш склад у США. Там ми усе перепакуємо та поштою вiдправимо адресатам.
+            p Вам не обов’язково самостійно формувати збірну посилку, ми зробимо це за вас: просто пришліть нам товар, готовий до відправлення, ми скомбінуємо його з іншими і відправимо на наш склад у США.
+
+
+    .l-media-r-info.advant-consol
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/advant-consol-img.svg" alt="image" width="610" height="569").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-advant-consol.svg
+            .site-title__designation Переваги Консолiдацiй
+            .site-title__large Переваги консолідації товарів або замовлень&nbsp;<br>
+              span неможливо недооцiнити
+            p Щоб об’єктивно оцінити користь такої послуги, виділимо основні переваги консолідації товарів або замовлень:
+            ul.site-ul
+              li.mb-16px одночасне пересилання декількох позицій без обмежень по мінімальному і максимальному обсягу партії;
+              li.mb-16px оперативна доставка на американський склад без затримок завдяки експрес-пошті;
+              li.mb-16px швидке розсилання позицій замовникам, гідний рівень сервісу;
+              li.mb-16px швидке розсилання позицій замовникам, гідний рівень сервісу;
+
+
+    include ./modules/_all-services
+
+
