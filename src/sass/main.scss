@@ -826,6 +826,16 @@ input, textarea {
         padding-top: 96px;
       }
     }
+
+    //&--top-block-another{
+    //  @include from-1100 {
+    //    padding-top: 55px;
+    //  }
+    //
+    //  @include for-680{
+    //    padding-top: 12px;
+    //  }
+    //}
   }
 
   &__title{
@@ -1037,6 +1047,28 @@ input, textarea {
 
 
   /**************************/
+  &.consol-page &__content{
+    p{
+      @include from-1100{
+        width: calc(100% + 45px);
+      }
+    }
+  }
+
+  &.consol-page &__media{
+    @include for-680{
+      height: 504px;
+      margin-bottom: -11px;
+    }
+  }
+  &.consol-page &__media-img{
+    @include for-680{
+      transform: translate(15px, 26px);
+    }
+  }
+
+
+  /**************************/
 
 }
 
@@ -1079,7 +1111,7 @@ input, textarea {
 
   &__gift-img{
     position: absolute;
-    right: 0;
+    right: 33px;
     top: -35px;
   }
 
@@ -1527,6 +1559,115 @@ input, textarea {
 
   /**************************/
 
+  &.instruction {
+    @include from-1100{
+      margin-top: -19px;
+      margin-bottom: 30px;
+    }
+  }
+  &.instruction .l-media-r-info__inner{
+    @include from-1100 {
+      padding-top: 0;
+    }
+
+    @include for-680{
+      padding-bottom: 16px;
+    }
+  }
+
+  &.instruction &__media{
+    @include for-680{
+      display: none;
+    }
+  }
+  &.instruction &__media-img {
+
+    @include from-1400 {
+      transform: translateX(3px) translateY(20px);
+
+      img{
+        width: 100%;
+        max-width: 491px;
+      }
+
+    }
+
+    @include for-680{
+      height: 320px;
+      position: relative;
+      margin: 0 -15px;
+      width: calc(100% + 30px);
+      transform: scale(1.1) translate(-23px, -20px);
+
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  /**************************/
+
+  &.advant-consol {
+    @include from-1100{
+      padding-top: 50px;
+    }
+  }
+  &.advant-consol .l-media-r-info__inner{
+    @include from-1100 {
+
+    }
+  }
+
+  &.advant-consol &__media{
+
+    @include from-1100 {
+      height: 568px;
+      position: relative;
+      padding-top: 0;
+    }
+  }
+
+  &.advant-consol &__media-img {
+
+    @include from-1100 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateX(-42px) translateY(-40px);
+      width: 610px;
+
+      img{
+        width: 100%;
+        max-width: 610px;
+      }
+
+    }
+
+    @include for-680{
+      height: 320px;
+      position: relative;
+      margin: 0 -15px;
+      width: calc(100% + 30px);
+      transform: scale(1.1);
+
+      img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  /**************************/
+
 }
 
 
@@ -1767,5 +1908,64 @@ input, textarea {
   }
 }
 
+
+
+
+.faqs{
+  &__inner{
+
+    @include for-1100{
+      flex-direction: column;
+    }
+  }
+
+  &__content{
+    width: 100%;
+    max-width: 469px;
+
+    @include for-1100{
+      max-width: 100%;
+
+      .mw-320{
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title{
+    @include for-1100{
+      max-width: 100%;
+
+      .mw-350{
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__media{
+
+  }
+
+  &__list-block{
+    width: 100%;
+  }
+
+  &__list{
+
+    @include from-1100 {
+      padding-top: 75px;
+    }
+  }
+
+  &__item{
+    @include for-680{
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-content{
+
+  }
+}
 
 

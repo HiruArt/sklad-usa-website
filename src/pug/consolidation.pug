@@ -2,7 +2,7 @@ extends _layout
 
 block vars
   - var pageTitle = "Consolidation";
-  - var pageClass = "consolidation rhombus";
+  - var pageClass = "consolidation";
   - var pageActive = "consolidation";
   - var pageSection = "services";
   - var pageName = "Консолiдацiя";
@@ -12,9 +12,9 @@ block content
   div.main-wrap
     include ./modules/_breadcrumbs
 
-    .capital
+    .capital.consol-page
       .capital__inner.site-container.site-container--section
-        .capital__content.capital__content--top-block.grid-padding
+        .capital__content.grid-padding
           .capital__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-icon01.svg
@@ -27,8 +27,10 @@ block content
               a(href="https://system.skladusa.com/registration").site-btn
                 span Зареєcтруватися
             .capital__manage-item.custom-col.fit-content
-              a(href="#").site-link
+              a(href="#").site-link.site-link--desktop
                 span Детальнiше про нас
+              a(href="#").site-link.site-link--mobile
+                span Про нас
         .capital__media.rhombus
           .capital__media-img
             img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/consolidation-on-hero.svg" alt="img" width="636" height="636").lazyload
@@ -54,7 +56,7 @@ block content
 
     .faqs
       .faqs__inner.site-container.site-container--section.double-block
-        .faqs__content.grid-padding.left-block
+        .faqs__content.grid-padding
           .faqs__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-faqs.svg
@@ -62,10 +64,10 @@ block content
             .site-title__large.mw-350
               span Є питання?&nbsp;
               | Ми пiдготували вiдповiдi
-          .mw-350
+          .mw-320
             p Якщо ви не знайшли вiдповiдi на ваше запитання, чи знаходите її не повною, будь-ласка, зв’яжiться з нами, вирiшемо!
 
-        .faqs__media.right-block
+        .faqs__list-block
           .faqs__list.accordion.js_accordion
             .faqs__item
               .faqs__item-content.accordion__item
@@ -92,7 +94,7 @@ block content
 
     .bonus
       .bonus__inner.site-container.site-container--section.double-block
-        .bonus__content.grid-padding.left-block
+        .bonus__content.grid-padding
           .bonus__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-bonus.svg
@@ -104,7 +106,7 @@ block content
               li.mb-24px Ви можете оплатити послуги доставки коштами зі свого балансу. Для тих клієнтів, які не користуються нашою послугою з приймання платежів, доступна функція поповнення балансу.
               li.mb-24px Замовлення створюється в один клік – інформацію про покупця буде заповнено автоматично і вам не доведеться вручну формувати відправлення.
 
-        .bonus__media.right-block.right-media
+        .bonus__media
           .bonus__media-img.d-flex.justify-content-end
             img(src="./img/bouses-img.svg" alt="support" width="562" height="410").lazyload
 
@@ -121,27 +123,27 @@ block content
 
           .cooperation__case
             .cooperation__case-item
-              .cooperation__case-content.site-case
-                .cooperation__case-title Консолiдацiя
-                .cooperation__case-txt
+              .cooperation__case-content.coop-case
+                .coop-case__title Консолiдацiя
+                .coop-case__txt
                   p Консолідація замовлень / товарів в Україні і відправка на склад в Міннесоту з подальшою доставкою покупцеві місцевою поштою
-                .cooperation__case-btn
-                  .cooperation__case-btn-i
+                .coop-case__btn
+                  .coop-case__btn-i
                     a(href="javascript:void(0)" data-modal-class="consolidations-popup").site-btn
                       span Читати деталi
-                  .cooperation__case-btn-i
+                  .coop-case__btn-i
                     a(href="#").site-link
                       span Калькулятор
             .cooperation__case-item
-              .cooperation__case-content.site-case
-                .cooperation__case-title Спрощена консолiдацiя
-                .cooperation__case-txt
+              .cooperation__case-content.coop-case
+                .coop-case__title Спрощена консолiдацiя
+                .coop-case__txt
                   p Замовлення відразу повинні бути упаковані в тому в вигляді, в якому будуть відправлені покупцеві зі складу в США
-                .cooperation__case-btn
-                  .cooperation__case-btn-i
-                    a(href="javascript:void(0)").site-btn
+                .coop-case__btn
+                  .coop-case__btn-i
+                    a(href="javascript:void(0)" data-modal-class="simplified-consolidation-popup").site-btn
                       span Читати деталi
-                  .cooperation__case-btn-i
+                  .coop-case__btn-i
                     a(href="#").site-link
                       span Калькулятор
 
