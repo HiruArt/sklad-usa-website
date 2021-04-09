@@ -1,95 +1,74 @@
 extends _layout
 
 block vars
-  - var pageTitle = "Вiдправляйте товари найдешевим чином для вас. Дiзнайтесь як";
   - var pageClass = "blog-item";
   - var pageActive = "blog-item";
+  - var pageSection = "services";
+  - var pageName = "Вiдправляйте товари найдешевим чином для вас. Дiзнайтесь як";
 
 block content
   div.main-wrap
+    include ./modules/_breadcrumbs
+
     .capital
       .capital__inner.site-container.site-container--section
-        .capital__content.grid-padding
+        .grid-padding
           .capital__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-icon01.svg
             h1.site-title__large
-              | Кориснi статтi про&nbsp;
-              span продаж закордон
+              span H1 Вiдправляйте товари найдешевим чином для вас.&nbsp;
+              | Дiзнайтесь як
 
-    .search-line
-      .search-line__inner.site-container
-        form
-          input(type='text' placeholder='Введiть ваш запит').search-line__input
-          a(href="#").search-line__btn Пошук
+    .blog-article
+      .blog-article__inner.site-container
+        .blog-article__content
+          b Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum malesuada rhoncus. Morbi consectetur, mi vitae egestas cursus, dui dolor convallis nunc, vel tristique mi ligula sit amet est. In dapibus consequat magna quis iaculis.
 
-    .blog-list
-      .blog-list__inner.site-container
-        .blog-list__items
-          .blog-list__item
-            .blog-list__item-content
-              a(href="#").blog-list__image
-                img(src='/img/blog/blog-4.webp' alt='img')
-              .blog-list__item-text
-                .blog-list__date 23 Aug, 2020
-                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
-                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
-          .blog-list__item
-            .blog-list__item-content
-              a(href="#").blog-list__image
-                img(src='/img/blog/blog-3.webp' alt='img')
-              .blog-list__item-text
-                .blog-list__date 23 Aug, 2020
-                a(href="#").blog-list__title Вiдправляйте товари найдешевим чином для вас. Дiзнайтесь як
-                .blog-list__desc Завдяки повноцінному складу, ви маєте можливість відправляти...
-          .blog-list__item
-            .blog-list__item-content
-              a(href="#").blog-list__image
-                img(src='/img/blog/blog-2.webp' alt='img')
-              .blog-list__item-text
-                .blog-list__date 23 Aug, 2020
-                a(href="#").blog-list__title Процесс роботи SKLADUSA: що після прибуття товару на склад
-                .blog-list__desc Після прибуття товару на склад, замовлення додатково упакують (за...
-          .blog-list__item
-            .blog-list__item-content
-              a(href="#").blog-list__image
-                img(src='/img/blog/blog-1.webp' alt='img')
-              .blog-list__item-text
-                .blog-list__date 23 Aug, 2020
-                a(href="#").blog-list__title Процесс роботи SKLADUSA: що після прибуття товару на склад
-                .blog-list__desc Після прибуття товару на склад, замовлення додатково упакують (за...
+          figure
+            img(src='./img/blog-image.png' alt='img')
+            figcaption Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis
 
-    .site-pagination
-      .site-pagination__inner.site-container
-        ul.site-pagination__items
-          li
-            span.site-pagination__item.first.inactive Попередня
-          li
-            a(href="#").site-pagination__item.active 1
-          li
-            a(href="#").site-pagination__item 2
-          li
-            a(href="#").site-pagination__item 3
-          li
-            a(href="#").site-pagination__item 4
-          li
-            a(href="#").site-pagination__item.dots ...
-          li
-            a(href="#").site-pagination__item.black 23
-          li
-            a(href="#").site-pagination__item.last Наступна
+          h2 h2 Nullam bibendum sapien ac dolor euismod tempor. Phasellus et nisl id nunc porttitor suscipit sed non mauris
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
+
+          h3 h3 Curabitur sed ante sed ligula varius euismod:
+
+          ol
+            li turabitur sed ante sed ligula varius euismod;
+            li curabitur sed ante sed ligula varius euismod;
+            li sed ante sed ligula varius euismod;
+            li purabitur sed ante sed ligula varius euismod.
+
+          figure
+            blockquote Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.
+            figcaption Anton Brond
+            figcaption CEO at Yalantis
+
+          h2 Nullam bibendum sapien ac dolor euismod tempor. Phasellus et nisl id nunc porttitor suscipit sed non mauris
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
+
+          ul
+            li turabitur sed ante sed ligula varius euismod;
+            li curabitur sed ante sed ligula varius euismod;
+            li sed ante sed ligula varius euismod;
+            li purabitur sed ante sed ligula varius euismod.
+
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
+
+        .blog-article__share
+          .blog-article__share-name Share
+          .blog-article__share-item
+            include ../img/ico/fb.svg
+          .blog-article__share-item
+            include ../img/ico/twitter.svg
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .blog-article__useful
+          .blog-article__useful-title Чи була стаття корисною для вас?
+          .blog-article__useful-btns
+            a(href='#').blog-article__useful-btn Так, корисна
+            a(href='#').blog-article__useful-btn Нi, не корисна
