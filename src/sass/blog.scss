@@ -1,6 +1,30 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
+
+.blog .page__wrapper {
+  background-image: url("../img/background-img-blog.svg");
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat; }
+@media (min-width: 1446px) {
+  .accepting-payments .page__wrapper {
+    background-image: url("../img/background-img-accepting-payments1920.svg");
+    background-position: center top;
+    background-size: auto; } }
+@media (min-width: 1600px) {
+  .accepting-payments .page__wrapper {
+    background-size: auto; } }
+@media (min-width: 1920px) {
+  .accepting-payments .page__wrapper {
+    background-size: 100%; } }
+@media (max-width: 1100px) {
+  .accepting-payments .page__wrapper {
+    background-image: url("../img/background-img-accepting-payments1100.svg");
+    background-size: auto;
+    background-position: center 2%; } }
+
+
 .blog{
   .site-pagination__inner,
   .blog-list__inner,
