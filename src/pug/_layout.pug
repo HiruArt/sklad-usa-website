@@ -4,64 +4,72 @@ block vars
 
 doctype html
 html(lang="uk")
-	head
-		meta(charset="utf-8")
-		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		meta(name="viewport" content="initial-scale=1.0, width=device-width")
-		title SkladUSA website
-		meta(name="description", content='description content')
+  head
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    title SkladUSA website
+    meta(name="description", content='description content')
 
-		//favicon
-		link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
+    //favicon
+    link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
 
-		if (pageActive === "homepage")
-			link(rel='stylesheet', href='./css/libs/slick.css')
-			link(rel='stylesheet', href='./css/slider.css')
-		link(rel='stylesheet', href='./css/main.css')
-
-		if (pageActive === "homepage")
-			link(rel='stylesheet', href='./css/homepage.css')
-
-		if (pageActive === "fba-prep-center")
-			link(rel='stylesheet', href='./css/fba-prep-center.css')
-
-		if (pageActive === "accepting-payments")
-			link(rel='stylesheet', href='./css/accepting-payments.css')
-
-		if (pageActive === "return-processing")
-			link(rel='stylesheet', href='./css/return-processing.css')
-
-		if (pageActive === "fbm-fulfillment")
-			link(rel='stylesheet', href='./css/fbm-fulfillment.css')
-
-		if (pageActive === "consolidation")
-			link(rel='stylesheet', href='./css/consolidation.css')
-
-		if (pageActive === "blog")
-			link(rel='stylesheet', href='./css/blog.css')
+    if (pageActive === "homepage")
+      link(rel='stylesheet', href='./css/libs/slick.css')
+      link(rel='stylesheet', href='./css/slider.css')
 
 
+    if (pageActive === "homepage")
+      link(rel='stylesheet', href='./css/homepage.css')
+
+    if (pageActive === "fba-prep-center")
+      link(rel='stylesheet', href='./css/fba-prep-center.css')
+
+    if (pageActive === "accepting-payments")
+      link(rel='stylesheet', href='./css/accepting-payments.css')
+
+    if (pageActive === "return-processing")
+      link(rel='stylesheet', href='./css/return-processing.css')
+
+    if (pageActive === "fbm-fulfillment")
+      link(rel='stylesheet', href='./css/fbm-fulfillment.css')
+
+    if (pageActive === "consolidation")
+      link(rel='stylesheet', href='./css/consolidation.css')
+
+    if (pageActive === "blog")
+      link(rel='stylesheet', href='./css/blog.css')
+
+
+    link(rel='stylesheet', href='./css/main.css')
 
 
 
-	body(class="page " + pageClass)
-		.page__wrapper
-			include modules/_header
-
-			main.page__content
-				block content
-
-			include modules/_footer
-
-			if (pageActive === "consolidation")
-				include modules/_consolidations-popup
 
 
-		block scripts
-			script(src='./js/libs/jquery.js')
-			script(src='./js/libs/lazysizes.js')
-			if (pageClass === "homepage")
-				script(src='./js/libs/slick.js')
-				script(src='./js/slider.js')
-			script(src='./js/main.js')
+  body(class="page " + pageClass)
+    .page__wrapper
+      include modules/_header
+
+      main.page__content
+        block content
+
+      include modules/_footer
+
+      if (pageActive === "consolidation")
+        include modules/_consolidations-popup
+
+
+    block scripts
+      script(src='./js/libs/jquery.js')
+      script(src='./js/libs/lazysizes.js')
+      if (pageClass === "homepage")
+        script(src='./js/libs/slick.js')
+        script(src='./js/slider.js')
+
+      if (pageActive === "consolidation")
+        script(src='./js/libs/popper.js')
+        script(src='./js/libs/tippy-bundle.umd.js')
+
+      script(src='./js/main.js')
 
