@@ -815,15 +815,15 @@ div{
       }
     }
 
-    &--top-block-another{
-      @include from-1100 {
-        padding-top: 55px;
-      }
-
-      @include for-680{
-        padding-top: 12px;
-      }
-    }
+    //&--top-block-another{
+    //  @include from-1100 {
+    //    padding-top: 55px;
+    //  }
+    //
+    //  @include for-680{
+    //    padding-top: 12px;
+    //  }
+    //}
   }
 
   &__title{
