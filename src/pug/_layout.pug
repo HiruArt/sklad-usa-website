@@ -52,6 +52,11 @@ html(lang="uk")
 				block content
 
 			include modules/_footer
+
+			if (pageActive === "consolidation")
+				include modules/_consolidations-popup
+
+
 		block scripts
 			script(src='./js/libs/jquery.js')
 			script(src='./js/libs/lazysizes.js')
