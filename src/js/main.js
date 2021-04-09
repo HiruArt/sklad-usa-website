@@ -98,10 +98,9 @@ $(document).ready(function () {
       },
       theme: 'custom',
       allowHTML: true,
-      trigger: 'click',
+      // trigger: 'click',
       maxWidth: 320,
       role: 'tooltip',
-
     });
   }
 

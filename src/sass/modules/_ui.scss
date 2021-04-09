@@ -63,6 +63,12 @@
   max-width: 100% !important ;
 }
 
+.mw-320{
+  @include from-680 {
+    max-width: 320px;
+  }
+}
+
 .mw-350{
   @include from-680 {
     max-width: 350px;
@@ -257,8 +263,8 @@ body .mb-12px{
   width: fit-content;
 
   @include from-1400{
-    padding-left: 26px;
-    padding-right: 26px;
+    //padding-left: 26px;
+    //padding-right: 26px;
   }
 
   @include from-1100 {
@@ -491,6 +497,78 @@ p{
     line-height: 21px;
     color: $grey;
   }
+}
+
+
+
+.coop-case{
+  background: $white;
+  box-shadow: 0px 4px 30px #E2D8CB;
+  border-radius: 14px;
+  padding: 32px 40px ;
+  display: flex;
+  flex-direction: column;
+
+  @include for-800{
+    padding: 24px;
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: $grey;
+    margin-bottom: 16px;
+    padding-bottom: 15px;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $brown;
+      opacity: 0.2;
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  &__txt{
+    font-size: 16px;
+    line-height: 141.19%;
+    color: $grey;
+
+    p{
+      margin: 0!important;
+    }
+  }
+
+  &__btn{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__btn-i{
+    margin-right: 24px;
+
+    > a {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    @include for-680{
+      margin-right: 15px;
+    }
+
+    &:last-child{
+      margin-right: 0;
+
+    }
+  }
+
 }
 
 .price-case{
@@ -776,6 +854,12 @@ p{
     border-radius: 11px;
     margin-bottom: 12px;
 
+    @include for-680{
+      min-height: auto;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
     &:before{
       content: '';
       position: absolute;
@@ -786,6 +870,13 @@ p{
       background: url("../../img/ico/arrow-black-up.svg") center/contain no-repeat;
       z-index: 2;
       transform: rotate(180deg);
+
+      @include for-680{
+        width: 11px;
+        height: 5px;
+        top: 23px;
+        right: 16px;
+      }
     }
 
     &.open{
@@ -811,6 +902,13 @@ p{
     padding-right: 48px;
     cursor: pointer;
 
+    @include for-680{
+      font-size: 14px;
+      line-height: 16px;
+      padding-left: 16px;
+      padding-right: 30px!important;
+    }
+
     &:after{
       content: '';
       position: absolute;
@@ -820,6 +918,11 @@ p{
       height: 50px;
       cursor: pointer;
       z-index: 3;
+
+      @include for-680{
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -829,8 +932,24 @@ p{
     padding-right: 24px;
     display: none;
 
+    @include from-1100{
+      padding-right: 60px;
+    }
+
+    @include for-680{
+      font-size: 14px;
+      line-height: 141.19%;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
     p{
       margin: 0;
+
+      @include for-680{
+        font-size: 14px;
+        line-height: 141.19%;
+      }
     }
   }
 
@@ -859,6 +978,13 @@ ul.site-ul{
 }
 
 
+.site-tooltip-btn{
+  width: 12px;
+  height: 12px;
+  background: url("../../img/ico/tooltip-ico.svg") center/contain no-repeat;
+}
+
+
 .tippy-box[data-theme~='custom'] {
 
 
@@ -870,12 +996,27 @@ ul.site-ul{
   }
 
   .tippy-arrow{
-    background: red;
     color: transparent;
     bottom: -15px;
+    background: transparent!important;
+    z-index: 1;
 
     &:before{
       display: none;
+    }
+
+    &:after{
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: white;
+      position: absolute;
+      top: -10px;
+      left: -1px;
+      border-radius: 0 1px 6px 1px;
+      transform: rotate(45deg);
+      z-index: 10;
+      box-shadow: 5px 5px 6px -3px rgba(0, 0, 0 , 0.2);
     }
   }
 
@@ -884,8 +1025,11 @@ ul.site-ul{
     border: 1px solid #F8F4EE;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
     padding: 16px;
-    transform: translateX(80px);
     border-radius: 14px;
+
+    @include from-680{
+      transform: translateX(80px);
+    }
   }
 
   p{

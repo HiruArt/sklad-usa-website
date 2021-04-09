@@ -1,2 +1,137 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
+
+.consolidation .page__wrapper{
+  background-image: url("../img/background-img-fbm-fulfilment.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-fbm-fulfilment1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+
+  @include for-1100{
+    background-image: url("../img/background-img-fbm-fulfilment1100.svg");
+    background-size: auto;
+    background-position: center 2%;
+  }
+}
+
+.consolidation .numbered-tiles__inner{
+  padding-bottom: 24px!important;
+
+  @include for-680{
+    padding-bottom: 50px!important;
+  }
+}
+
+
+.cooperation{
+
+  &__inner{
+
+  }
+
+  &__content{
+
+  }
+
+  &__title{
+    margin-bottom: 40px;
+  }
+
+  &__case{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__case-item{
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+
+    @include for-800{
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__case-content{
+
+  }
+
+}
+
+
+
+.bonus{
+  &__inner{
+
+  }
+
+  &__content{
+    ul.site-ul{
+      @include from-1100{
+        max-width: 442px;
+      }
+
+      li{
+        padding-left: 12px;
+      }
+    }
+
+    @include for-1100{
+      width: 50%;
+    }
+
+    @include for-680{
+      width: 100%;
+    }
+  }
+
+  &__title{
+
+  }
+
+  &__media{
+
+
+    @include for-1100{
+      width: 50%;
+    }
+
+    @include for-680{
+      width: 100%;
+    }
+  }
+
+  &__media-img{
+
+    @include from-1100{
+      transform: translate(-11px, 21px);
+    }
+
+    @include for-1100{
+
+      img{
+        width: 100%;
+      }
+    }
+
+
+  }
+
+}
