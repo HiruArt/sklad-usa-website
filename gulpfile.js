@@ -81,6 +81,8 @@ gulp.task('js-libs', () => {
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/lazysizes/lazysizes.js',
       'node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js',
+      'node_modules/@popperjs/core/dist/umd/popper.js',
+      'node_modules/tippy.js/dist/tippy-bundle.umd.js',
     ])
     .pipe(gulp.dest('dist/js/libs/'))
     .pipe(uglify())

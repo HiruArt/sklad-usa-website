@@ -89,6 +89,22 @@ $(document).ready(function () {
     });
   }
 
+  if($('.js__tooltip').length > 0){
+    tippy('.js__tooltip', {
+      content(reference) {
+        const id = reference.getAttribute('data-template');
+        const template = document.getElementById(id);
+        return template.innerHTML;
+      },
+      theme: 'custom',
+      allowHTML: true,
+      trigger: 'click',
+      maxWidth: 320,
+      role: 'tooltip',
+
+    });
+  }
+
   /*popups start*/
   $(document).on('click', '[data-modal-class]', function (e) {
     e.preventDefault();

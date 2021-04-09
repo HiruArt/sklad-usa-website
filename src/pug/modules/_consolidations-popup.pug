@@ -3,4 +3,52 @@
     .popup__inner
       .popup__close
         .popup__close-ico
-      .popup__content.order-detail__content
+      .popup__content
+        .popup__title Консолiдацiя
+        p Консолідація замовлень / товарів в Україні і відправка на склад в Міннесоту з подальшою доставкою покупцеві місцевою поштою
+
+        .popup__subtitle Умови вiдправлення
+        ul.site-ul
+          li До вартості консолідації додається вартість доставки кожного замовлення зі складу до отримувача
+          li Якщо у вас достатньо вантажу для того, щоб сформувати власну посилку, ви можете зробити відправку зі свого міста, не висилаючи товар на транзитний склад у Києві
+          li Відправки консолідації кожного дня!
+
+        .popup__subtitle Цiни
+        .popup__list.popup__list--two
+          .popup__item
+            .popup__item-ico
+              include ../../img/ico/logo-dhl.svg
+            .popup__item-content
+              .popup__subtitle DHL (США)
+              p Крок ціноутворення — 250 г
+              p 1 кг — $7.5
+          .popup__item
+            .popup__item-ico
+              include ../../img/ico/logo-fedex.svg
+            .popup__item-content
+              .popup__subtitle FedEx (США)
+              p Крок ціноутворення — 200 г
+              p 1 кг — $5
+          .popup__item
+            .popup__item-ico
+              include ../../img/ico/logo-dhl.svg
+            .popup__item-content
+              .popup__subtitle DHL (Англiя)
+              p Крок ціноутворення — 250 г
+              p 1 кг — $7.5
+          .popup__item
+            .popup__item-ico
+              include ../../img/ico/logo-dhl.svg
+            .popup__item-content
+              .popup__subtitle DHL (Європа)
+                span.js__tooltip(data-template="dhl-eu-tooltip") 123123
+              p Крок ціноутворення — 250 г
+              p 1 кг — $7.5
+
+
+.d-none
+  div#dhl-eu-tooltip
+    .site-tooltip
+      p
+        b Вiдправлення у наступнi країни
+      p Нiмеччина, Францiя, Iспанiя, Бельгiя, Нiдерланди, Португалiя, Iталiя, Румунiя, Данiя, Угорщина, Словенiя, ХорватIя, Чехiя, Словаччина, Естонiя, Латвiя, Австрiя, Швецiя, Грецiя, Фiнляндiя, Джерсi.

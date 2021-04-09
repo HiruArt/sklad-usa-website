@@ -51,6 +51,10 @@
   }
 }
 
+.d-none{
+  display: none;
+}
+
 .w-100{
   width: 100% !important;
 }
@@ -853,3 +857,44 @@ ul.site-ul{
   }
 
 }
+
+
+.tippy-box[data-theme~='custom'] {
+
+
+  background: transparent;
+
+
+  .tippy-content{
+    padding: 0;
+  }
+
+  .tippy-arrow{
+    background: red;
+    color: transparent;
+    bottom: -15px;
+
+    &:before{
+      display: none;
+    }
+  }
+
+  .site-tooltip{
+    background-color: white;
+    border: 1px solid #F8F4EE;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    transform: translateX(80px);
+    border-radius: 14px;
+  }
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: $brown;
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+}
+
