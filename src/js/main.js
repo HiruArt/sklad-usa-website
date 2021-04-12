@@ -40,6 +40,14 @@ $(document).ready(function () {
     $('.mobile-menu').slideToggle();
   });
 
+  $('.article-not-useful-form input[type="checkbox"]').click(function () {
+    if($(this).prop('checked') && $(this).hasClass('other-reason')) {
+      $('.other-reason-input').removeClass('inactive')
+    } else if(!$(this).prop('checked') && $(this).hasClass('other-reason')){
+      $('.other-reason-input').addClass('inactive')
+    }
+  });
+
 
   if($(window).width() > 1200) {
     let scrollDown;

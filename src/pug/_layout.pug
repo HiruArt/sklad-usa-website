@@ -41,6 +41,9 @@ html(lang="uk")
       link(rel='stylesheet', href='./css/blog.css')
 
     if (pageActive === "blog-item")
+      link(rel='stylesheet', href='./css/libs/slick.css')
+      link(rel='stylesheet', href='./css/slider.css')
+      link(rel='stylesheet', href='./css/blog.css')
       link(rel='stylesheet', href='./css/blog-item.css')
 
     if (pageActive === "contacts")
@@ -66,11 +69,13 @@ html(lang="uk")
         include modules/_consolidations-popup
         include modules/_simplified-consolidation-popup.pug
 
+      if (pageActive === "blog-item")
+        include modules/_article-not-useful-popup.pug
 
     block scripts
       script(src='./js/libs/jquery.js')
       script(src='./js/libs/lazysizes.js')
-      if (pageClass === "homepage")
+      if (pageClass === "homepage" || pageActive === "blog-item")
         script(src='./js/libs/slick.js')
         script(src='./js/slider.js')
 

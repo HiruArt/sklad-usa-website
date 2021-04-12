@@ -30,8 +30,10 @@ block content
             figcaption Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis
 
           h2 h2 Nullam bibendum sapien ac dolor euismod tempor. Phasellus et nisl id nunc porttitor suscipit sed non mauris
-          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.
           p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
+
+          .blog-item-box.blog-item-image-bg
 
           h3 h3 Curabitur sed ante sed ligula varius euismod:
 
@@ -47,7 +49,7 @@ block content
             figcaption CEO at Yalantis
 
           h2 Nullam bibendum sapien ac dolor euismod tempor. Phasellus et nisl id nunc porttitor suscipit sed non mauris
-          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.
           p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
 
           ul
@@ -56,7 +58,9 @@ block content
             li sed ante sed ligula varius euismod;
             li purabitur sed ante sed ligula varius euismod.
 
-          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.   
+          .blog-item-telega.blog-item-image-bg
+
+          p Curabitur sed ante sed ligula varius euismod. Duis nec libero vehicula, gravida erat ac, placerat neque. Morbi ante turpis, vehicula finibus ipsum quis, commodo commodo tortor. Quisque sollicitudin nec neque et vehicula. Morbi id dolor odio. Phasellus at dignissim tellus, a semper purus.
           p Curabitur sodales tellus sed enim fringilla feugiat. Curabitur pulvinar, neque quis placerat pretium, dui tellus ornare tortor, ut aliquam elit magna non velit. Vivamus commodo diam tellus, a tempor neque imperdiet non. Vestibulum sed vehicula augue. Integer pulvinar nibh lorem, a mollis augue condimentum vel. Curabitur bibendum vitae elit sed mollis. Mauris dapibus nisl in ante venenatis, vitae tristique elit viverra. Phasellus at tristique nisi. Curabitur pulvinar, urna in mollis maximus, tellus eros fermentum leo, a cursus dui enim non odio. Nunc ultrices nisi et lacus porta, vel pulvinar tellus varius.
 
         .blog-article__share
@@ -71,4 +75,61 @@ block content
           .blog-article__useful-title Чи була стаття корисною для вас?
           .blog-article__useful-btns
             a(href='#').blog-article__useful-btn Так, корисна
-            a(href='#').blog-article__useful-btn Нi, не корисна
+            a(href='#' data-modal-class="article-not-useful-popup").blog-article__useful-btn Нi, не корисна
+
+
+    .other-article-title
+      .site-container
+        .grid-padding
+          .site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            .site-title__designation Блог
+            .site-title__large
+              | Вам також може бути&nbsp; <br>
+              span корисними наступнi статтi
+
+    .other-article
+      .site-container
+        .other-article__items
+          .other-article__item.blog-list__item
+            .blog-list__item-content
+              a(href="./blog-item.html").blog-list__image
+                img(src='./img/blog/blog-4.webp' alt='img')
+              .blog-list__item-text
+                .blog-list__date 23 Aug, 2020
+                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
+                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
+          .other-article__item.blog-list__item
+            .blog-list__item-content
+              a(href="./blog-item.html").blog-list__image
+                img(src='./img/blog/blog-4.webp' alt='img')
+              .blog-list__item-text
+                .blog-list__date 23 Aug, 2020
+                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
+                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
+          .other-article__item.blog-list__item
+            .blog-list__item-content
+              a(href="./blog-item.html").blog-list__image
+                img(src='./img/blog/blog-4.webp' alt='img')
+              .blog-list__item-text
+                .blog-list__date 23 Aug, 2020
+                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
+                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
+          .other-article__item.blog-list__item
+            .blog-list__item-content
+              a(href="./blog-item.html").blog-list__image
+                img(src='./img/blog/blog-4.webp' alt='img')
+              .blog-list__item-text
+                .blog-list__date 23 Aug, 2020
+                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
+                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
+          .other-article__item.blog-list__item
+            .blog-list__item-content
+              a(href="./blog-item.html").blog-list__image
+                img(src='./img/blog/blog-4.webp' alt='img')
+              .blog-list__item-text
+                .blog-list__date 23 Aug, 2020
+                a(href="#").blog-list__title Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi?
+                .blog-list__desc Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо...
+
