@@ -35,4 +35,39 @@ $(document).ready(function(){
     });
   }
 
+  if($('.other-article__items').length > 0) {
+    $('.other-article__items').slick({
+      infinite: true,
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      speed: 500,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+
+      ]
+    });
+  }
+
 });

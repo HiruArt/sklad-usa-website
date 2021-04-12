@@ -1969,3 +1969,53 @@ input, textarea {
 }
 
 
+.form-checkbox{
+  margin-bottom: 15px;
+
+  input{
+    display: none;
+
+    & + label{
+      &:before{
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        opacity: 0.4;
+        border: 1px solid #8F7A61;
+        margin-right: 12px;
+      }
+    }
+
+    &:checked + label:before{
+      border: 1px solid #8F7A61;
+      opacity: 1;
+      background: #8F7A61 url("../img/check.svg") center center no-repeat;
+    }
+  }
+
+  label{
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+}
+
+.form-input{
+  input{
+    border: 1px solid #BBAD9C;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 16px 13px;
+    background: transparent;
+
+    &::placeholder{
+      font-size: 14px;
+      line-height: 16px;
+      color: #BBAD9C;
+    }
+  }
+}
+
