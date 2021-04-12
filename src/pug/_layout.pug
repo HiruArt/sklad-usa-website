@@ -38,6 +38,8 @@ html(lang="uk")
       link(rel='stylesheet', href='./css/consolidation.css')
 
     if (pageActive === "express-order")
+      link(rel='stylesheet', href='./css/libs/slick.css')
+      link(rel='stylesheet', href='./css/slider.css')
       link(rel='stylesheet', href='./css/express-order.css')
 
     if (pageActive === "blog")
@@ -66,17 +68,24 @@ html(lang="uk")
         include modules/_consolidations-popup
         include modules/_simplified-consolidation-popup.pug
 
+      if (pageActive === "express-order")
+        include modules/_express-order-popup
+
 
     block scripts
       script(src='./js/libs/jquery.js')
       script(src='./js/libs/lazysizes.js')
-      if (pageClass === "homepage")
+      if (pageActive === "homepage")
         script(src='./js/libs/slick.js')
         script(src='./js/slider.js')
 
       if (pageActive === "consolidation")
         script(src='./js/libs/popper.js')
         script(src='./js/libs/tippy-bundle.umd.js')
+
+      if (pageActive === "express-order")
+        script(src='./js/libs/slick.js')
+        script(src='./js/slider.js')
 
       script(src='./js/main.js')
 

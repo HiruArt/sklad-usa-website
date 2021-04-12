@@ -186,4 +186,31 @@
     line-height: 16px;
   }
 
+
+  &__accordion{
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &.accordion__head{
+    font-weight: bold;
+    font-size: 18px;
+    //line-height: 21px;
+    color: $grey;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+  }
+
+  .accordion__head-ico{
+    height: 25px;
+    width: 70px;
+    margin-right: 10px;
+
+    svg{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
 }
