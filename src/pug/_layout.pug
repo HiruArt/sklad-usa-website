@@ -43,6 +43,9 @@ html(lang="uk")
     if (pageActive === "blog-item")
       link(rel='stylesheet', href='./css/blog-item.css')
 
+    if (pageActive === "contacts")
+      link(rel='stylesheet', href='./css/contacts.css')
+
 
     link(rel='stylesheet', href='./css/main.css')
 
@@ -75,5 +78,11 @@ html(lang="uk")
         script(src='./js/libs/popper.js')
         script(src='./js/libs/tippy-bundle.umd.js')
 
-      script(src='./js/main.js')
+      if (pageActive === "contacts")
+        script(src='./js/libs/slick.js')
+        script(src='./js/slider.js')
+
+
+
+  script(src='./js/main.js')
 

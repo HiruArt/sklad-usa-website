@@ -122,5 +122,21 @@ $(document).ready(function () {
   });
   /*popups end*/
 
+
+  //contacts tabs
+
+  $('.address__tab:first-child').addClass('__active');
+  $('.address__tabs-items').hide();
+  $('.address__tabs-items:first').show();
+
+  $('.address__tab').on('click', function(e) {
+    e.preventDefault();
+    $('.address__tab').removeClass('__active')
+    $(this).addClass('__active')
+    $('.address__tabs-items').hide();
+    let activeTab = $(this).find('a').attr('href');
+    $(activeTab).fadeIn();
+  })
+
 });
 

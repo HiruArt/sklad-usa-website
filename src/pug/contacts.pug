@@ -1,0 +1,341 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Contacts";
+  - var pageClass = "contacts";
+  - var pageActive = "contacts";
+
+
+block content
+  div.main-wrap
+
+    .capital.consol-page
+      .capital__inner.site-container.site-container--section
+        .capital__content.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large
+              span Ми завжди раді
+              |<br> вас бачити та чути
+            .capital__contact-phone
+              a(href="#")
+                span 0 (800) 21 7096
+            .capital__contact-email
+              a(href="#")
+                span support@skladusa.com
+            .capital__contact-socaial
+              .socail-item.facebook
+                img(src="./img/ico/fb.svg")
+              .socail-item.instagram
+                img(src="./img/ico/instagram.svg")
+              .socail-item.apple
+                img(src="./img/ico/apple.svg")
+        .capital__media.address__media
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/illustration.svg" alt="img" ).lazyload
+
+
+    .address.site-container
+        .grid-padding
+          .address__inner
+            .address__head
+              .address__tabs
+                .address__tab
+                  a.address__tab-btn(href='#ukrainian')
+                    span Україна
+                .address__tab
+                  a.address__tab-btn(href='#belarus')
+                    span Білорусь
+                .address__tab
+                  a.address__tab-btn(href='#usa')
+                    span США
+
+            .address__content
+              .address__tab-content
+                ul.address__tab-content-list
+                  li#ukrainian.address__tabs-items
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Києві
+                        .address__tab-item--decription-address
+                          p вул. Закревського 24E
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Дніпрі
+                        .address__tab-item--decription-address
+                          p пр. Гагаріна 82
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Львові
+                        .address__tab-item--decription-address
+                          p Богдана Хмельницького, 20
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс в Одесі
+                        .address__tab-item--decription-address
+                          p вул. Мала Арнаутська, 119
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Харкові
+                        .address__tab-item--decription-address
+                          p пр. Московський, 38/2
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+                  li#belarus.address__tabs-items
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Мінську
+                        .address__tab-item--decription-address
+                          p вул. Закревського 24E
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Дніпрі
+                        .address__tab-item--decription-address
+                          p пр. Гагаріна 82
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Львові
+                        .address__tab-item--decription-address
+                          p Богдана Хмельницького, 20
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс в Одесі
+                        .address__tab-item--decription-address
+                          p вул. Мала Арнаутська, 119
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Харкові
+                        .address__tab-item--decription-address
+                          p пр. Московський, 38/2
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+                  li#usa.address__tabs-items
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Сіетлі
+                        .address__tab-item--decription-address
+                          p вул. Закревського 24E
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Дніпрі
+                        .address__tab-item--decription-address
+                          p пр. Гагаріна 82
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Львові
+                        .address__tab-item--decription-address
+                          p Богдана Хмельницького, 20
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс в Одесі
+                        .address__tab-item--decription-address
+                          p вул. Мала Арнаутська, 119
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
+
+                    .address__tab-item
+                      .address__tab-item--img
+                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
+                      .address__tab-item--decription
+                        .address__tab-item--decription-title
+                          h2 Офіс у Харкові
+                        .address__tab-item--decription-address
+                          p пр. Московський, 38/2
+                        .address__tab-item--decription-worktime
+                            p Години роботи:
+                            p пн-пт: 9:00-18:00
+                            p нд 11:00-16:00
+                        .address__tab-item--decription-phone
+                          a(href='#')
+                            span +38 (096) 186-29-86
+                        .address__tab-item--decription-map
+                          a(href="#")
+                            span Як дістатисятися
