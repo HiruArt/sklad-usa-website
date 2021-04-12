@@ -1,0 +1,37 @@
+.popup.article-not-useful-popup
+  .popup__body
+    .popup__inner
+      .popup__close
+        .popup__close-ico
+      .popup__content
+        .popup__title Чому стаття не корисна?
+        p Дякую, що подiлилися своєю думкою. Будь-ласка, повiдомте чому, можливо ми зможемо покращити цей матерiал.
+
+        .popup__subtitle Стаття не корисна, бо:
+
+        .form-popup.article-not-useful-form
+          form(action='#qweq')
+            .form-checkbox
+              input(type='checkbox' id='check1')
+              label(for='check1') потрібно більше інформації;
+            .form-checkbox
+              input(type='checkbox' id='check2')
+              label(for='check2') cкладно зрозуміти;
+            .form-checkbox
+              input(type='checkbox' id='check3')
+              label(for='check3') неточний або невідповідний вміст;
+            .form-checkbox
+              input(type='checkbox' id='check4')
+              label(for='check4') посилання відсутнє або недійсне;
+            .form-checkbox
+              input(type='checkbox' id='check5').other-reason
+              label(for='check5') iнша причина
+
+            .form-input
+              input(type='text' placeholder='Введiть причину').other-reason-input.inactive
+
+            a(href="javascript:void(0)" onclick='$(this).next().click()').site-btn
+              span Вiдправити
+            input(type='submit' style='display: none;')
+
+
