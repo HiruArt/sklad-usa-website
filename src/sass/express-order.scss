@@ -1,0 +1,192 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+
+
+.express-order .page__wrapper{
+  background-image: url("../img/background-img-consolidation.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-consolidation1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+
+  @include for-1100{
+    background-image: url("../img/background-img-consolidation1100.svg");
+    background-size: auto;
+    background-position: center 2%;
+  }
+}
+
+.express-order .capital__media-img{
+  margin-bottom: -46px!important;
+}
+
+
+
+.cooperation{
+  overflow: hidden;
+  position: relative;
+
+  &__inner{
+    position: relative;
+
+    &.site-container--section {
+      @include from-1100 {
+        padding-top: 60px;
+      }
+    }
+  }
+
+  &__content{
+
+  }
+
+  &__title{
+
+  }
+
+  &__slider-wrap{
+
+  }
+
+  &__slider{
+    position: relative;
+    min-height: 277px;
+
+    @include for-1400{
+      min-height: 320px;
+    }
+
+    .slick-list{
+      overflow: initial!important;
+    }
+  }
+
+  &__slider-inner{
+    padding-left: 90px;
+
+    width: calc(100vw - 30%);
+
+    @include for-1600{
+      width: calc(100vw - 10%);
+    }
+
+    @include for-1400{
+      width: 100vw;
+    }
+
+
+    @include for-1400{
+      padding-left: 0;
+    }
+
+    @include from-1100 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      padding-right: 25%;
+    }
+
+    @include for-550{
+      padding: 0;
+    }
+  }
+
+  &__slider-main{
+    width: calc(100vw - 20%);
+    padding-right: 20%;
+
+    @include for-1600{
+      width: calc(100vw - 10%);
+      padding-right: 25%;
+    }
+
+    @include for-1400{
+      width: 100vw ;
+      padding-right: 0;
+    }
+
+
+    @include for-1100{
+      margin: 0 -15px;
+    }
+
+    @include from-680{
+      overflow: hidden;
+    }
+  }
+
+  &__item{
+    padding: 0 15px;
+
+    @include for-1100{
+      padding: 0 15px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__item-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 32px;
+    background: $white;
+    box-shadow: 0px 4px 14px #e2d8cb!important;
+    border-radius: 14px;
+    min-height: 237px;
+
+    @include for-1400{
+      padding: 18px 24px;
+      min-height: 266px;
+    }
+
+    @include for-680{
+
+      p{
+
+        b{
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+  }
+
+  &__txt, p{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+
+  &__name{
+    margin-top: 24px;
+    font-weight: bold;
+  }
+
+
+  &__detail-more{
+    @include for-1100{
+      margin-bottom: 24px;
+    }
+  }
+
+}

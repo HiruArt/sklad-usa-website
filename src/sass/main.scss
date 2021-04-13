@@ -1666,6 +1666,24 @@ input, textarea {
     }
   }
 
+
+  /**************************/
+
+  &.express-delivery &__inner {
+    @include from-1100 {
+      padding-top: 80px;
+    }
+  }
+  &.express-delivery &__media{
+    padding-top: 0;
+  }
+  &.express-delivery &__media-img {
+
+    @include from-1100 {
+      transform: translateX(36px) translateY(100px);
+    }
+  }
+
   /**************************/
 
 }

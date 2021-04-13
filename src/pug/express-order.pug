@@ -1,0 +1,175 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Express order";
+  - var pageClass = "express-order";
+  - var pageActive = "express-order";
+  - var pageSection = "services";
+  - var pageName = "Eкспрес замовлення";
+
+
+block content
+  div.main-wrap
+    include ./modules/_breadcrumbs
+
+    .capital.consol-page
+      .capital__inner.site-container.site-container--section
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large
+              span Швидкi та зручнi &nbsp;<br>
+              | доставки в США
+          .mw-415
+            p Ми беремо будь-якi проблеми, пов’язанi з пересиланням товару в іншу країну, його персональною розсилкою замовникам. Ви витрачаєте цей час на бiльш важливi чи приємнi речi
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-link.site-link--desktop
+                span Детальнiше про нас
+              a(href="#").site-link.site-link--mobile
+                span Про нас
+        .capital__media.rhombus
+          .capital__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/express-on-hero.svg" alt="img" width="636" height="636").lazyload
+
+
+    .cascade
+      .cascade__inner.site-container.site-container--section.double-block
+        .cascade__content.grid-padding.left-block
+          .cascade__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-crown.svg
+            .site-title__designation Переваги
+            .site-title__large Дiлимося&nbsp;<br> найкращим&nbsp;
+              span про експрес доставку
+
+            p.mw-350 Нашим клієнтам доступна послуга експрес доставки замовлення безпосередньо до покупця. Така послуга забезпечить максимальну швидкість доставки за оптимальною ціною!​
+
+        .cascade__content.right-block.grid-padding
+          .cascade__list
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Максимальна орієнтація на клієнта
+                p Ми надамо вам саме ті послуги, в яких ви потребуєте в рамках вашої комерційної діяльності.
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Зручна система оплати
+                p Ви можете відкрити рахунок в системі SkladUSA, проводячи швидкі платежі при невисоких комісіях;
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Формування замовлення з транзакції в один клік
+                p Замість повного заповнення форми заявки на кожного клієнта
+            .cascade__item
+              .cascade__item-content.site-case
+                .site-case__name Завжди вчасно
+                p Відправки здійснюються швидко і з суворим дотриманням термінів. Ви не підведете своїх замовників.
+
+
+    .l-media-r-info.express-delivery
+      .l-media-r-info__inner.site-container.site-container--section.double-block
+        .l-media-r-info__media.left-block.left-media
+          .l-media-r-info__media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/our-warehouses-img.svg" alt="image" width="491").lazyload
+
+        .l-media-r-info__content.grid-padding.right-block
+          .l-media-r-info__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-advant-consol.svg
+            .site-title__designation Умови Експрес доставки
+            .site-title__large Користуйтеся&nbsp;
+              span кращiми способами доставки
+          .mw-462
+            p Ми працюємо для того, щоб ви отримували максимальну якiсть послуг та широкий їх спектр, саме тому:
+            ul.site-ul
+              li.mb-16px Послуга доступна всім нашим клієнтам
+              li.mb-16px Відправлення вiдбувається кожного дня
+              li.mb-16px Відправлення, що надходять у відділення Нової пошти до 11 години, відправляються того ж дня
+              li.mb-16px Для розрахунку вартості пересилання береться більша вага - фактична або об'ємна. Розрахунок об'ємної ваги здійснюється за формулою: Ш х В х Д / 5000
+
+
+
+    .cooperation
+      .cooperation__inner.site-container.site-container--section
+        .cooperation__content.grid-padding
+          .cooperation__title.site-title.mw-100
+            .site-title__ico.shadow
+              include ../img/site-title-cooperation.svg
+            .site-title__designation Варiацiї спiвпрацi
+            .site-title__large
+              span Відправлення одразу&nbsp;
+              | до<br> покупця від 3 днів
+
+          .cooperation__detail-more
+            a(href="javascript:void(0)" data-modal-class="express-order-popup").cooperation__detail-more.site-link.brown Детальнiше
+
+        .cooperation__slider
+          .cooperation__slider-inner
+            .cooperation__slider-main.js_cooperation__slider
+              .cooperation__item
+                .cooperation__item-content.coop-case
+                  .coop-case__title
+                    .coop-case__title-ico
+                      include ../img/tab-dhl.svg
+                  .coop-case__txt
+                    p Вiдправляє замовлення вагою вiд 500 грамiв по всьому свiту: Америка, країни Европи та Австралiї.
+                  .coop-case__row
+                    .coop-case__col
+                      p
+                        b Европа
+                      p Вiд $25
+                    .coop-case__col
+                      p
+                        b США, Канада
+                      p Вiд $32
+                    .coop-case__col
+                      p
+                        b Австралiя
+                      p Вiд $40
+              .cooperation__item
+                .cooperation__item-content.coop-case
+                  .coop-case__title
+                    .coop-case__title-ico
+                      include ../img/tab-tnt.svg
+                  .coop-case__txt
+                    p Здiйснює вiдправлення вагою вiд 500 грамiв по вciх континентах за найнижчою цiною.
+                  .coop-case__row
+                    .coop-case__col
+                      p
+                        b Европа
+                      p Вiд $17
+                    .coop-case__col
+                      p
+                        b США, Канада
+                      p Вiд $19
+                    .coop-case__col
+                      p
+                        b Австралiя
+                      p Вiд $23
+              .cooperation__item
+                .cooperation__item-content.coop-case
+                  .coop-case__title
+                    .coop-case__title-ico
+                      include ../img/tab-fedex.svg
+                  .coop-case__txt
+                    p Здiйснює вiдправлення вагою вiд 500 грамiв по вciх континентах за найнижчою цiною.
+                  .coop-case__row
+                    .coop-case__col
+                      p
+                        b Европа
+                      p Вiд $20
+                    .coop-case__col
+                      p
+                        b США, Канада
+                      p Вiд $19
+                    .coop-case__col
+                      p
+                        b Австралiя
+                      p Вiд $23
+
+    include ./modules/_all-services
+
+

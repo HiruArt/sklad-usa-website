@@ -2,9 +2,11 @@
   .breadcrumbs__inner.site-container
     .breadcrumbs__list
       .breadcrumbs__item
-        a(href="/").breadcrumbs__link Головна
+        span
+          a(href="/").breadcrumbs__link Головна
       if (pageSection === "services")
         .breadcrumbs__item
-          a(href="./" + (pageActive) + ".html").breadcrumbs__link Послуги
+          span
+            a(href="./" + (pageActive) + ".html").breadcrumbs__link Послуги
       .breadcrumbs__item
         span.breadcrumbs__link #{pageName}
