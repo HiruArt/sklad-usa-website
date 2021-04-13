@@ -1,221 +1,215 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
-
 //.contacts .page__wrapper{
-  //background-image: url("../../src/img/contact-bg.png");
-  //background-repeat: no-repeat;
-  //background-size: cover;
+//background-image: url("../../src/img/contact-bg.png");
+//background-repeat: no-repeat;
+//background-size: cover;
 //}
-
 .capital {
-  &__content,
-  &__media{
-    margin: 0 19px;
-  }
-  &__content{
-    margin-left: 0;
-
-  }
-  &__media{
-       margin-right: 0;
-  }
-  .address__media{
-    @include for-680{
-      display: none;
+    &__content,
+    &__media {
+        margin: 0 19px;
     }
-  }
-  &__contact-phone {
-    padding-bottom: 8px;
-
-    & a {
-      color: $brown;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.5;
+    &__content {
+        margin-left: 0;
     }
-  }
-
-  &__contact-email {
-    padding-bottom: 16px;
-
-    & a {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1;
+    &__media {
+        margin-right: 0;
     }
-  }
-
-  &__contact-socaial {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    & .socail-item {
-      margin: 0 6px;
+    .address__media {
+        @include for-680 {
+            display: none;
+        }
     }
-
-    .socail-item:nth-child(1) {
-      margin-left: 0;
+    &__contact-phone {
+        padding-bottom: 8px;
+        & a {
+            color: $brown;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.5;
+        }
     }
-
-    .socail-item:nth-child(3) {
-      margin-right: 0;
+    &__contact-email {
+        padding-bottom: 16px;
+        & a {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1;
+        }
     }
-  }
+    &__contact-socaial {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        & .socail-item {
+            margin: 0 6px;
+        }
+        .socail-item:nth-child(1) {
+            margin-left: 0;
+        }
+        .socail-item:nth-child(3) {
+            margin-right: 0;
+        }
+    }
 }
 
 .address {
-  &__tabs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 440px;
-    margin-bottom: 40px;
-    border-radius: 60px;
-    border: 1px solid rgba(143, 122, 97, 0.3);
-  }
-
-  &__tab {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 14px 40px;
-    width: 100%;
-    text-align: center;
-    border-radius: 60px;
-    background-color: transparent;
-    transition: all ease 0.8s;
-    &.__active {
-      a {
-        color: #fff;
-      }
-        background-color: $accent;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 440px;
+        margin-bottom: 40px;
+        border-radius: 60px;
+        border: 1px solid rgba(143, 122, 97, 0.3);
     }
-    & :hover{
-      cursor: pointer;
-      }
-
-    @include for-680{
-      padding: 14px 20px;
-    }
-    @include for-350{
-      padding: 14px 15px;
-    }
-    }
-  &__tabs-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @include for-1100{
-      justify-content: center;
-    }
-    @include for-680{
-      display: block;
-    }
-  }
-  &__tab-item{
-    display: flex;
-    margin: 16px;
-    width: 100%;
-    height: 100%;
-    max-width: 515px;
-    max-height: 260px;
-    background-color: $white;
-    box-shadow: 0px 4px 30px #E2D8CB;
-    border-radius: 14px;
-    overflow: hidden;
-
-    &:nth-child(odd){
-      margin-left: 0;
-    }
-    &:nth-child(even){
-      margin-right: 0;
-    }
-
-    &--img{
-      flex: 1 1 50%;
-      & img {
-        @include for-680 {
-          width: 100%;
-        }
-      }
-      }
-    &--decription{
-      flex: 1 1 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      padding: 24px;
-
-      //??????????????????????????????
-      & *{
-        margin: 0;
+    &__tab {
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: $grey;
-      }
-      //???????????????????????????????
-      &-title{
-        h2{
-          padding-bottom: 8px;
-          font-size: 24px;
-          font-weight: 700;
-          line-height: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 14px 40px;
+        width: 100%;
+        text-align: center;
+        border-radius: 60px;
+        background-color: transparent;
+        transition: all ease 0.8s;
+        &.__active {
+            a {
+                color: #fff;
+            }
+            background-color: $accent;
         }
-      }
-      &-address{
-        p{
-          padding-bottom: 12px;
-          line-height: 22px;
+        & :hover {
+            cursor: pointer;
         }
-      }
-      &-worktime{
-        padding-bottom: 12px;
-        p{
-          line-height: 22px;
+        @include for-680 {
+            padding: 14px 20px;
         }
-        & :nth-child(1){
-          font-weight: 700;
-          padding-bottom: 5px;
+        @include for-350 {
+            padding: 14px 15px;
         }
-      }
-      &-phone{
-        padding-bottom: 16px;
-        a span{
-          padding-bottom: 12px;
-          font-weight: 700;
-          line-height: 22px;
-        }
-      }
-      &-map{
-        a span {
-          color: $brown;
-          font-weight: 700;
-          text-decoration: underline;
-        }
-      }
     }
-
-    @include for-1100{
-      margin-left: 0;
-      margin-right: 0;
+    &__tabs-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include for-1100 {
+            justify-content: center;
+        }
+        @include for-680 {
+            display: block;
+        }
     }
-    @include for-680{
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      max-width: unset;
-      max-height: unset;
+    &__tab-item {
+        display: flex;
+        margin: 0 16px;
+        width: 100%;
+        height: 100%;
+        max-width: 515px;
+        max-height: 260px;
+        background-color: $white;
+        box-shadow: 0px 4px 30px #E2D8CB;
+        border-radius: 32px;
+        overflow: hidden;
+        &:nth-child(odd) {
+            margin-left: 0;
+        }
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+        &--img {
+            flex: 1 1 50%;
+            & img {
+                @include for-680 {
+                    width: 100%;
+                }
+            }
+        }
+        &--decription {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 24px;
+            //??????????????????????????????
+            & * {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: $grey;
+            }
+            //???????????????????????????????
+            &-title {
+                h2 {
+                    padding-bottom: 8px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+            }
+            &-address {
+                p {
+                    padding-bottom: 12px;
+                    line-height: 22px;
+                }
+            }
+            &-worktime {
+                padding-bottom: 12px;
+                p {
+                    line-height: 22px;
+                }
+                & :nth-child(1) {
+                    font-weight: 700;
+                    padding-bottom: 5px;
+                }
+            }
+            &-phone {
+                padding-bottom: 16px;
+                a span {
+                    padding-bottom: 12px;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+            }
+            &-map {
+                a span {
+                    color: $brown;
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+        }
+        @include for-1100 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @include for-680 {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            max-width: unset;
+            max-height: unset;
+        }
     }
-  }
 }
 
-
+// //////////////////////////?????????????????????????????????????????????????
 .slick-track {
-  display: flex;
+    display: flex;
+}
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
 }
