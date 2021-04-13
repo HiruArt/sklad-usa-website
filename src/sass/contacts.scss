@@ -299,6 +299,10 @@
       max-height: unset;
     }
   }
+
+  &__content{
+    margin-bottom: -8px;
+  }
 }
 
 .contacts .slick-slider {
