@@ -562,10 +562,14 @@ input, textarea {
       &:after{
         display: none;
       }
+
+      span{
+        opacity: .5;
+      }
     }
 
     span{
-      opacity: .5;
+      //opacity: .5;
     }
   }
 
@@ -1064,6 +1068,38 @@ input, textarea {
   &.consol-page &__media-img{
     @include for-680{
       transform: translate(15px, 26px);
+    }
+  }
+
+
+  /**************************/
+
+  &.about-block .site-container--section{
+    @include for-680 {
+
+    }
+  }
+
+  &.about-block &__media-img{
+    @include from-1200{
+
+    }
+
+    @include for-680{
+
+    }
+
+    img{
+      @include from-1100{
+        width: 540px;
+      }
+    }
+  }
+
+
+  &.about-block &__media {
+    @include for-680{
+      height: 390px;
     }
   }
 

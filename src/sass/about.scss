@@ -1,0 +1,15 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+
+.benefit-about{
+  &__content{
+    position: relative;
+  }
+
+  &__media{
+    position: absolute;
+    left: 0;
+    top: -65px;
+  }
+}

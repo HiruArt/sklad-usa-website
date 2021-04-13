@@ -99,6 +99,12 @@
   }
 }
 
+.mw-800{
+  @include from-680 {
+    max-width: 800px!important;
+  }
+}
+
 
 
 .d-flex{
