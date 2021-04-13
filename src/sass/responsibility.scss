@@ -39,7 +39,6 @@
   &__rules{
     position: relative;
     z-index: 1;
-    background: red;
     display: flex;
     flex-direction: column;
   }
@@ -47,10 +46,82 @@
     max-width: 726px;
   }
   &__rules-ico{
-    background: blue;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    @include for-992{
+      display: none;
+    }
+  }
+  &__conditions {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+
+    .faqs__list-block{
+      width: 100%;
+      max-width: 701px;
+      margin-left: 15px;
+      .faqs__list{
+        padding: 0;
+      }
+      @include for-800{
+        margin: 0;
+        max-width: unset;
+      }
+    }
+
+    &-ico{
+      position: absolute;
+      top: 40%;
+      left: -32%;
+      transform: translateY(50%);
+      @include for-992{
+        display: none;
+      }
+    }
+
+    &-title {
+      position: relative;
+      display: flex;
+      flex: 1 1 calc(100% - 701px + 30px);
+      align-items: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 40px;
+      font-weight: 500;
+      margin-right: 15px;
+
+      &-head-title{
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.465em;
+        text-transform: uppercase;
+        color: $accent;
+      }
+      @include for-800{
+        margin: 0;
+        padding-bottom: 50px;
+      }
+    }
+    &--icon.site-title__ico{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -105px;
+      top: -20px;
+      width: 81px;
+      height: 81px;
+      @include for-992{
+        display: none;
+      }
+    }
+    @include for-800{
+      flex-wrap: wrap;
+    }
   }
 }
