@@ -87,6 +87,12 @@
   }
 }
 
+.mw-415{
+  @include from-680 {
+    max-width: 415px;
+  }
+}
+
 
 
 .d-flex{
