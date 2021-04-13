@@ -1,53 +1,17 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
-.slick-slider{
+.slick-slider {
+  * {
+    outline: none !important;
 
-  *{
-    outline: none!important;
-
-    &:focus{
-      outline: none!important;
+    &:focus {
+      outline: none !important;
     }
   }
 
-  .slick-track {
-    display: flex;
-  }
 
-
-  .slick-slide{
-
-    > div{
-      display: flex;
-      height: 100%;
-
-
-      @include for-550 {
-        padding: 0;
-        padding-left: 10px;
-      }
-
-    }
-
-    &.slick-active > div {
-      @include for-550 {
-       transform: translateX(-30px);
-      }
-    }
-  }
-
-  .slick-slide.slick-slide[aria-hidden=false]:not(.slick-current){
-    @include for-550 {
-      transform: translateX(30px) !important;
-
-      + div{
-        transform: translateX(-30px) !important;
-      }
-    }
-  }
-
-  &.slick-initialized .slick-slide > div{
+  &.slick-initialized .slick-slide > div {
     display: flex;
     height: 100%;
     padding-top: 15px;
@@ -55,24 +19,22 @@
     box-sizing: border-box;
   }
 
-  .slick-dots{
+  .slick-dots {
     display: flex;
     max-width: 1115px;
     width: 100%;
     justify-content: center;
-
-    @include for-680{
+    @include for-680 {
       width: calc(100% - 15px);
     }
 
-
-    li{
+    li {
       width: initial;
       height: initial;
       padding: 0;
       margin: 0 4px;
 
-      button{
+      button {
         font-size: 0;
         line-height: 0;
         padding: 0;
@@ -85,11 +47,42 @@
         cursor: pointer;
       }
 
-      &.slick-active button{
+      &.slick-active button {
         background: $brown;
       }
     }
   }
+}
 
+.homepage .slick-slider {
 
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    > div {
+      display: flex;
+      height: 100%;
+      @include for-550 {
+        padding: 0;
+        padding-left: 10px;
+      }
+    }
+
+    &.slick-active > div {
+      @include for-550 {
+        transform: translateX(-30px);
+      }
+    }
+  }
+
+  .slick-slide.slick-slide[aria-hidden=false]:not(.slick-current) {
+    @include for-550 {
+      transform: translateX(30px) !important;
+      + div {
+        transform: translateX(-30px) !important;
+      }
+    }
+  }
 }

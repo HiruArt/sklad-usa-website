@@ -51,6 +51,11 @@ html(lang="uk")
       link(rel='stylesheet', href='./css/blog.css')
       link(rel='stylesheet', href='./css/blog-item.css')
 
+    if (pageActive === "contacts")
+      link(rel='stylesheet', href='./css/libs/slick.css')
+      link(rel='stylesheet', href='./css/slider.css')
+      link(rel='stylesheet', href='./css/contacts.css')
+
 
     link(rel='stylesheet', href='./css/main.css')
 
@@ -87,6 +92,11 @@ html(lang="uk")
       if (pageActive === "consolidation")
         script(src='./js/libs/popper.js')
         script(src='./js/libs/tippy-bundle.umd.js')
+
+      if (pageActive === "contacts")
+        script(src='./js/libs/slick.js')
+        script(src='./js/slider.js')
+
 
       if (pageActive === "express-order")
         script(src='./js/libs/slick.js')
