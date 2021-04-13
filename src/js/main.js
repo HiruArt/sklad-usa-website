@@ -135,16 +135,6 @@ $(document).ready(function() {
     $('.address__tabs-items').hide();
     $('.address__tabs-items:first').show();
 
-    function slickCarousel() {
-        $('.address__tabs-items').slick({
-            infinite: true,
-            arrows: false,
-            slidesToShow: 1.1,
-            slidesToScroll: 1,
-            speed: 500,
-            dots: true,
-        });
-    }
 
     function destroyCarousel() {
         if ($('.address__tabs-items').hasClass('slick-initialized')) {
@@ -163,8 +153,14 @@ $(document).ready(function() {
         // ??????????????????????????????????????????????????????????????
         if ($(window).width() < 680) {
             destroyCarousel();
-            slickCarousel();
-
+            $('.address__tabs-items').slick({
+                infinite: true,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+                dots: true,
+            })
         }
     })
 

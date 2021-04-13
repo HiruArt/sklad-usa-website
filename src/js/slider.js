@@ -98,7 +98,7 @@ $(document).ready(function () {
         $('.address__tabs-items').slick({
             infinite: true,
             arrows: false,
-            slidesToShow: 1.1,
+            slidesToShow: 1,
             slidesToScroll: 1,
             speed: 500,
             dots: true,
