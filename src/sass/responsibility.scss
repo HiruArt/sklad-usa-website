@@ -28,3 +28,23 @@
     background-size: cover;
   }
 }
+.responsibility{
+  &__title{
+    padding-bottom: 40px;
+  }
+  &__title,
+  &__rules{
+    max-width: 726px;
+  }
+  &__rules{
+    position: relative;
+    z-index: 1;
+  }
+  &__rules-ico{
+    position: absolute;
+    content: '';
+    bottom: 222px;
+    right: -50%;
+    //transform: translateX(50%);
+  }
+}
