@@ -26,15 +26,18 @@ block content
                 span support@skladusa.com
             .capital__contact-socaial
               .socail-item.facebook
-                img(src="./img/ico/fb.svg")
+                a(href="#")
+                  include ../img/ico/fb.svg
               .socail-item.instagram
-                img(src="./img/ico/instagram.svg")
+                a(href="#")
+                  include ../img/ico/instagram.svg
               .socail-item.apple
-                img(src="./img/ico/apple.svg")
+                a(href="#")
+                  include ../img/ico/apple.svg
         .capital__media.address__media
           .capital__media-img
-            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/illustration.svg" alt="img" ).lazyload
-
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="./img/illustration.svg" alt="img").lazyload
 
     .address.site-container
         .grid-padding
@@ -57,285 +60,346 @@ block content
                   li#ukrainian.address__tabs-items
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-kv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-kv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Києві
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Закревського 24E
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-dp.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-dp.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Дніпрі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p пр. Гагаріна 82
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-lv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-lv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Львові
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p Богдана Хмельницького, 20
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-od.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-od.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс в Одесі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Мала Арнаутська, 119
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-hr.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-hr.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Харкові
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p пр. Московський, 38/2
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
+
                   li#belarus.address__tabs-items
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-kv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-kv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Мінську 2
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Закревського 24E
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-dp.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-dp.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Дніпрі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p пр. Гагаріна 82
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-lv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-lv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Львові
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p Богдана Хмельницького, 20
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-od.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-od.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс в Одесі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Мала Арнаутська, 119
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-hr.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-hr.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Харкові
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p пр. Московський, 38/2
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
                   li#usa.address__tabs-items
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-kv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-kv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-kv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Сіетлі 3
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Закревського 24E
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-dp.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-dp.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-dp.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Дніпрі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p пр. Гагаріна 82
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-lv.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-lv.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-lv.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс у Львові
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p Богдана Хмельницького, 20
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-od.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-od.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-od.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
                           h2 Офіс в Одесі
-                        .address__tab-item--decription-address
+                        .address__tab-item--description-address
                           p вул. Мала Арнаутська, 119
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
 
                     .address__tab-item
                       .address__tab-item--img
-                        img(src="./img/maskgroup-hr.svg" alt='img').lazyload
-                      .address__tab-item--decription
-                        .address__tab-item--decription-title
-                          h2 Офіс у Харкові
-                        .address__tab-item--decription-address
+                        picture
+                          source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-srcset="./img/contacts-maskgroup-hr.webp" type="image/webp").lazyload
+                          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-src="./img/contacts-maskgroup-hr.png" alt='img' width="261" height="261").lazyload
+                      .address__tab-item--description
+                        .address__tab-item--description-title
+                          h2 Офіс у Харкові1
+                        .address__tab-item--description-address
                           p пр. Московський, 38/2
-                        .address__tab-item--decription-worktime
-                            p Години роботи:
-                            p пн-пт: 9:00-18:00
-                            p нд 11:00-16:00
-                        .address__tab-item--decription-phone
-                          a(href='#')
+                        .address__tab-item--description-worktime
+                          p Години роботи:
+                          p пн-пт: 9:00-18:00
+                          p нд 11:00-16:00
+                        .address__tab-item--description-phone
+                          a(href='tel:+380961862986')
                             span +38 (096) 186-29-86
-                        .address__tab-item--decription-map
+                        .address__tab-item--description-map
                           a(href="#")
                             span Як дістатися
