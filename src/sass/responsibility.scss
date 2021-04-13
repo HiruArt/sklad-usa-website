@@ -31,20 +31,26 @@
 .responsibility{
   &__title{
     padding-bottom: 40px;
-  }
-  &__title,
-  &__rules{
-    max-width: 726px;
+
+    &.site-title{
+      max-width: 726px;
+    }
   }
   &__rules{
     position: relative;
     z-index: 1;
+    background: red;
+    display: flex;
+    flex-direction: column;
+  }
+  &__rules-list{
+    max-width: 726px;
   }
   &__rules-ico{
+    background: blue;
     position: absolute;
-    content: '';
-    bottom: 222px;
-    right: -50%;
-    //transform: translateX(50%);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
