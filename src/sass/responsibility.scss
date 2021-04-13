@@ -82,7 +82,17 @@
         display: none;
       }
     }
-
+    &-head-title{
+      position: relative;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.465em;
+      text-transform: uppercase;
+      color: $accent;
+    }
     &-title {
       position: relative;
       display: flex;
@@ -93,15 +103,7 @@
       font-weight: 500;
       margin-right: 15px;
 
-      &-head-title{
-        font-family: "Roboto", sans-serif;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0.465em;
-        text-transform: uppercase;
-        color: $accent;
-      }
+
       @include for-800{
         margin: 0;
         padding-bottom: 50px;
