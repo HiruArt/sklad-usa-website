@@ -51,6 +51,12 @@
   }
 }
 
+.hide-path-mobile{
+  @include for-680{
+    display: none;
+  }
+}
+
 .d-none{
   display: none;
 }

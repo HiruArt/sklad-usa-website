@@ -1,0 +1,33 @@
+extends _layout
+
+block vars
+  - var pageTitle = "About";
+  - var pageClass = "about";
+  - var pageActive = "about";
+
+block content
+  div.main-wrap
+    .capital
+      .capital__inner.site-container.site-container--section
+        .capital__floating-img.floating-img
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/floating-img01.svg" alt="floating").floating-img__i.lazyload
+        .capital__content.capital__content--top-block.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large Ми допомагаємо українцям та бiлорусам &nbsp;
+              span продавати закордон
+          p Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо допомогти робити це зручно! Приймайте платежi, тримайте товар на наших складах та користуйтеся нашими службами доставки.
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-btn
+                span Зареєcтруватися
+        .capital__media
+          .capital__media-img
+            picture
+              source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/education-img-mobile.svg" media="(max-width: 680px)" )
+              img(src="./img/education-img.svg" alt="education" width="690").lazyload
+
+
+
+
