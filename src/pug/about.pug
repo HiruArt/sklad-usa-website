@@ -1,103 +1,295 @@
 extends _layout
 
 block vars
-  - var pageTitle = "About";
-  - var pageClass = "about";
-  - var pageActive = "about";
+	- var pageTitle = "About";
+	- var pageClass = "about";
+	- var pageActive = "about";
 
 block content
-  div.main-wrap
-    .capital.about-block
-      .capital__inner.site-container.site-container--section
-        .capital__content.grid-padding
-          .capital__title.site-title
-            .site-title__ico.shadow
-              include ../img/site-title-icon01.svg
-            h1.site-title__large Ми допомагаємо українцям та бiлорусам&nbsp;
-              span продавати закордон
-          p Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо допомогти робити це зручно! Приймайте платежi, тримайте товар на наших складах та користуйтеся нашими службами доставки.
-          .capital__manage.custom-row.custom-row--12px
-            .capital__manage-item.custom-col.fit-content
-              a(href="https://system.skladusa.com/registration").site-btn
-                span Зареєcтруватися
-        .capital__media.rhombus
-          .capital__media-img
-            picture
-              source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/about-on-hero-mobile.svg" media="(max-width: 680px)")
-              img(src="./img/about-on-hero.svg" alt="education" width="540").lazyload
+	div.main-wrap
+		.capital.about-block
+			.capital__inner.site-container.site-container--section
+				.capital__content.grid-padding
+					.capital__title.site-title
+						.site-title__ico.shadow
+							include ../img/site-title-icon01.svg
+						h1.site-title__large Ми допомагаємо українцям та бiлорусам&nbsp;
+							span продавати закордон
+					p Продавайте на Amazon, eBay, Etsy, чи iншiй торговiй платформi. Ми можемо допомогти робити це зручно! Приймайте платежi, тримайте товар на наших складах та користуйтеся нашими службами доставки.
+					.capital__manage.custom-row.custom-row--12px
+						.capital__manage-item.custom-col.fit-content
+							a(href="https://system.skladusa.com/registration").site-btn
+								span Зареєcтруватися
+				.capital__media.rhombus
+					.capital__media-img
+						picture
+							source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="./img/about-on-hero-mobile.svg" media="(max-width: 680px)")
+							img(src="./img/about-on-hero.svg" alt="education" width="540").lazyload
 
 
-    .benefit-about
-      .benefit-about__inner.site-container.site-container--section
-        .benefit-about__head.center-content.grid-padding.mw-800
-          .benefit-about__title.site-title.mw-100
-            .site-title__ico.shadow
-              include ../img/site-title-charity.svg
-            .site-title__designation Благоiйнiсть
-            .site-title__large Ми люди. Ми потрiбнi один одному.&nbsp;
-              span Залишаймося людьми
+		.benefit-about
+			.benefit-about__inner.site-container.site-container--section
+				.benefit-about__head.center-content.grid-padding.mw-800
+					.benefit-about__title.site-title.mw-100
+						.site-title__ico.shadow
+							include ../img/site-title-charity.svg
+						.site-title__designation Благоiйнiсть
+						.site-title__large Ми люди. Ми потрiбнi один одному.&nbsp;
+							span Залишаймося людьми
 
-        .benefit-about__content
-          .benefit-about__media.w-half
-            .benefit-about__media-img
-              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/about-charity-img.svg" alt="benefit").lazyload
+				.benefit-about__content
+					.benefit-about__media.w-half
+						.benefit-about__media-img
+							img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/about-charity-img.svg" alt="benefit").lazyload
 
-          .benefit-about__list.grid-padding.center-content.center-content--w100.accordion.js_accordion
-            .benefit-about__item.accordion__item
-              .accordion__head Благодiйний фонд “Таблеточки”
-              .accordion__content
-                p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
-            .benefit-about__item.accordion__item.open
-              .accordion__head “Народний тил”
-              .accordion__content
-                p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
-            .benefit-about__item.accordion__item
-              .accordion__head “Дом ребенка”, Мiнськ, Бiлорусь
-              .accordion__content
-                p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
+					.benefit-about__list.grid-padding.center-content.center-content--w100.accordion.js_accordion
+						.benefit-about__item.accordion__item
+							.accordion__head Благодiйний фонд “Таблеточки”
+							.accordion__content
+								p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
+						.benefit-about__item.accordion__item.open
+							.accordion__head “Народний тил”
+							.accordion__content
+								p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
+						.benefit-about__item.accordion__item
+							.accordion__head “Дом ребенка”, Мiнськ, Бiлорусь
+							.accordion__content
+								p Перераховано 100 000грн на необхiдностi героїв, що захищають Україну вiд країни-агрессора РФ
 
 
-    .benefit-about
-      .benefit-about__inner.site-container.site-container--section
-        .benefit-about__head.center-content.grid-padding.mw-800
-          .benefit-about__title.site-title.mw-100
-            .site-title__ico.shadow
-              include ../img/site-title-charity.svg
-            .site-title__designation Досягнення
-            .site-title__large Пишаємося нашим прогресом&nbsp;<br>
-              span та нашими клiєнтами
+		.benefit-about
+			.benefit-about__inner.site-container.site-container--section
+				.benefit-about__head.center-content.grid-padding.mw-800
+					.benefit-about__title.site-title.mw-100
+						.site-title__ico.shadow
+							include ../img/site-title-charity.svg
+						.site-title__designation Досягнення
+						.site-title__large Пишаємося нашим прогресом&nbsp;<br>
+							span та нашими клiєнтами
 
-        .benefit-about__content
-          .benefit-about__list
-            .benefit-about__item
-              .benefit-about__item-content
-                .benefit-about__counter
-                  .benefit-about__counter-ico
-                  .benefit-about__content
-                    .benefit-about__large-num
-                      span 150
-                      | +
-                    .benefit-about__caption Країн
+				.benefit-about__content
+					.benefit-about__list
+						.benefit-about__item
+							.benefit-about__item-content
+								.benefit-about__counter
+									.benefit-about__counter-ico
+									.benefit-about__content
+										.benefit-about__large-num
+											span 150
+											| +
+										.benefit-about__caption Країн
 
-            .benefit-about__item
-              .benefit-about__item-content
-                .benefit-about__counter
-                  .benefit-about__counter-ico
-                  .benefit-about__content
-                    .benefit-about__large-num
-                      span 500
-                      | k+
-                    .benefit-about__caption Посилок
+						.benefit-about__item
+							.benefit-about__item-content
+								.benefit-about__counter
+									.benefit-about__counter-ico
+									.benefit-about__content
+										.benefit-about__large-num
+											span 500
+											| k+
+										.benefit-about__caption Посилок
 
-            .benefit-about__item
-              .benefit-about__item-content
-                .benefit-about__counter
-                  .benefit-about__counter-ico
-                  .benefit-about__content
-                    .benefit-about__large-num
-                      span 400
-                      | +
-                    .benefit-about__caption Тон вантажу
+						.benefit-about__item
+							.benefit-about__item-content
+								.benefit-about__counter
+									.benefit-about__counter-ico
+									.benefit-about__content
+										.benefit-about__large-num
+											span 400
+											| +
+										.benefit-about__caption Тон вантажу
+
+
+		.timeline
+			.timeline__inner.site-container.site-container--section
+				.timeline__head
+					.timeline__title.site-title.mw-100
+						.site-title__ico.shadow
+							include ../img/site-title-timeline.svg
+						.site-title__designation Timeline
+						.site-title__large Ми розвиваємося i ростемо&nbsp;<br>
+							span з кожним днем
+				.timeline__content
+					.timeline__section
+						.timeline__section-title 2021
+						.timeline__section-content
+							.timeline__row
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Лютий
+										.timeline__desc Удосконалення функціоналу опису вмісту відправлень<br><br>
+											| Впровадження можливості додання інвойсу оплати VAT для відправлень в Англію
+
+					.timeline__section
+						.timeline__section-title 2020
+						.timeline__section-content
+							.timeline__row
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Ciчень
+										.timeline__desc Переїзд на нову адресу в США
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Лютий
+										.timeline__desc Новий логiстичний партнер<br> 100 000 вiдправлень
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Квітень
+										.timeline__desc Нова Visa Card від SkladUSA (Bento)
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Травень
+										.timeline__desc Виділено 100 000 гривень на медичне забезпечення для волонтерського об'єднання «Народний тил»
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Червень
+										.timeline__desc Удосконалення можливості створення замовлень з транзакцій та переміщення товару між складами FBA та FBM<br><br>
+											| Новий функціонал подання заявки на страхування або пошук посилки одразу в системі
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Липень
+										.timeline__desc Додана повна митна інформація для кожної країни в системі<br><br>
+											| Новий функціонал подання заявки на страхування або пошук посилки одразу в системі<br><br>
+											| Переїзд на нову адресу складу в Києві<br><br>
+											| Відмова від використання "бонусного" балансу, введення єдиної комісії SkladUSA — 3%<br><br>
+											| Інтеграція Нової пошти до системи SkladUSA
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Серпень
+										.timeline__desc Впровадження функціоналу для пошуку повернень та операцій з ними.<br><br>
+											| Новий функціонал - «Статистика доставки»<br><br>
+											| Відкриття складу у Дніпрі<br><br>
+											| Співпраця з благодійними організаціями та дитячими будинками Білорусі.
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Вересень
+										.timeline__desc Зменшення комісії PayPal для SkladUSA за приймання оплат<br><br>
+											| Відкриття складу у Харкові
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Жовтень
+										.timeline__desc Впровадження послуги додаткової відповідальності від SkladUSA на період святкового сезону<br><br>
+											| Створення нового єдиного телефону для служби підтримки
+											| Відкриття складу у Львові
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Листопад
+										.timeline__desc Відкриття складу в Одесі
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Грудень
+										.timeline__desc Впровадження послуги додаткової відповідальності від SkladUSA на період святкового сезону<br><br>
+											| Загалом на рахунок благодійного фонду «Tabletochki» було перераховано 1 000 000 гривень
+											| Впровадження додаткової консолідації в Європу через Бельгію
+
+					.timeline__section
+						.timeline__section-title 2019
+						.timeline__section-content
+							.timeline__row
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Квiтень
+										.timeline__desc Etsy API Iнтеграцiя<br><br>
+											| Mastercard вiд SkladUSA (Divvy)
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Червень
+										.timeline__desc Amazon API iнтегрцiя<br><br>
+											| Open API iнтеграцiя Shopify, Wocommerce, OpenCart, будь-який CRM<br><br>
+											| Офiцiйний партнер фонду “Таблеточки”
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Липень
+										.timeline__desc Iнтеграцiя Укрпошти в особистому кабiнетi<br><br>
+											| e-Bay API iнтеграцiя
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Серпень
+										.timeline__desc Прийняття оплат банкiвских карт (без PayPal) та iнтеграцiя в будь-який iнтернет магазин<br><br>
+											| Першi 50 000 вiдправлень
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Вересень
+										.timeline__desc Перша консолiдацiя в Англiю<br><br>
+											| Участь в Handmade EXPO
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Листопад
+										.timeline__desc Першi 100 000 гривень у фондi “Таблеточки”<br><br>
+											| Вдосконалення служби пiдтримки<br><br>
+											| Введення EZ кабiнету
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Грудень
+										.timeline__desc Перша консолiдацiя в Бiлорусi<br><br>
+											| Пiдсумок року - 168 730грн у фондi “Таблеточки”
+
+					.timeline__section
+						.timeline__section-title 2018
+						.timeline__section-content
+							.timeline__row
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Осiнь
+										.timeline__desc Отримання платжiв та фулфiлмент склад<br><br>
+											| перша консолiдацiя з України
+
+								.timeline__col
+									.timeline__col-content
+										.timeline__name
+											span Зима
+										.timeline__desc Запуск експрес вiдправлень з усiх мiст України
+
+		include ./modules/_all-services
+
+		include ./modules/_consolidations
+
+		include ./modules/_reviews
+
+
+
+
+
+
+
+
+
 
 
 
