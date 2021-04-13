@@ -36,6 +36,11 @@
       .site-title__large{
         display: flex;
         flex-direction: column;
+        color: #CD9E64;
+
+        span {
+          color: #232323;
+        }
       }
     }
   }
@@ -387,7 +392,7 @@
 .blog-item-telega{
   position: relative;
   width: 100%;
-  
+
   @include for-992{
     display: none;
   }

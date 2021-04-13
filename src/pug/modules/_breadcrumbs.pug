@@ -8,5 +8,9 @@
         .breadcrumbs__item
           span
             a(href="./" + (pageActive) + ".html").breadcrumbs__link Послуги
+      if (pageSection === "blog")
+        .breadcrumbs__item
+          span
+            a(href="./" + (pageActive) + ".html").breadcrumbs__link Блог
       .breadcrumbs__item
         span.breadcrumbs__link #{pageName}
