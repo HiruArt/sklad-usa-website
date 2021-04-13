@@ -97,6 +97,9 @@
 }
 
 .address {
+  &.site-container {
+    padding-bottom: 68px;
+  }
   &__tabs {
     display: flex;
     justify-content: space-between;
@@ -195,7 +198,7 @@
 
       @include for-680 {
         max-width: 100%;
-        height: 272px;
+        //height: 272px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -212,13 +215,13 @@
       }
     }
 
-    &--decription {
+    &--description {
       flex: 1 1 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      padding: 24px;
+      padding: 23px;
       & * {
         margin: 0;
         font-family: 'Roboto', sans-serif;
@@ -273,6 +276,11 @@
           text-decoration: underline;
         }
       }
+
+      @include for-680 {
+        padding: 20px;
+      }
+
     }
 
     @include for-1100 {
@@ -289,19 +297,17 @@
   }
 }
 
-// //////////////////////////?????????????????????????????????????????????????
-
 .contacts .slick-slider {
 
   .slick-list {
     overflow: initial!important;
     padding-right: 72px;
+    //height: 533px; //???????????????????
   }
 
   .slick-track {
     display: flex;
   }
-
 
   .slick-slide {
     margin: 0 20px;
@@ -310,10 +316,13 @@
   }
 
   .slick-dots {
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
