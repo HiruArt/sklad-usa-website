@@ -1,6 +1,7 @@
 //include _mixins
 
 block vars
+  - var cacheFix = parseInt(Math.random()*1000)
 
 doctype html
 html(lang="uk")
@@ -15,54 +16,54 @@ html(lang="uk")
     link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
 
     if (pageActive === "homepage")
-      link(rel='stylesheet', href='./css/libs/slick.css')
-      link(rel='stylesheet', href='./css/slider.css')
+      link(rel='stylesheet', href='./css/libs/slick.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/slider.css?' + cacheFix)
 
 
     if (pageActive === "homepage")
-      link(rel='stylesheet', href='./css/homepage.css')
+      link(rel='stylesheet', href='./css/homepage.css?' + cacheFix)
 
     if (pageActive === "about")
-      link(rel='stylesheet', href='./css/about.css')
+      link(rel='stylesheet', href='./css/about.css?' + cacheFix)
 
     if (pageActive === "fba-prep-center")
-      link(rel='stylesheet', href='./css/fba-prep-center.css')
+      link(rel='stylesheet', href='./css/fba-prep-center.css?' + cacheFix)
 
     if (pageActive === "accepting-payments")
-      link(rel='stylesheet', href='./css/accepting-payments.css')
+      link(rel='stylesheet', href='./css/accepting-payments.css?' + cacheFix)
 
     if (pageActive === "return-processing")
-      link(rel='stylesheet', href='./css/return-processing.css')
+      link(rel='stylesheet', href='./css/return-processing.css?' + cacheFix)
 
     if (pageActive === "fbm-fulfillment")
-      link(rel='stylesheet', href='./css/fbm-fulfillment.css')
+      link(rel='stylesheet', href='./css/fbm-fulfillment.css?' + cacheFix)
 
     if (pageActive === "consolidation")
-      link(rel='stylesheet', href='./css/consolidation.css')
+      link(rel='stylesheet', href='./css/consolidation.css?' + cacheFix)
 
     if (pageActive === "express-order")
-      link(rel='stylesheet', href='./css/libs/slick.css')
-      link(rel='stylesheet', href='./css/slider.css')
-      link(rel='stylesheet', href='./css/express-order.css')
+      link(rel='stylesheet', href='./css/libs/slick.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/slider.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/express-order.css?' + cacheFix)
 
     if (pageActive === "blog")
-      link(rel='stylesheet', href='./css/blog.css')
+      link(rel='stylesheet', href='./css/blog.css?' + cacheFix)
 
     if (pageActive === "blog-item")
-      link(rel='stylesheet', href='./css/libs/slick.css')
-      link(rel='stylesheet', href='./css/slider.css')
-      link(rel='stylesheet', href='./css/blog.css')
-      link(rel='stylesheet', href='./css/blog-item.css')
+      link(rel='stylesheet', href='./css/libs/slick.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/slider.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/blog.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/blog-item.css?' + cacheFix)
 
     if (pageActive === "contacts")
-      link(rel='stylesheet', href='./css/libs/slick.css')
-      link(rel='stylesheet', href='./css/slider.css')
-      link(rel='stylesheet', href='./css/contacts.css')
+      link(rel='stylesheet', href='./css/libs/slick.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/slider.css?' + cacheFix)
+      link(rel='stylesheet', href='./css/contacts.css?' + cacheFix)
 
     if (pageActive === "responsibility")
-      link(rel='stylesheet', href='./css/responsibility.css')
-      
-    link(rel='stylesheet', href='./css/main.css')
+      link(rel='stylesheet', href='./css/responsibility.css?' + cacheFix)
+
+    link(rel='stylesheet', href='./css/main.css?' + cacheFix)
 
 
 
@@ -107,5 +108,5 @@ html(lang="uk")
         script(src='./js/libs/slick.js')
         script(src='./js/slider.js')
 
-      script(src='./js/main.js')
+      script(src='./js/main.js?' + cacheFix)
 
