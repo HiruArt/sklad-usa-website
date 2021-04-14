@@ -164,4 +164,20 @@ $(document).ready(function() {
         }
     })
 
+    //prohibited tabs
+
+    $('.prohibited__tab:first-child').addClass('__active');
+    $('.prohibited__tabs-items').hide();
+    $('.prohibited__tabs-items:first').show();
+
+    $('.prohibited__tab').on('click', function(e) {
+        e.preventDefault();
+        $('.prohibited__tab').removeClass('__active')
+        $(this).addClass('__active')
+        $('.prohibited__tabs-items').hide();
+        let activeTab = $(this).find('a').attr('href');
+        $(activeTab).fadeIn();
+    });
+
+
 });

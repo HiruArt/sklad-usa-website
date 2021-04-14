@@ -1,0 +1,140 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+.prohibited .page__wrapper{
+  background-image: url("../img/background-img-three-pages.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+
+
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-three-pages1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
+}
+.prohibited {
+  &__title {
+    position: relative;
+    margin-bottom: 40px;
+    max-width: 727px;
+    &-large{
+      width: calc(100% + 30px);
+    }
+    &.site-title {
+      max-width: 726px;
+      padding-top: 35px;
+    }
+  }
+
+  &__rules {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-bottom-item {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 701px;
+      margin: 0;
+    }
+
+    &-icon-cart {
+      position: absolute;
+      bottom: 24%;
+      right: 5%;
+      @include for-992 {
+        display: none;
+      }
+
+    }
+
+    &-list {
+      padding: 48px 48px 23px;
+      margin-bottom: 57px;
+      width: 100%;
+      max-width: 726px;
+      background-color: $white;
+      box-shadow: 0px 4px 30px #E2D8CB;
+      border-radius: 11px;
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: $grey;
+        margin: 0;
+        margin-bottom: 25px;
+      }
+
+      @include for-992 {
+        max-width: unset;
+      }
+      @include for-420 {
+        padding: 20px;
+      }
+    }
+
+    &-ico {
+      position: absolute;
+      top: 100%;
+      right: -53%;
+      transform: translateY(-50%);
+      @include for-992 {
+        display: none;
+      }
+    }
+  }
+
+  &__tab-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 391px;
+    margin-bottom: 32px;
+    border-radius: 60px;
+    border: 1px solid rgba(143, 122, 97, 0.3);
+  }
+
+  &__tab {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 13px 25px;
+    max-width: 205px;
+    text-align: center;
+    border-radius: 60px;
+    background-color: transparent;
+
+    @include from-680 {
+      transition: all .3s;
+    }
+
+    &.__active {
+      a {
+        color: #fff;
+      }
+
+      background-color: $accent;
+    }
+  }
+  &__support{
+    padding-top: 34px;
+  }
+}

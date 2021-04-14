@@ -1,0 +1,62 @@
+extends _layout
+
+block vars
+  - var pageTitle = "arbitration";
+  - var pageClass = "arbitration";
+  - var pageActive = "arbitration";
+
+
+block content
+  div.main-wrap
+    include ./modules/_breadcrumbs
+    .arbitration
+     .arbitration__inner.site-container.site-container--section
+       .capital__content.capital__content--top-block.grid-padding
+         .arbitration__title.site-title
+           .site-title__ico.shadow
+             include ../img/site-title-icon01.svg
+           h1.site-title__large Онлайн арбiтраж — це основа&nbsp;
+             span вигiдних продажiв
+         p Онлайн арбiтраж є пошук в інтернеті певних товарів для порівняння вартості з розцінками Amazon. Пiсля вивчення ринку з’являється можливiсть більш вигідного перепродажу товару на цьому майданчику.
+         .capital__manage.custom-row.custom-row--12px
+           .capital__manage-item.custom-col.fit-content
+             a(href="https://system.skladusa.com/registration").site-btn
+               span Зареєcтруватися
+           .capital__manage-item.custom-col.fit-content
+             a(href="#").site-link.site-link--desktop
+               span Детальнiше про нас
+             a(href="#").site-link.site-link--mobile
+               span Про нас
+       .arbitration__media.capital__media.rhombus
+         .arbitration__media-img.capital__media-img
+           img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+           data-src="./img/arbitration-laptop.svg" alt="img" width="636" height="636").lazyload
+
+     .arbitration__cascad.cascade
+       .arbitration__inner.site-container.site-container--section.double-block
+         .cascade__content.grid-padding.left-block
+           .cascade__title.site-title
+             .site-title__ico.shadow
+               include ../img/site-title-crown.svg
+             .site-title__designation Переваги
+             .site-title__large Торгуйте речами просто —<br>
+               span без пакування та пошт
+           p Коли товар знайдений, ви відразу купуєте його і замовляєте відправку на склад компанії, яка надає фулфілмент послуги. Звідти його пересилають покупцеві або на склад Amazon.
+         .cascade__content.right-block.grid-padding
+           .cascade__list
+             .cascade__item
+               .cascade__item-content.site-case
+                 .site-case__name Фiнансово вигiдно
+                 p Ваші фінансові вкладення виявляються мінімальними;
+             .cascade__item
+               .cascade__item-content.site-case
+                 .site-case__name Розвиток бiзнесу
+                 p Ви розширите список категорій реалізованої продукції та зробите продажі на Amazon прибутковішими;
+             .cascade__item
+               .cascade__item-content.site-case
+                 .site-case__name Вiдсутнiсть торгової марки
+                 p Вам не потрібно піклуватися про відкриття власної торгової марки;
+             .cascade__item
+               .cascade__item-content.site-case
+                 .site-case__name Пiдвищення репутацiї
+                 p Ви отримуєте можливість повністю задовільнити попит споживача, підвищуючи власну репутацію, як продавця.
