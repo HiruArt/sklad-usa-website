@@ -1729,6 +1729,20 @@ input, textarea {
 
   /**************************/
 
+  &.sklad-fbm-modyf &__inner {
+
+  }
+  &.sklad-fbm-modyf &__media{
+
+  }
+  &.sklad-fbm-modyf &__media-img {
+    @include from-1100 {
+      transform: translateX(0px) translateY(-50px);
+    }
+  }
+
+  /**************************/
+
 }
 
 

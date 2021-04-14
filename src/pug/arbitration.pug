@@ -9,7 +9,7 @@ block vars
 block content
   div.main-wrap
     include ./modules/_breadcrumbs
-    .arbitration
+    .arbitration.capital
      .arbitration__inner.site-container.site-container--section
        .capital__content.capital__content--top-block.grid-padding
          .arbitration__title.site-title
@@ -39,8 +39,8 @@ block content
              .site-title__ico.shadow
                include ../img/site-title-crown.svg
              .site-title__designation Переваги
-             .site-title__large Торгуйте речами просто —<br>
-               span без пакування та пошт
+             .site-title__large Торгуйте речами просто —&nbsp;
+               span без&nbsp;<br>пакування та пошт
            p Коли товар знайдений, ви відразу купуєте його і замовляєте відправку на склад компанії, яка надає фулфілмент послуги. Звідти його пересилають покупцеві або на склад Amazon.
          .cascade__content.right-block.grid-padding
            .cascade__list
@@ -60,3 +60,126 @@ block content
                .cascade__item-content.site-case
                  .site-case__name Пiдвищення репутацiї
                  p Ви отримуєте можливість повністю задовільнити попит споживача, підвищуючи власну репутацію, як продавця.
+
+     .table-block
+       .table-block__inner.site-container.site-container--section.double-block
+         .table-block__content.grid-padding.left-block
+           .table-block__title.site-title
+             .site-title__ico.shadow
+               include ../img/site-title-automation.svg
+             .site-title__designation Нашi обов’язки
+             .site-title__large Ваша торгівля в США буде максимально оптимізована&nbsp;та<br><span>принесе очікуваний дохід</span>
+           a(href="https://system.skladusa.com/registration").site-btn
+             span Зареєcтруватися
+         .table-block__table.right-block.grid-padding
+           .site-table
+             .site-table__inner
+               table
+                 thead
+                   tr
+                     th Послуга
+                     th Умови
+                 tbody
+                   tr
+                     td Приймаєм та беремо на облік
+                     td до 3 днiв
+                   tr
+                     td Безкоштовне зберігання
+                     td до 14 днів, далi: <br>
+                       | $35 — 1\2 палети,<br>
+                       | $50 — 1 палета в місяць
+                   tr
+                     td Наліпка FNSKU
+                     td за потреби
+                   tr
+                     td Пакування
+                     td за потреби
+                   tr
+                     td Набiр з декількох товарів
+                     td $0.25 за кожен (без цiни за коробку)
+                   tr
+                     td Робота з вкладишами
+                     td $0.10 за кожен
+                   tr
+                     td Вiдправлення до складу Amazon
+                     td за тарифами перевізників
+
+     .l-media-r-info.sklad-fbm-modyf
+       .l-media-r-info__inner.site-container.site-container--section.double-block
+         .l-media-r-info__media.left-block.left-media
+           .l-media-r-info__media-img
+             img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-src="./img/arbitration-fbm.svg" alt="fbm-img" width="495" height="424").lazyload
+
+         .l-media-r-info__content.grid-padding.right-block
+           .l-media-r-info__title.site-title
+             .site-title__ico.shadow
+               include ../img/site-title-box.svg
+             .site-title__designation Слкад FBM
+             .site-title__large
+               span Преп центр у США&nbsp;<br></span>необхiднiсть №1 для торгiвлi закордон
+           .mw-377
+             p З його допомогою вдасться вирішувати всі організаційні питання, робити це швидко і якісно, ​​підвищуючи рівень сервісу для покупців, отримуючи позитивні відгуки.
+             p Ви можете не турбуватися про прийом платежів і процедурах повернення, пов’язані з ними формальності теж будуть вирішені.
+             a(href="https://system.skladusa.com/registration").site-btn
+               span Детальнiше про склад
+
+     .plans
+      .plans__inner.site-container.site-container--section
+       .plans__head.grid-padding
+        .plans__title.site-title
+          .site-title__ico.shadow
+            include ../img/site-title-plans.svg
+          .site-title__designation Плани
+          .site-title__large Обирайте те, що &nbsp;<br>
+            span працює для вас краще
+        .plans__content
+          .plans__list.custom-row.custom-row--8px
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $1.00
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline Стандарт
+                  .price-case__text
+                    p Сума усiх сторiн до 60см, вага до 1кг
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $1.50
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline Середнiй
+                  .price-case__text
+                    p Сума усiх сторiн 60—100см, вага до 2кг.
+            .plans__item.custom-col.custom-col--33
+              .plans__item-content.price-case
+                .price-case__head
+                  span $0.60
+                  | за 1 товар
+                .price-case__content
+                  .price-case__title.underline VIP
+                  .price-case__text
+                    p Сума усiх сторiн 100—150см, вага до 5кг.
+
+     .arbitration__about
+      .arbitration__inner.site-container.site-container--section.double-block
+        .arbitration__content.grid-padding.left-block
+          .arbitration__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            .site-title__designation Про нас
+            .site-title__large Працювати зi SKLADUSA&nbsp;<br><span>зручно та вигiдно</span>
+          ul.arbitration__about-description SkladUSA – одна з небагатьох компаній, що пропонують якісні і недорогі послуги фулфілмента. Для вас ми пропонуємо:
+            li ціна послуг максимально доступна, обговорюється індивідуально з клієнтом;
+            li фулфілмент компанія веде прозору діяльність, працює за офіційними договорами;
+            li доставка в Америку здійснюється дуже швидко, обмеження по кількості одиниць, обсягом і масі вантажу відсутні;
+          a(href="https://system.skladusa.com/registration").site-btn
+            span Детальнiше про нас
+        .arbitration__content.grid-padding.right-block
+          .arbitration__content-media-img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="./img/arbitration-about.svg" alt="fbm-img" width="532" height="360").lazyload
+
+      include ./modules/_all-services
