@@ -2,28 +2,30 @@
 @import "./modules/_colors";
 
 .responsibility .page__wrapper{
-  background-image: url("../img/respomsibility-bg-vector.svg");
-  background-position: center top;
-  background-size: cover;
+  background-image: url("../img/background-img-three-pages.svg");
+  background-size: auto;
   background-repeat: no-repeat;
 
-  //@media (min-width: 1446px){
-  //  background-image: url("../img/background-img-homepage--top1920(1).svg");
-  //  background-size: auto;
-  //}
-  //
-  //@media (min-width: 1600px){
-  //  background-size: 100%;
-  //}
-  //
-  //@include for-1100{
-  //  background-image: url("../img/background-img-rhombus1100.svg");
-  //  background-size: auto;
-  //  background-position: center 2%;
-  //}
 
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-three-pages1920.svg");
+    background-position: center top;
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: auto;
+  }
+
+  @media (min-width: 1920px){
+    background-size: 100%;
+  }
 }
 .responsibility{
+  &__content{
+    padding-top: 23px;
+  }
   &__title{
 
     &.site-title{
@@ -90,16 +92,19 @@
         display: none;
       }
     }
-    &-head-title{
+    &-head-title {
       position: relative;
       width: 100%;
-      font-family: "Roboto", sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0.465em;
-      text-transform: uppercase;
-      color: $accent;
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.465em;
+        text-transform: uppercase;
+        color: $accent;
+      }
     }
     &-title {
       position: relative;

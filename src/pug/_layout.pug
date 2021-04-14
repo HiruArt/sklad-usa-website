@@ -68,11 +68,13 @@ html(lang="uk")
     if (pageActive === "agreement")
       link(rel='stylesheet', href='./css/user-agreement.css?' + cacheFix)
 
+    if (pageActive === "prohibited")
+      link(rel='stylesheet', href='./css/prohibited-goods.css?' + cacheFix)
+
+    if (pageActive === "arbitration")
+      link(rel='stylesheet', href='./css/arbitration.css?' + cacheFix)
+
     link(rel='stylesheet', href='./css/main.css?' + cacheFix)
-
-
-
-
 
   body(class="page " + pageClass)
     .page__wrapper
@@ -100,7 +102,6 @@ html(lang="uk")
         script(src='./js/libs/slick.js')
         script(src='./js/slider.js')
 
-
       if (pageActive === "consolidation")
           script(src='./js/libs/popper.js')
           script(src='./js/libs/tippy-bundle.umd.js')
@@ -108,7 +109,6 @@ html(lang="uk")
       if (pageActive === "contacts")
         script(src='./js/libs/slick.js')
         script(src='./js/slider.js')
-
 
       if (pageActive === "express-order")
         script(src='./js/libs/slick.js')
