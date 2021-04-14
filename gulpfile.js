@@ -34,9 +34,9 @@ gulp.task('sass', () => {
     }))
     .pipe(cssImport())
     .pipe(gulp.dest('dist/css/')) // upload the result to the desired folder
-    .pipe(cssmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css/')) // upload the result to the desired folder
+    // .pipe(cssmin())
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(gulp.dest('dist/css/')) // upload the result to the desired folder
     .pipe(browserSync.reload({stream: true})); // updating CSS on the page when changing
 });
 
@@ -55,9 +55,9 @@ gulp.task('js', () => {
   return gulp.src('src/js/**/!(_)*.js')
     .pipe(rigger())
     .pipe(gulp.dest('dist/js/'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('dist/js/'))
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(uglify())
+    // .pipe(gulp.dest('dist/js/'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -69,9 +69,9 @@ gulp.task('css-libs', () => {
       'node_modules/slick-carousel/slick/slick.css',
   ])
     .pipe(gulp.dest('dist/css/libs/'))
-    .pipe(cssmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css/libs/'))
+    // .pipe(cssmin())
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(gulp.dest('dist/css/libs/'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -85,9 +85,9 @@ gulp.task('js-libs', () => {
       'node_modules/tippy.js/dist/tippy-bundle.umd.js',
     ])
     .pipe(gulp.dest('dist/js/libs/'))
-    .pipe(uglify())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/js/libs'))
+    // .pipe(uglify())
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(gulp.dest('dist/js/libs'))
     .pipe(browserSync.reload({stream: true}));
 });
 

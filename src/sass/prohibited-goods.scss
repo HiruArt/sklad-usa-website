@@ -23,6 +23,11 @@
   }
 }
 .prohibited {
+  &__inner{
+    @include for-680{
+      padding-bottom: 0 !important;
+    }
+  }
   &__title {
     position: relative;
     margin-bottom: 40px;

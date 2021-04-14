@@ -23,6 +23,12 @@
   }
 }
 .responsibility{
+  &__inner{
+    @include for-680{
+      padding-bottom: 0 !important;
+    }
+  }
+
   &__content{
     padding-top: 23px;
   }
@@ -59,7 +65,7 @@
   &__conditions {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     position: relative;
 
     .faqs__list-block{

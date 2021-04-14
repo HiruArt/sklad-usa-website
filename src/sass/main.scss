@@ -989,6 +989,13 @@ input, textarea {
 
 
   /*modify*/
+  &.consolidations &__title{
+    br{
+      display: block!important;
+    }
+  }
+
+
   &.consolidations &__content{
     width: 100%;
     max-width: 655px;
@@ -1216,11 +1223,11 @@ input, textarea {
   }
 
   &__item-content{
-    height: 221px;
+    min-height: 221px;
 
 
     @include for-992{
-      height:  197px;
+      min-height:  197px;
     }
   }
 

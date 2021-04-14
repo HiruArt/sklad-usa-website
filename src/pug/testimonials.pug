@@ -1,0 +1,34 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Testimonials";
+  - var pageClass = "testimonials";
+  - var pageActive = "testimonials";
+
+block content
+  div.main-wrap
+    .capital.testimonials-block
+      .capital__inner.site-container.site-container--section
+        .capital__content.grid-padding
+          .capital__title.site-title
+            .site-title__ico.shadow
+              include ../img/site-title-icon01.svg
+            h1.site-title__large Ми вважаємо, що наш <br>бiзнес&nbsp;
+              span про людей та їх потреби
+          .mw-415
+            p Ми невпинно рухаємося вперед, щоб робити доставку  товарiв з України у будь-яку точку свiту дешево та швидко. Нас мотивують люди, якi цiнують це та пiдтримують нас у всьому. Ми робимо це разом
+          .capital__manage.custom-row.custom-row--12px
+            .capital__manage-item.custom-col.fit-content
+              a(href="#").site-btn
+                span Залишити відгук
+            .capital__manage-item.custom-col.fit-content
+              a(href="https://system.skladusa.com/registration").site-link
+                span Зареєcтруватися
+        .capital__media
+          .capital__media-img
+            img(src="./img/testimonial-on-hore.svg" alt="education" width="431" height="431").lazyload
+
+
+
+    include ./modules/_all-services
+

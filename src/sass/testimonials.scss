@@ -1,0 +1,19 @@
+@import "./modules/_mixins";
+@import "./modules/_colors";
+
+.testimonials{
+  .capital__content{
+    .capital__title{
+      @include from-1100{
+        width: calc(100% + 30px);
+      }
+    }
+  }
+
+  .capital__media{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 38px;
+  }
+
+}

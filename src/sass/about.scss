@@ -1,19 +1,77 @@
 @import "./modules/_mixins";
 @import "./modules/_colors";
 
+.about .page__wrapper{
+  background-position: center top;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1100px){
+    background-image: url("../img/background-img-homepage--top.svg");
+  }
+
+  @media (min-width: 1446px){
+    background-image: url("../img/background-img-homepage--top1920(1).svg");
+    background-size: auto;
+  }
+
+  @media (min-width: 1600px){
+    background-size: 100%;
+  }
+
+  @include for-992{
+    background-size: cover;
+  }
+}
+
 .about .numbered-tiles__gift{
   display: none;
+}
+
+.about .capital__media{
+  @include for-680{
+    margin-top: -20px;
+  }
+}
+
+.about .capital__content{
+  @include for-680{
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .benefit-about{
   &__content{
     position: relative;
+
+    @include from-1100{
+      padding-bottom: 37px;
+    }
+
+    @include for-1100{
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__media{
     position: absolute;
     left: 0;
     top: -65px;
+
+    @include for-1100{
+      position: relative;
+      top: 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__media-img{
+    @include from-1100{
+      transform: translate(-37px, -11px);
+    }
   }
 }
 
@@ -39,8 +97,10 @@
     display: flex;
     justify-content: space-between;
 
-    @include from-1400 {
+    @include from-1100 {
       padding-left: 50px;
+      padding-top: 26px;
+      padding-bottom: 12px;
     }
 
     @include for-1100{
@@ -67,6 +127,13 @@
 
     @include for-680{
       width: 100%;
+    }
+  }
+
+  &__item:first-child &__item-content{
+    @include from-1100{
+      justify-content: flex-start;
+      padding-left: 15px;
     }
   }
 
@@ -124,6 +191,8 @@
     font-size: 72px;
     line-height: 111.69%;
     color: $brown;
+    margin-bottom: 10px;
+
 
     span{
       min-width: 124px;
@@ -149,8 +218,8 @@
   }
 
   &__floating-img{
-    right: 0;
-    top: 360px;
+    right: 47px;
+    top: 355px;
   }
 
   &__head{
@@ -165,8 +234,9 @@
     display: flex;
     flex-direction: column;
 
-
     &--desktop{
+      padding-top: 13px;
+
       @include for-992{
         display: none;
       }
@@ -225,6 +295,11 @@
     padding-bottom: 40px;
     padding-left: 79px;
 
+    @include for-992{
+      padding-top: 32px;
+      padding-bottom: 16px;
+    }
+
     &:not(.timeline__section-content:first-child){
       &:after{
         content: '';
@@ -247,6 +322,11 @@
       position: absolute;
       left: 55px;
       transform: translateX(-50%);
+
+
+      @include for-992{
+        height: 32px;
+      }
     }
   }
 
@@ -299,6 +379,10 @@
 
   }
 
+  &__col:last-child &__col-content{
+    padding-bottom: 0;
+  }
+
   &__col-content{
     max-width: 255px;
     padding-bottom: 56px;
@@ -306,6 +390,7 @@
 
     @include for-992{
       max-width: 100%;
+      padding-bottom: 32px;
     }
 
 
@@ -371,6 +456,8 @@
     line-height: 141.19%;
     color: #000000;
   }
+
+
 
 }
 
