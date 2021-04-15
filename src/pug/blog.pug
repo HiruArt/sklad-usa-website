@@ -125,13 +125,33 @@ block content
                 a(href="#").blog-list__title Процесс роботи SKLADUSA: що після прибуття товару на склад
                 .blog-list__desc Після прибуття товару на склад, замовлення додатково упакують (за...
 
+    //.site-pagination
+    //  .site-pagination__inner.site-container
+    //    ul.site-pagination__items
+    //      li
+    //        span.site-pagination__item.first.inactive Попередня
+    //      li
+    //        a(href="#").site-pagination__item.active 1
+    //      li
+    //        a(href="#").site-pagination__item 2
+    //      li
+    //        a(href="#").site-pagination__item 3
+    //      li
+    //        a(href="#").site-pagination__item 4
+    //      li
+    //        a(href="#").site-pagination__item.dots ...
+    //      li
+    //        a(href="#").site-pagination__item.black 23
+    //      li
+    //        a(href="#").site-pagination__item.last Наступна
+
     .site-pagination
       .site-pagination__inner.site-container
         ul.site-pagination__items
-          li
-            span.site-pagination__item.first.inactive Попередня
-          li
-            a(href="#").site-pagination__item.active 1
+          li.first.disabled
+            span Попередня
+          li.disabled
+            span 1
           li
             a(href="#").site-pagination__item 2
           li
@@ -141,9 +161,9 @@ block content
           li
             a(href="#").site-pagination__item.dots ...
           li
-            a(href="#").site-pagination__item.black 23
-          li
-            a(href="#").site-pagination__item.last Наступна
+            a(href="#").site-pagination__item 23
+          li.last
+            a(href="#").site-pagination__item Наступна
 
 
 

@@ -9,7 +9,7 @@ block content
   div.main-wrap
     .capital.testimonials-block
       .capital__inner.site-container.site-container--section
-        .capital__content.grid-padding
+        .capital__content.capital__content--top-block.grid-padding
           .capital__title.site-title
             .site-title__ico.shadow
               include ../img/site-title-icon01.svg
@@ -27,6 +27,94 @@ block content
         .capital__media
           .capital__media-img
             img(src="./img/testimonial-on-hore.svg" alt="education" width="431" height="431").lazyload
+
+      .reviews-all
+        .reviews-all__inner.site-container.site-container--section
+          .reviews-all__content.grid-padding
+            .reviews-all__title.site-title.mw-100
+              .site-title__ico.shadow
+                include ../img/site-title-reviews-all.svg
+              .site-title__designation Вiдгуки
+              .site-title__large Ми цiнуємо наших клiєнтiв, <br>а вони&nbsp;
+                span вдячнi за нашу працю
+
+          .reviews-all__list-wrapper.grid-padding
+            .reviews-all__floating-img.floating-img
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/floating-img01.svg" alt="floating").floating-img__i.lazyload
+            .reviews-all__truck-img
+              include ../img/truck-cart-img.svg
+            .reviews-all__list
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Завдяки повноцінному складу, ви маєте можливість відправляти за допомогою консолідації свої замовлення в «непідготовленому для відправки вигляді»,що дозволить зменшити вартість доставки.
+                  .reviews-all__item-author.site-case__name Олiвiя
+
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Великий вибір методів доставки дозволяє обрати оптимальний варіант за співвідношенням ціна/швидкість.
+                  .reviews-all__item-author.site-case__name Олiвiя
+
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et metus ac lectus faucibus feugiat. Cras in venenatis leo. Fusce quis egestas tortor. Integer nec accumsan justo, nec semper dolor. Donec non eleifend dui. Aenean sed fermentum nulla. Maecenas eleifend mauris eu dui placerat tristique. Fusce sed pharetra lacus, nec sagittis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed accumsan, massa aliquet imperdiet condimentum, enim tellus ullamcorper arcu, eu venenatis ex tellus eu nulla. <br><br>
+                      | Morbi luctus dolor sapien, a pretium est vulputate eget. Aliquam tempor vulputate consequat. Donec ipsum est, tempor eu odio vel, egestas hendrerit tortor. Ut pulvinar molestie mi sit amet dapibus. Donec posuere turpis sapien, eget vulputate mi imperdiet nec. Morbi lacus risus, venenatis quis mollis et, interdum tempus eros. In in tincidunt massa, sit amet sollicitudin quam.
+                  .reviews-all__item-author.site-case__name Олiвiя
+
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Завдяки повноцінному складу, ви маєте можливість відправляти за допомогою консолідації свої замовлення в «непідготовленому для відправки вигляді»,що дозволить зменшити вартість доставки.
+                  .reviews-all__item-author.site-case__name Олiвiя
+
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Великий вибір методів доставки дозволяє обрати оптимальний варіант за співвідношенням ціна/швидкість.
+                  .reviews-all__item-author Олiвiя
+
+              .reviews-all__item
+                .reviews-all__item-content.site-case
+                  .reviews-all__item-txt
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et metus ac lectus faucibus feugiat. Cras in venenatis leo. Fusce quis egestas tortor. Integer nec accumsan justo, nec semper dolor. Donec non eleifend dui. Aenean sed fermentum nulla. Maecenas eleifend mauris eu dui placerat tristique. Fusce sed pharetra lacus, nec sagittis sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed accumsan, massa aliquet imperdiet condimentum, enim tellus ullamcorper arcu, eu venenatis ex tellus eu nulla. <br><br>
+                      | Morbi luctus dolor sapien, a pretium est vulputate eget. Aliquam tempor vulputate consequat. Donec ipsum est, tempor eu odio vel, egestas hendrerit tortor. Ut pulvinar molestie mi sit amet dapibus. Donec posuere turpis sapien, eget vulputate mi imperdiet nec. Morbi lacus risus, venenatis quis mollis et, interdum tempus eros. In in tincidunt massa, sit amet sollicitudin quam.
+                  .reviews-all__item-author.site-case__name Олiвiя
+
+            .reviews-all__pagination.site-pagination
+              .site-pagination__inner.site-container
+                ul.site-pagination__items
+                  li.first.disabled
+                    span Попередня
+                  li.disabled
+                    span 1
+                  li
+                    a(href="#").site-pagination__item 2
+                  li
+                    a(href="#").site-pagination__item 3
+                  li
+                    a(href="#").site-pagination__item 4
+                  li
+                    a(href="#").site-pagination__item.dots ...
+                  li
+                    a(href="#").site-pagination__item 23
+                  li.last
+                    a(href="#").site-pagination__item Наступна
+
+
+      .give-feedback
+        .give-feedback__inner.site-container.site-container--section
+          .give-feedback__content.grid-padding
+            .give-feedback__title.site-title.mw-100
+              .site-title__ico.shadow
+                include ../img/site-title-give-feedback.svg
+              .site-title__designation Ваш вiдгук
+              .site-title__large Якщо ви маєте досвід роботи зі <br>а вони&nbsp;
+                span вдячнi за нашу працю
+
+          .give-feedback__form-wrapper.grid-padding
+            .give-feedback__inner
 
 
 

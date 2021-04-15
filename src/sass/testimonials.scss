@@ -15,5 +15,110 @@
     margin-right: auto;
     margin-top: 38px;
   }
+}
+
+.reviews-all{
+  &__inner{
+
+  }
+
+  &__content{
+
+  }
+
+  &__title{
+
+  }
+
+  &__list-wrapper{
+    padding-top: 20px;
+    position: relative;
+  }
+
+  &__floating-img{
+    right: 7px;
+    top: calc(27% + 3px);
+
+    &.floating-img {
+      @include for-1200 {
+        display: block;
+      }
+
+      @include for-992{
+        display: none;
+      }
+    }
+  }
+
+  &__truck-img{
+    position: absolute;
+    left: -162px;
+    bottom: calc(41% + 4px);
+    width: 163px;
+
+    @include for-1200{
+      display: none;
+    }
+
+    svg{
+      width: 100%;
+    }
+  }
+
+  &__list{
+    @include from-992{
+      max-width: 726px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 16px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-content{
+
+    p{
+      line-height:  23px;
+    }
+
+    &.site-case {
+      padding: 32px;
+    }
+  }
+
+  &__item-txt{
+    margin-bottom: 18px;
+  }
+
+  &__item-author{
+
+    &.site-case__name{
+      margin-bottom: 0;
+    }
+  }
+
+  &__pagination{
+
+    @include from-992{
+      display: flex;
+      justify-content: flex-end;
+      max-width: 726px;
+
+
+      &.site-pagination{
+        padding-top: 36px;
+      }
+
+      .site-pagination__inner,
+      .site-pagination__items{
+        margin: 0;
+        width: fit-content;
+      }
+    }
+  }
 
 }
