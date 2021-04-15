@@ -4,7 +4,8 @@ block vars
   - var pageTitle = "arbitration";
   - var pageClass = "arbitration";
   - var pageActive = "arbitration";
-
+  - var pageSection = "services";
+  - var pageName = "Арбiтраж";
 
 block content
   div.main-wrap
@@ -61,7 +62,7 @@ block content
                  .site-case__name Пiдвищення репутацiї
                  p Ви отримуєте можливість повністю задовільнити попит споживача, підвищуючи власну репутацію, як продавця.
 
-     .table-block
+     .arbitration__table.table-block
        .table-block__inner.site-container.site-container--section.double-block
          .table-block__content.grid-padding.left-block
            .table-block__title.site-title
@@ -104,7 +105,7 @@ block content
                      td Вiдправлення до складу Amazon
                      td за тарифами перевізників
 
-     .l-media-r-info.sklad-fbm-modyf
+     .arbitration-media-info.l-media-r-info.sklad-fbm-modyf
        .l-media-r-info__inner.site-container.site-container--section.double-block
          .l-media-r-info__media.left-block.left-media
            .l-media-r-info__media-img
@@ -116,15 +117,14 @@ block content
              .site-title__ico.shadow
                include ../img/site-title-box.svg
              .site-title__designation Слкад FBM
-             .site-title__large
-               span Преп центр у США&nbsp;<br></span>необхiднiсть №1 для торгiвлi закордон
+             .site-title__large <span>Преп центр у США&nbsp;<br></span>необхiднiсть №1 для торгiвлi закордон
            .mw-377
              p З його допомогою вдасться вирішувати всі організаційні питання, робити це швидко і якісно, ​​підвищуючи рівень сервісу для покупців, отримуючи позитивні відгуки.
              p Ви можете не турбуватися про прийом платежів і процедурах повернення, пов’язані з ними формальності теж будуть вирішені.
              a(href="https://system.skladusa.com/registration").site-btn
                span Детальнiше про склад
 
-     .plans
+     .arbitration__plans.plans
       .plans__inner.site-container.site-container--section
        .plans__head.grid-padding
         .plans__title.site-title
@@ -171,10 +171,11 @@ block content
               include ../img/site-title-icon01.svg
             .site-title__designation Про нас
             .site-title__large Працювати зi SKLADUSA&nbsp;<br><span>зручно та вигiдно</span>
-          ul.arbitration__about-description SkladUSA – одна з небагатьох компаній, що пропонують якісні і недорогі послуги фулфілмента. Для вас ми пропонуємо:
-            li ціна послуг максимально доступна, обговорюється індивідуально з клієнтом;
-            li фулфілмент компанія веде прозору діяльність, працює за офіційними договорами;
-            li доставка в Америку здійснюється дуже швидко, обмеження по кількості одиниць, обсягом і масі вантажу відсутні;
+          .arbitration__about-description SkladUSA – одна з небагатьох компаній, що пропонують якісні і недорогі послуги фулфілмента. Для вас ми пропонуємо:
+            ul
+              li ціна послуг максимально доступна, обговорюється індивідуально з клієнтом;
+              li фулфілмент компанія веде прозору діяльність, працює за офіційними договорами;
+              li доставка в Америку здійснюється дуже швидко, обмеження по кількості одиниць, обсягом і масі вантажу відсутні;
           a(href="https://system.skladusa.com/registration").site-btn
             span Детальнiше про нас
         .arbitration__content.grid-padding.right-block
