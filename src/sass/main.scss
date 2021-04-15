@@ -790,6 +790,48 @@ input, textarea {
     }
   }
 
+  &__social{
+    display: flex;
+    padding-top: 15px;
+
+    @include from-800{
+      padding-left: 57px;
+    }
+  }
+
+  &__social-i{
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__social-ico{
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey;
+    border-radius: 50%;
+    position: relative;
+
+    svg{
+      transition: .1s ease-in-out;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__social-i:hover &__social-ico{
+    background: $brown;
+    border-color: $brown;
+    svg {
+      path{
+        fill: white;
+      }
+    }
+  }
 }
 
 

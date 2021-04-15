@@ -217,6 +217,8 @@
     line-height: 24px;
     color: $grey;
     margin-right: 12px;
+    display: flex;
+
   }
 
   &__share-item{
@@ -228,6 +230,22 @@
     justify-content: center;
     border: 1px solid #8f7a614d;
     margin-right: 8px;
+    transition: .1s ease-in-out;
+
+    svg{
+
+      path{
+        transition: .1s ease-in-out;
+      }
+    }
+
+    &:hover{
+      background: $brown;
+
+      svg path{
+        fill: white;
+      }
+    }
   }
 
   &__useful{

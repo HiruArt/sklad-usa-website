@@ -65,16 +65,16 @@ block content
 
         .blog-article__share
           .blog-article__share-name Share
-          .blog-article__share-item
+          a(href="https://www.facebook.com/skladUSA" target="_blank" rel="nofollow").blog-article__share-item
             include ../img/ico/fb.svg
-          .blog-article__share-item
-            include ../img/ico/twitter.svg
+          //.blog-article__share-item
+          //  include ../img/ico/twitter.svg
 
 
         .blog-article__useful
           .blog-article__useful-title Чи була стаття корисною для вас?
           .blog-article__useful-btns
-            a(href='#').blog-article__useful-btn Так, корисна
+            a(href='javascript:void(0);' data-modal-class="thank-popup").blog-article__useful-btn Так, корисна
             a(href='#' data-modal-class="article-not-useful-popup").blog-article__useful-btn Нi, не корисна
 
 

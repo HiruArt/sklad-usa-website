@@ -169,7 +169,9 @@
   }
   &__title{
     .site-title__large{
+      @include from-1400 {
         width: calc(100% + 70px);
+      }
     }
   }
 
@@ -189,7 +191,11 @@
       margin-bottom: 32px;
       font-size: 16px;
       line-height: 22px;
-      width: calc(100% + 60px);
+
+      @include from-1400{
+        width: calc(100% + 60px);
+      }
+
       & li{
         margin: 12px 0;
         margin-left: 20px;

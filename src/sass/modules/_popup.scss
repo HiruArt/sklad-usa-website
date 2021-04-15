@@ -28,6 +28,7 @@
     width: fit-content;
     margin: 0 auto;
     margin-top: 40px;
+    padding-bottom: 30px;
 
     @include for-800{
       margin-top: 30px;
@@ -213,4 +214,15 @@
     }
   }
 
+}
+
+
+#site-popup{
+
+  .reviews__txt, .reviews p{
+    display: flex;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    overflow: hidden;
+  }
 }
