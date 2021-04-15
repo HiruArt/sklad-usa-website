@@ -110,12 +110,29 @@ block content
               .site-title__ico.shadow
                 include ../img/site-title-give-feedback.svg
               .site-title__designation Ваш вiдгук
-              .site-title__large Якщо ви маєте досвід роботи зі <br>а вони&nbsp;
-                span вдячнi за нашу працю
+              .site-title__large Якщо ви маєте досвід роботи зі <br>SkladUSA,&nbsp;
+                span будь-ласка, поділіться ним!
 
           .give-feedback__form-wrapper.grid-padding
-            .give-feedback__inner
-
+            .give-feedback__form.site-form
+              form#contactFormId(action="/forms-handler/" method="post" enctype="multipart/form-data")
+                .form-group.site-form__col(class="field-contactform-contactperson required")
+                  label.site-form__item
+                    input(type="text" id="contactform-contactperson" class="form-control" name="ContactForm[contactPerson]" aria-required="true" aria-invalid="false" value="Tatiana")
+                    .help-block
+                    .site-form__label Name
+                .form-group.site-form__col(class="field-contactform-email required")
+                  label.site-form__item
+                    input(type="text" id="field-contactform-email" class="form-control" name="ContactForm[contactPerson]" aria-required="true" aria-invalid="false")
+                    .help-block
+                    .site-form__label E-mail
+                .form-group(class="field-contactform-message required")
+                  label.site-form__item
+                    textarea(id="contactform-message" class="form-control" name="ContactForm[message]"  aria-required="true" aria-invalid="true")
+                    .help-block
+                    .site-form__label Message
+                .bottom.loaded-file
+                  button(type="submit" id="ask-question-btn-id" class="btn-arrow btn" onclick="return false") Відправити
 
 
     include ./modules/_all-services

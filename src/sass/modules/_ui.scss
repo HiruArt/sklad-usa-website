@@ -1274,3 +1274,173 @@ ul.site-ul{
   }
 
 }
+
+
+.site-form{
+
+  .form-group{
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 24px;
+  }
+
+  &__col.form-group {
+    @include from-680 {
+      width: 50%;
+    }
+  }
+
+  form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    position: relative;
+  }
+
+  .bottom{
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  button{
+    display: flex;
+    padding: 11px 24px;
+    background: #CD9E64;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    width: fit-content;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    @include from-1100 {
+      &:hover {
+        background: $brown;
+      }
+    }
+
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    @include for-350{
+      font-size: 12px;
+    }
+
+  }
+
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label{
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    opacity: 0.2;
+    position: absolute;
+    left: 16px;
+    top: 13px;
+    transition: 0.15s all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 15px);
+    overflow: hidden;
+  }
+
+  input[type="text"]{
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 42px;
+    background: $white;
+    border: 1px solid $hints;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    @include for-680{
+      font-size: 16px;
+    }
+
+    &::placeholder{
+      font-size: 14px;
+      color: $brownOp02;
+      vertical-align: middle;
+      line-height: revert;
+    }
+
+    &:disabled{
+      background: $brownOp02;
+      color: $grey;
+      border-color: transparent;
+      opacity: 1;
+    }
+  }
+
+  textarea{
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: $white;
+    border: 1px solid $hints;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 100px;
+    resize: none;
+  }
+
+  .label-active {
+    input[type="text"],textarea {
+      border-color: $accent;
+    }
+  }
+
+  .label-active &__label{
+    color: $hints;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: $white;
+    background: linear-gradient(180deg, #F4ECE1 0%, #F8F4EE 100%);
+    transform: translate(0, -20px);
+    opacity: 1;
+    padding: 1px 2px;
+  }
+
+
+  .has-error {
+    input[type="text"], textarea{
+      border-color: $accent;
+    }
+
+    .help-block{
+      color: #f2994a;
+    }
+  }
+
+  .has-success {
+    input[type="text"], textarea{
+      border: 2px solid rgba(40, 175, 96, .6);
+    }
+  }
+
+  .help-block{
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+
+}

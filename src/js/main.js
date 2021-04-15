@@ -32,6 +32,22 @@ if (UAString.indexOf("Trident") !== -1 && UAString.indexOf("rv:10") !== -1) {
 
 $(document).ready(function() {
 
+    if($('.site-form').length > 0) {
+
+        $('.site-form').find('input[type="text"], textarea').each(function(){
+            $(this).val().length > 0 ? $(this).parent().addClass('label-active') : $(this).parent().removeClass('label-active');
+        });
+
+        $('.site-form').find('input[type="text"], textarea').focus(function (e) {
+            $(this).parent().addClass('label-active')
+        });
+
+        $('.site-form').find('input[type="text"], textarea').blur(function (e) {
+            $(this).val().length > 0 ? $(this).parent().addClass('label-active') : $(this).parent().removeClass('label-active');
+        });
+
+    }
+
     if($('[data-max-count]').length > 0) {
 
         function animateValue(id, start, end, duration) {
