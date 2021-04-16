@@ -14,6 +14,14 @@ html(lang="uk")
 
     //favicon
     link(rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon")
+    link(rel='apple-touch-icon' sizes='180x180' href='./img/favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='./img/favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='./img/favicon/favicon-16x16.png')
+    link(rel='manifest' href='./img/favicon/site.webmanifest')
+    link(rel='mask-icon' href='./img/favicon/safari-pinned-tab.svg' color='#ffa200')
+    meta(name='msapplication-TileColor' content='#ffc40d')
+    meta(name='theme-color' content='#ffffff')
+
 
     if (pageActive === "homepage")
       link(rel='stylesheet', href='./css/libs/slick.css?' + cacheFix)
@@ -100,6 +108,7 @@ html(lang="uk")
 
       include modules/_thank-popup.pug
       include modules/_site-popup.pug
+      include modules/_calculator-popup
 
     block scripts
       script(src='./js/libs/jquery.js')

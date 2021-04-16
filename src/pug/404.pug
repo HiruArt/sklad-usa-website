@@ -1,0 +1,17 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Error404";
+  - var pageClass = "error404";
+  - var pageActive = "error404";
+
+block content
+  div.main-wrap
+    .error404-block.site-container
+      .error404-block__ico
+        include ../img/404.svg
+      .error404-block__message
+        p <b>Здається, щось пішло не так. Давайте перейдемо на головну сторінку, щоб почати шлях із самого початку</b>
+      .error404-block__btn
+        a(href="/").site-btn
+          span На головну

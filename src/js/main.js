@@ -189,6 +189,19 @@ $(document).ready(function () {
   $(document).on('click', '[data-modal-class]', function (e) {
     e.preventDefault();
     var dataModalId = $(this).attr('data-modal-class');
+
+    if (dataModalId === 'calculator-popup'){
+      let dataLazyloadSrc = $('.calculator-popup').find('iframe').attr('data-lazyload-src');
+      if($('.calculator-popup').find('iframe').attr('data-src') !== dataLazyloadSrc){
+        $('.calculator-popup').find('iframe').attr('data-src', dataLazyloadSrc);
+        $('.calculator-popup').find('iframe').addClass('lazyload');
+        setTimeout(function () {
+          lazySizes.init();
+        }, 50);
+
+      }
+    }
+
     $('.popup.' + dataModalId + '').addClass('open');
   });
 
