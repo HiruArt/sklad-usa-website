@@ -2195,11 +2195,12 @@ input, textarea {
   }
 
   .popup__content{
-    padding: 45px 30px 20px 15px;
+    //padding: 45px 30px 20px 15px;
+    padding: 24px 15px 24px 15px;
 
     @include from-800{
       min-width: 768px;
-      padding: 24px 15px 24px 15px;
+
     }
 
     @include for-800{
@@ -2218,7 +2219,7 @@ input, textarea {
   }
 }
 
-.systemField.field-reviewform-emptyfield{
+.systemField{
   height: 0;
   visibility: hidden;
   z-index: -1;
