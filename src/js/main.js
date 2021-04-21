@@ -203,6 +203,7 @@ $(document).ready(function () {
     }
 
     $('.popup.' + dataModalId + '').addClass('open');
+    $('.popup.' + dataModalId + '').addClass('oh');
   });
 
   $(document).on('click', '.popup__close', function (e) {
@@ -211,6 +212,7 @@ $(document).ready(function () {
       $(this).closest('#site-popup').find('.popup__content div').remove();
     }
     $('.popup ').removeClass('open');
+    $('body').removeClass('oh');
   });
 
   $(document).on('click', '.popup', function (e) {
@@ -219,6 +221,7 @@ $(document).ready(function () {
         $(this).closest('#site-popup').find('.popup__content div').remove();
       }
       $('.popup ').removeClass('open');
+      $('body').removeClass('oh');
     }
   });
   /*popups end*/

@@ -2225,3 +2225,33 @@ input, textarea {
   z-index: -1;
   opacity: 0;
 }
+
+
+.article-not-useful-form .form-input{
+  position: relative;
+
+  &.has-error{
+
+    .help-block {
+      padding-left: 27px;
+      position: absolute;
+      top: calc(100% + 5px);
+      left: 0;
+      font-size: 11px;
+      line-height: 13px;
+      color: #f2994a;
+
+      @include for-550{
+        padding-left: 0;
+      }
+    }
+  }
+
+  .other-reason-input{
+    @include for-550{
+      margin-left: 0;
+      min-width: auto;
+      width: 100%;
+    }
+  }
+}
