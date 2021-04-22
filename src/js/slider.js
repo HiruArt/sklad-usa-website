@@ -56,6 +56,32 @@ $(document).ready(function () {
 		});
 	}
 
+	// if ($('.js_slider-reviews-mini').length > 0 && $(window).width() < 992) {
+	// 	$('.js_slider-reviews-mini').slick({
+	// 		infinite: true,
+	// 		arrows: false,
+	// 		speed: 500,
+	// 		dots: true,
+	// 		responsive: [
+	// 			{
+	// 				breakpoint: 1100,
+	// 				settings: {
+	// 					slidesToShow: 2,
+	// 					slidesToScroll: 2
+	// 				}
+	// 			},
+	// 			{
+	// 				breakpoint: 550,
+	// 				settings: {
+	// 					slidesToShow: 1.05,
+	// 					slidesToScroll: 1,
+	// 				}
+	// 			}
+	//
+	// 		]
+	// 	});
+	// }
+
 	if ($('.other-article__items').length > 0) {
 		$('.other-article__items').slick({
 			infinite: true,

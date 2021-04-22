@@ -2,14 +2,14 @@
 @import "./modules/_colors";
 
 .arbitration .page__wrapper{
-  background-image: url("../img/background-img-return-processing.svg");
+  background-image: url("../img/background-img-return-processing.svg?123");
   background-size: auto;
   background-repeat: no-repeat;
 
 
 
   @media (min-width: 1446px){
-    background-image: url("../img/background-img-return-processing1920.svg");
+    background-image: url("../img/background-img-return-processing1920.svg?123");
     background-position: center top;
     background-size: auto;
   }
@@ -23,7 +23,7 @@
   }
 
   @include for-1100{
-    background-image: url("../img/background-img-return-processing1100.svg");
+    background-image: url("../img/background-img-return-processing1100.svg?123");
     background-size: auto;
     background-position: center 2%;
   }

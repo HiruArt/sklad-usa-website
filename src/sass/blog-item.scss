@@ -3,19 +3,19 @@
 
 
 .blog-item .page__wrapper {
-  background: url("../img/background-img-blog-item1920.svg") center 425px no-repeat, url("../img/top-left-bg.svg") top left no-repeat;
+  background: url("../img/background-img-blog-item1920.svg?123") center 425px no-repeat, url("../img/top-left-bg.svg?123") top left no-repeat;
   background-size: auto;
   //background-repeat: no-repeat;
 
   @media (max-width: 1440px) {
-    background: url("../img/background-img-blog-item1440.svg") center 290px no-repeat, url("../img/top-left-bg.svg") top left no-repeat;
+    background: url("../img/background-img-blog-item1440.svg?123") center 290px no-repeat, url("../img/top-left-bg.svg?123") top left no-repeat;
     //background-position: center 290px;
     background-size: auto;
     //background-repeat: no-repeat;
   }
 
   @media (max-width: 768px) {
-    background: url("../img/background-img-blog-item768.svg") center 400px no-repeat;
+    background: url("../img/background-img-blog-item768.svg?123") center 400px no-repeat;
     background-size: auto;
   }
 
@@ -173,7 +173,7 @@
         display: block;
         width: 49px;
         height: 40px;
-        background: url("../img/ico/quote.svg") center center no-repeat;
+        background: url("../img/ico/quote.svg?123") center center no-repeat;
         position: absolute;
         top: 8px;
         left: -100px;
@@ -404,7 +404,7 @@
     right: 0;
     width: 170px;
     height: 168px;
-    background: url("../img/blog-item-box.svg") center center no-repeat;
+    background: url("../img/blog-item-box.svg?123") center center no-repeat;
   }
 }
 
@@ -423,6 +423,6 @@
     right: 0;
     width: 142px;
     height: 205px;
-    background: url("../img/blog-item-telega.svg") center center no-repeat;
+    background: url("../img/blog-item-telega.svg?123") center center no-repeat;
   }
 }

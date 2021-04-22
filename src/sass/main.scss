@@ -29,14 +29,14 @@ input, textarea {
 /*rhombus bg*/
 
 .rhombus .page__wrapper{
-  background-image: url("../img/background-img-rhombus.svg");
+  background-image: url("../img/background-img-rhombus.svg?123");
   background-size: auto;
   background-repeat: no-repeat;
 
 
 
   @media (min-width: 1446px){
-    background-image: url("../img/background-img-rhombus1920.svg");
+    background-image: url("../img/background-img-rhombus1920.svg?123");
     background-position: center top;
     background-size: auto;
   }
@@ -50,7 +50,7 @@ input, textarea {
   }
 
   @include for-1100{
-    background-image: url("../img/background-img-rhombus1100.svg");
+    background-image: url("../img/background-img-rhombus1100.svg?123");
     background-size: auto;
     background-position: center 2%;
   }
@@ -1448,6 +1448,29 @@ input, textarea {
   }
 
 
+  &__list{
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include for-992{
+
+      .slick-list {
+        padding: 15px 0 15px 15px!important;
+      }
+    }
+  }
+
+  &__list &__item{
+    width: 33.33333%;
+    padding: 0 15px;
+
+    @include for-992{
+      width: 100%;
+    }
+  }
+
+
 }
 
 
@@ -2112,7 +2135,7 @@ input, textarea {
     &:checked + label:before{
       border: 1px solid #8F7A61;
       opacity: 1;
-      background: #8F7A61 url("../img/check.svg") center center no-repeat;
+      background: #8F7A61 url("../img/check.svg?123") center center no-repeat;
     }
   }
 
@@ -2189,28 +2212,60 @@ input, textarea {
       width: 100%;
     }
 
-    @media(max-width: 360px){
-      padding: 0 15px;
+    //@media(max-width: 360px){
+    //  padding: 0 15px;
+    //}
+  }
+
+  .popup__body{
+    @include for-992{
+      margin-top: 0;
+      margin-bottom: 0;
+      border-radius: 0;
+      padding: 0;
     }
   }
 
   .popup__content{
     //padding: 45px 30px 20px 15px;
-    padding: 24px 15px 24px 15px;
+    padding: 45px 15px 24px 15px;
+    min-width: 768px;
+
+
+    @include for-992{
+      min-width: initial;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      border-radius: 0;
+      overflow-y: auto;
+      position: relative;
+      padding: 0;
+
+      padding-top: 40px;
+
+      .site-calculator{
+        height: 100%;
+      }
+
+      iframe{
+        height: 100%;
+      }
+    }
 
     @include from-800{
-      min-width: 768px;
+      //min-width: 768px;
 
     }
 
     @include for-800{
-      min-width: calc(100vw - 30px);
-      position: relative;
+      //min-width: calc(100vw - 30px);
+      //position: relative;
     }
 
     @media(max-width: 360px){
       //min-width: calc(100vw - 30px);
-      left: auto;
+      //left: auto;
     }
   }
 

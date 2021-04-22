@@ -3,7 +3,7 @@
 
 
 .blog .page__wrapper {
-  background-image: url("../img/background-img-blog.svg");
+  background-image: url("../img/background-img-blog.svg?123");
   background-position: bottom center;
   background-size: auto;
   background-repeat: no-repeat; }
@@ -83,7 +83,7 @@
       font-size: 0;
       margin-left: -48px;
 
-      background: $accent url("../img/magnifying.svg") center center no-repeat;
+      background: $accent url("../img/magnifying.svg?123") center center no-repeat;
     }
   }
 

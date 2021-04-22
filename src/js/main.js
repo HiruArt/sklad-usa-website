@@ -191,6 +191,7 @@ $(document).ready(function () {
     var dataModalId = $(this).attr('data-modal-class');
 
     if (dataModalId === 'calculator-popup'){
+      $('body').addClass('oh');
       let dataLazyloadSrc = $('.calculator-popup').find('iframe').attr('data-lazyload-src');
       if($('.calculator-popup').find('iframe').attr('data-src') !== dataLazyloadSrc){
         $('.calculator-popup').find('iframe').attr('data-src', dataLazyloadSrc);
@@ -203,7 +204,6 @@ $(document).ready(function () {
     }
 
     $('.popup.' + dataModalId + '').addClass('open');
-    $('.popup.' + dataModalId + '').addClass('oh');
   });
 
   $(document).on('click', '.popup__close', function (e) {

@@ -2,7 +2,7 @@
 @import "./modules/_colors";
 
 .homepage .page__wrapper{
-  background-image: url("../img/background-img-homepage--top.svg"), url("../img/background-img-homepage--bottom.svg");
+  background-image: url("../img/background-img-homepage--top.svg?123"), url("../img/background-img-homepage--bottom.svg?123");
   background-position: center top, center bottom;
   background-size: auto, auto;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
 
   @media (min-width: 1446px){
-    background-image: url("../img/background-img-homepage--top1920(1).svg"), url("../img/background-img-homepage--bottom1920(1).svg");
+    background-image: url("../img/background-img-homepage--top1920(1).svg?123"), url("../img/background-img-homepage--bottom1920(1).svg?123");
     background-size: auto, auto;
   }
 

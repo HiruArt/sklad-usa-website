@@ -3,7 +3,7 @@
 
 
 .testimonials .page__wrapper{
-  background-image: url("../img/background-img-testimonials--top.svg"), url("../img/background-img-testimonials--bottom.svg");
+  background-image: url("../img/background-img-testimonials--top.svg?123"), url("../img/background-img-testimonials--bottom.svg?123");
   background-position: center top, center calc(100% + 215px);
   background-size: auto, auto;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 
   @media (min-width: 1446px){
-    background-image: url("../img/background-img-testimonials--top1920.svg"), url("../img/background-img-testimonials--bottom1920.svg");
+    background-image: url("../img/background-img-testimonials--top1920.svg?123"), url("../img/background-img-testimonials--bottom1920.svg?123");
     background-size: auto, auto;
   }
 
@@ -20,7 +20,7 @@
   }
 
   @include for-1100{
-    background-image: url("../img/background-img-testimonials--bottom1100.svg");
+    background-image: url("../img/background-img-testimonials--bottom1100.svg?123");
     background-size: auto;
     background-position: center bottom;
   }

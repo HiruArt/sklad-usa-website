@@ -2,14 +2,14 @@
 @import "./modules/_colors";
 
 .agreement .page__wrapper{
-  background-image: url("../img/background-img-three-pages.svg");
+  background-image: url("../img/background-img-three-pages.svg?123");
   background-size: auto;
   background-repeat: no-repeat;
 
 
 
   @media (min-width: 1446px){
-    background-image: url("../img/background-img-three-pages1920.svg");
+    background-image: url("../img/background-img-three-pages1920.svg?123");
     background-position: center top;
     background-size: auto;
   }
