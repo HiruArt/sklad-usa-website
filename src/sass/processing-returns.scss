@@ -3,13 +3,13 @@
 
 
 .processing-returns .page__wrapper{
-	background-image: url("../img/background-img-return-processing.svg?123");
+  background-image: url("../img/background-img-consolidation.svg?123");
 	background-size: auto;
 	background-repeat: no-repeat;
 
 
 	@media (min-width: 1446px){
-		background-image: url("../img/background-img-return-processing1920.svg?123");
+    background-image: url("../img/background-img-consolidation1920.svg?123");
 		background-position: center top;
 		background-size: auto;
 	}
@@ -23,7 +23,7 @@
 	}
 
 	@include for-1100{
-		background-image: url("../img/background-img-return-processing1100.svg?123");
+   background-image: url("../img/background-img-consolidation1100.svg?123");
 		background-size: auto;
 		background-position: center 2%;
 	}
@@ -163,6 +163,8 @@
 			padding-top: 10px;
 			padding-bottom: 10px;
 			white-space: nowrap;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 
 		&:after{
@@ -250,6 +252,7 @@
 	}
 	&__form-wrapper{
 		display: flex;
+		padding-top: 24px;
 
 		@include for-680{
 			flex-direction: column-reverse;
