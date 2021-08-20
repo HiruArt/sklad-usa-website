@@ -278,4 +278,24 @@ $(document).ready(function () {
   });
 
 
+  /***
+   * Script for tabs
+   */
+
+  $(document).on("click", "[data-tab]", function (e) {
+    let dataTabContentName = $(this).attr("data-tab");
+    $("[data-tab]").removeClass("active");
+    $(this).addClass("active");
+    $("[data-tab-content]").removeClass("active");
+    $("[data-tab-content=" + dataTabContentName + "]").addClass("active");
+  });
+
+  $("[data-target]").click(function(e) {
+    let target = $(this).attr('data-target');
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $(target).offset().top - 100
+    }, 1000);
+  });
+
+
 });

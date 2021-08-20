@@ -1,0 +1,509 @@
+extends _layout
+
+block vars
+	- var pageTitle = "Processing returns";
+	- var pageClass = "processing-returns";
+	- var pageActive = "processing-returns";
+	- var pageSection = "services";
+	- var pageName = "Юридична консультацiя";
+
+block content
+	div.main-wrap
+		include ./modules/_breadcrumbs
+
+		.capital.capital--return
+			.capital__inner.site-container.site-container--section
+				.capital__content.capital__content--top-block.grid-padding
+					.capital__title.site-title
+						.site-title__ico.shadow
+							include ../img/site-title-icon01.svg
+						h1.site-title__large Працюйте легально! &nbsp;<br>
+							span А ми допоможемо)
+					p Реалії сьогодення вимагають від підприємців постійно шукати оптимальні шляхи ведення бізнесу. І, звичайно, багато питань виникає ще на етапі вибору форми підприємництва.
+					.capital__manage.custom-row.custom-row--12px
+						.capital__manage-item.custom-col.fit-content
+							a(href="javascript:void(0);" data-target="#appointment-block").site-btn.hide-for-800
+								span Записатися на консультацiю
+							a(href="javascript:void(0);" data-target="#appointment-block").site-btn.show-for-800
+								span Записатися
+						.capital__manage-item.custom-col.fit-content
+							a(href="https://system.skladusa.com/registration").site-link.site-link
+								span Зареєcтруватися
+				.capital__media.rhombus
+					.capital__media-img
+						img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="./img/processing-returns-hero.svg" alt="img" width="636" height="636").lazyload
+
+
+		.tow-or-fop
+			.tow-or-fop__inner.site-container.site-container--section
+				.tow-or-fop__content.grid-padding
+					.tow-or-fop__title.site-title
+						.site-title__ico.shadow
+							include ../img/site-title-automation.svg
+						.site-title__designation ТОВ чи ФОП?
+						.site-title__large
+							span Яка відмінність
+							|  між юридичною особою (ТОВ) та підприємцем (ФОП)?
+
+					.tow-or-fop__table
+						.site-table
+							.site-table__inner
+								table
+									thead
+										tr
+											th
+												span Фізична особа – підприємець (ФОП)
+											th
+												span Товариство з обмеженою відповідальністю (ТОВ)
+									tbody
+										tr
+											td
+												span Може зняти готівку з рахунку ФОП в будь-який момент і витратити ці кошти на будь-які потреби, включно з особистими
+											td
+												span Для зняття готівки з рахунку потрібні підстави та відповідне документальне оформлення
+										tr
+											td
+												span Відповідає за своїми зобов’язаннями та боргами всім своїм майном
+											td
+												span ТОВ несе відповідальність виключно в межах свого статутного капіталу. Засновники не відповідають за зобов’язаннями ТОВ
+										tr
+											td
+												span ФОП – платник єдиного податку  ІІ та ІІІ групи не застосовує РРО, якщо обсяг його доходів за рік менше 220 мінімальних заробітних плат і він не здійснює продаж складнопобутових товарів, ювелірних виробів, виробів медичного призначення
+											td
+												span ТОВ зобов’язано застосовувати касовий апарат при роздрібних продажах, незалежно від обсягу доходів та видів товару
+										tr
+											td
+												span Не веде бухгалтерський облік, але бажано мати документи на товар (сировину, матеріали, комплектуючі)
+											td
+												span Зобов’язано вести повноцінний бухгалтерський облік
+										tr
+											td
+												span У разі наявності партнерів по бізнесу немає можливості юридично врегулювати взаємовідносини між ними (участь у бізнесі, розподіл прибутків тощо)
+											td
+												span Всі взаємовідносини між учасниками (засновниками, власниками) ТОВ регулюються статутом ТОВ та корпоративним договором (у разі наявності)
+
+		.freq-ask
+			.freq-ask__inner.site-container.site-container--section
+				.freq-ask__content.grid-padding
+					.freq-ask__title.site-title
+						.site-title__ico.shadow
+							include ../img/site-title-automation.svg
+						.site-title__designation Частi питання
+						.site-title__large Найпоширеніші запитання
+							span  про реєстрацію бізнесу
+
+					.freq-ask__body
+						.freq-ask__tab
+							.freq-ask__tab-list
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-01").freq-ask__tab-item.active Загальне про ФОП
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-02").freq-ask__tab-item Оформлення ФОП
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-03").freq-ask__tab-item Функцiонування ФОП
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-04").freq-ask__tab-item Особливостi торгiвлi
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-05").freq-ask__tab-item Податки
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-06").freq-ask__tab-item Робота з прибутком
+								a(href="javascript:void(0)" data-tab="freq-ask-tab-07").freq-ask__tab-item Iнше
+
+						.freq-ask__tab-content
+							.freq-ask__tab-content-item.active(data-tab-content="freq-ask-tab-01")
+								// Загальне про фоп
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я планую продавати товари на закордонних маркетплейсах (Etsy, Amazon, eBay тощо), чи потрібно мені реєструвати для цього юридичну особу (ТОВ)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я підприємець (ФОП), чи можу я продавати товари на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Що потрібно підприємцю (ФОП) – платнику єдиного податку II або III групи щоб здійснювати продаж товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Хто такі підприємці (ФОП) – платники єдиного податку IV групи, чи можуть вони здійснювати продаж товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я підприємець (ФОП) – платник єдиного податку І групи, чи можу  здійснювати продаж товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-02")
+								// Функцiонування ФОП
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які обмеження чи особливості є для ІІ групи платників єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які обмеження чи особливості існують для ІІІ групи платників єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які взагалі існують обмеження для підприємців (ФОП)  – платників єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які звіти потрібно надавати платнику єдиного податку ІІ групи, і коли їх потрібно надавати?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які звіти потрібно надавати платнику єдиного податку ІІІ групи, і коли їх потрібно надавати?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Мені потрібно надавати якісь додаткові звіти, якщо у мене є наймані працівники?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Мені потрібно надавати якісь додаткові звіти, якщо я купую товари (сировину, матеріали, комплектуючі) чи послуги у іншого підприємця і сплачую за них із свого рахунку ФОП або готівкою?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Яким чином можна надавати звіти до податкової?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Коли платники єдино податку зобов’язані застосовувати касовий апарат (РРО)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я здійснюю продаж товарів виключно на закордонних маркетплейсах та отримую оплату від посередників на свій розрахунковий рахунок, чи потрібен мені касовий апарат (РРО, ПРРО)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Коли платники єдино податку зобов’язані застосовувати касовий апарат (РРО)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-03")
+								// Оформлення ФОП
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які мені потрібні КВЕДи і як їх правильно підібрати?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Де я можу найти КВЕДи, щоб підібрати необхідні саме для мене?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Яким чином я можу зареєструватись підприємцем (ФОП) – платником єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які документи необхідно надати, якщо я хочу зареєструватись як ФОП через ЦНАП або через нотаріуса?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Куди мені звертатись для реєстрації підприємцем (ФОП), якщо я зареєстрований (прописаний) в одному населеному пункті, а фактично мешкаю в іншому?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Що мені потрібно, щоб зареєструватись через портал (сайт) «Дія»?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Яким чином я можу отримати електронний підпис (Ключ ЕЦП)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-04")
+								// Робота з прибутком
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Як я буду отримувати оплату за товар, що продаю як підприємець (ФОП) на закордонних маркетплейсах (Etsy, Amazon, eBay тощо), в валюті чи в гривні?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head На мій підприємницький валютний рахунок (валютний рахунок ФОП) надійшли кошти, як мені їх отримати?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Мені потрібно продавати всю суму валютних коштів, що надходять на валютний рахунок ФОП?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які документи потрібно надавати до банку у випадку надходження валюти на рахунок ФОП?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Коли кошти отримані від продажу цифрових товарів вважаються ролті?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я отримую дохід в валюті, як його перерахувати (конвертувати) в гривню для відображення в декларації?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Під час відкриття рахунку ФОП мені в банку дали картку «ключ до рахунку», чи можу я з її допомогою сплачувати за покупки в магазині, за комунальні послуги тощо?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я зможу зняти валюту, що надійшла на мій підприємницький рахунок (рахунок ФОП), готівкою або переказати на мій приватний валютний рахунок?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-05")
+								// Податки
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Як податки та в якi термiни необхiдно спалчувати платнику єдиного податку III групи?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Яке мито чи податок на додану вартість (ПДВ) доведеться сплачувати при продажу товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо), якщо вартість посилки більше 150 євро?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Яка група єдиного податку підходить для здійснення діяльності із продажу товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які податки та в які терміни необхідно сплачувати платнику єдиного податку ІІ групи, який здійснює товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Які податки та в які терміни необхідно сплачувати платнику єдиного податку ІІІ групи?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я підприємець (ФОП) – платник єдиного податку ІІ групи, чи потрібно мені сплачувати податки, якщо я в якомусь місяці взагалі не отримував ніяких доходів?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Що таке фінансовий моніторинг та яке відношення до нього мають банки?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-06")
+								// Все про торговлю
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Чи є товари заборонені для продажу підприємцем (ФОП) – платником єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я продаю власні малюнки (картини, пастелі, акварелі тощо), що мені робити? Чи можу я бути підприємцем – платником єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Мені потрібні документи, що підтверджують придбання товарів, якими я торгую, або сировини (матеріалів, комплектуючих), з яких я ці товари виробляю?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+							.freq-ask__tab-content-item(data-tab-content="freq-ask-tab-07")
+								// Iнше
+								.faqs__list.accordion.js_accordion
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я купую старі речі у приватних осіб. Як мені це оформити, і які податки необхідно при цьому сплачувати?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я звичайна фізособа (не підприємець), які перекази коштів на мої приватні рахунки (картки) підпадають під фінансовий моніторинг в банках?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я продаю власні малюнки (картини, пастелі, акварелі тощо), що мені робити? Чи можу я бути підприємцем – платником єдиного податку?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я звичайна фізособа (не підприємець), які штрафи мені можуть нарахувати якщо дізнаються, що я отримував оплату за товар чи послуги на свої приватні рахунки (картки)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я звичайна фізособа (не підприємець), які податки мені можуть донарахувати, якщо дізнаються, що я отримував оплату за товар чи послуги на свої приватні рахунки (картки)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я звичайна фізособа (не підприємець), коли мене можуть притягнути до кримінальної відповідальності, якщо дізнаються, що я отримував оплату за товар чи послуги на свої приватні рахунки (картки)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Я підприємець (ФОП), чи можу я продавати товари на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+
+									.faqs__item
+										.faqs__item-content.accordion__item
+											.accordion__head Що потрібно підприємцю (ФОП) – платнику єдиного податку II або III групи щоб здійснювати продаж товарів на закордонних маркетплейсах (Etsy, Amazon, eBay тощо)?
+											.accordion__content
+												p Велика частина його тексту складається з розділів 1.10.32-3 з Цицерона De finibus bonorum ін malorum ( на кордонах добра і зла ; finibus може alspo перекласти як цілей). Neque Порро quisquam Передбачуване Квай dolorem Ipsum Quia Dolor сидіти Амет, consectetur, adipisci велить є першим відомим версія ("І немає ні тих, хто любить горе себе, так як це горе і, таким чином, хоче отримати його " )
+
+		.appointment#appointment-block
+			.appointment__inner.site-container.site-container--section
+				.appointment__content.grid-padding
+					.appointment__title.site-title.mw-100
+						.site-title__ico.shadow
+							include ../img/site-title-give-feedback.svg
+						.site-title__designation Записуйтесь на консультацiю
+						.site-title__large Найлегше забезпечити свою безпеку бути<br>
+							span  офіційно зареєстрованим підприємцем
+
+				.appointment__form-wrapper.grid-padding
+					.appointment__form.site-form
+						form#contactFormId(action="/forms-handler/" method="post" enctype="multipart/form-data")
+							.form-group.site-form__col(class="field-contactform-contactperson required")
+								label.site-form__item
+									input(type="text" id="contactform-contactperson" class="form-control" name="ContactForm[contactPerson]" aria-required="true" aria-invalid="false" value="Tatiana")
+									.help-block
+									.site-form__label Name
+							.form-group.site-form__col(class="field-contactform-email required")
+								label.site-form__item
+									input(type="text" id="field-contactform-email" class="form-control" name="ContactForm[contactPerson]" aria-required="true" aria-invalid="false")
+									.help-block
+									.site-form__label E-mail
+							.form-group.site-form__col(class="field-contactform-email required")
+								label.site-form__item
+									input(type="text" id="field-contactform-phone" class="form-control" name="ContactForm[contactPerson]" aria-required="true" aria-invalid="false")
+									.help-block
+									.site-form__label Phone
+							.form-group(class="field-contactform-message required")
+								label.site-form__item
+									textarea(id="contactform-message" class="form-control" name="ContactForm[message]"  aria-required="true" aria-invalid="true")
+									.help-block
+									.site-form__label Message
+							.form-group
+								.form-checkbox
+									input(type='checkbox' id='checkAppointment01')
+									label(for='checkAppointment01') Я користуюсь послугою з приймання оплат вiд SkladUSA
+							.form-group
+								.form-checkbox
+									input(type='checkbox' id='checkAppointment02')
+									label(for='checkAppointment02') Я зареєстрований пiдприємець
+							.bottom.loaded-file
+								button(type="submit" id="ask-question-btn-id" class="btn-arrow btn" onclick="return false") Відправити
+
+
+							.appointment__form-caption *Первинна консультація оплачується SkladUSA і включає в себе годинну онлайн-консультацію (тільки для клієнтів SkladUSA). Подальші консультації з юристом (за потреби) оплачуються окремо. Також ви зможете скористатися (за бажанням) спеціальним тарифом як клієнти SkladUSA для послуги щодо реєстрації ФОП
+					.appointment__persona
+						.appointment__persona-inner
+							.appointment__persona-photo
+								picture
+									source(srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+										data-srcset="./img/appointment-photo.webp" type="image/webp").lazyload
+									img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+										data-src="./img/appointment-photo.png" alt='img' width="245" height="245").lazyload
+							.appointment__persona-info
+								.appointment__persona-name Олександр Зарайский
+								.appointment__persona-position Податковий експерт
+
