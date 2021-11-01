@@ -297,5 +297,15 @@ $(document).ready(function () {
     }, 1000);
   });
 
+  /***
+   * Script for tabs country
+   */
 
+  $(document).on("click", "[data-country-tab]", function (e) {
+    let dataTabContentName = $(this).attr("data-country-tab");
+    $("[data-country-tab]").removeClass("active");
+    $(this).addClass("active");
+    $("[data-country-tab-content]").removeClass("active");
+    $("[data-country-tab-content=" + dataTabContentName + "]").addClass("active");
+  });
 });
