@@ -149,15 +149,22 @@ $(document).ready(function () {
     });
   }
 
+  function tariffBlockInit(){
+    $(document).find('.tariff__table-item.open').find('.tariff__table-content').show();
+
+    $(document).on('click', '.tariff__table-title', function (e) {
+      $(this).parent().toggleClass('open');
+      $(this).next('.tariff__table-content').slideToggle();
+    });
+  }
+
+  if($('.tariff').length > 0 && $(window).width() < 992){
+    tariffBlockInit()
+  }
+
   $(window).resize(function () {
-
     if ($('.tariff').length > 0 && $(window).width() < 992) {
-      $(document).find('.tariff__table-item.open').find('.tariff__table-content').show();
-
-      $(document).on('click', '.tariff__table-title', function (e) {
-        $(this).parent().toggleClass('open');
-        $(this).next('.tariff__table-content').slideToggle();
-      });
+      tariffBlockInit()
     }
   });
 
